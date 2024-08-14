@@ -1,24 +1,24 @@
-@extends('layouts.master')
 
-@section('title')
-    @lang('Foto Galeri')
-@endsection
 
-@section('content')
-    @component('components.breadcrumb')
-        @slot('li_1')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Foto Galeri'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+    <?php $__env->startComponent('components.breadcrumb'); ?>
+        <?php $__env->slot('li_1'); ?>
             Maklumat Sekolah
-        @endslot
-        @slot('title')
+        <?php $__env->endSlot(); ?>
+        <?php $__env->slot('title'); ?>
             Foto Galeri
-        @endslot
-    @endcomponent
+        <?php $__env->endSlot(); ?>
+    <?php echo $__env->renderComponent(); ?>
 
-    @if (Auth::user()->jawatan_app != 6 and Auth::user()->jawatan_app != 1)
+    <?php if(Auth::user()->jawatan_app != 6 and Auth::user()->jawatan_app != 1): ?>
         <button type="button" class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#uploadGambar">
             <i class='bx bx-upload'></i> Muat naik Gambar
         </button>
-    @endif
+    <?php endif; ?>
 
     <!-- Modal Lirik -->
     <div class="modal fade" id="uploadGambar" tabindex="-1" aria-labelledby="uploadGambarLabel" aria-hidden="true">
@@ -46,25 +46,27 @@
 
     <div class="row g-3">
         <div class="col-md-4 col-sm-6">
-            <img src="{{ asset('images/img3.jpg') }}" alt="Image 1" class="gallery-item mb-2">
+            <img src="<?php echo e(asset('images/img3.jpg')); ?>" alt="Image 1" class="gallery-item mb-2">
             <p class="card-text fw-bold fs-6">Pintu Pagar Utama</p>
         </div>
         <div class="col-md-4 col-sm-6">
-            <img src="{{ asset('images/img2.jpg') }}" alt="Image 2" class="gallery-item mb-2">
+            <img src="<?php echo e(asset('images/img2.jpg')); ?>" alt="Image 2" class="gallery-item mb-2">
             <p class="card-text fw-bold fs-6">Taman</p>
         </div>
         <div class="col-md-4 col-sm-6">
-            <img src="{{ asset('images/img1.jpg') }}" alt="Image 3" class="gallery-item mb-2">
+            <img src="<?php echo e(asset('images/img1.jpg')); ?>" alt="Image 3" class="gallery-item mb-2">
             <p class="card-text fw-bold fs-6">Tandas</p>
         </div>
         <div class="col-md-4 col-sm-6">
-            <img src="{{ asset('images/img2.jpg') }}" alt="Image 3" class="gallery-item mb-2">
+            <img src="<?php echo e(asset('images/img2.jpg')); ?>" alt="Image 3" class="gallery-item mb-2">
             <p class="card-text fw-bold fs-6">Pintu Pagar Utama</p>
         </div>
         <div class="col-md-4 col-sm-6">
-            <img src="{{ asset('images/img3.jpg') }}" alt="Image 3" class="gallery-item mb-2">
+            <img src="<?php echo e(asset('images/img3.jpg')); ?>" alt="Image 3" class="gallery-item mb-2">
             <p class="card-text fw-bold fs-6">Tandas</p>
         </div>
         <!-- Tambahkan lebih banyak kolom sesuai kebutuhan -->
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BELAJAR-PROYEK\GRAVIX\mps_cino\mps\resources\views/foto-galeri.blade.php ENDPATH**/ ?>

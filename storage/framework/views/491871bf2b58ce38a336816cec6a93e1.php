@@ -118,7 +118,6 @@
                                 </ul>
                             </li>
                             <li><a href="peta-susun-atur-premis" key="t-full-calendar"><?php echo app('translator')->get('Peta Susun Atur Premis'); ?></a></li>
-                            <li><a href="foto-galeri" key="t-full-calendar"><?php echo app('translator')->get('Foto Galeri'); ?></a></li>
                             <li><a href="peta-lokasi" key="t-full-calendar"><?php echo app('translator')->get('Peta Lokasi'); ?></a></li>
                         <?php endif; ?>
                     </ul>

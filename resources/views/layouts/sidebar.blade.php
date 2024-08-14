@@ -118,7 +118,6 @@
                                 </ul>
                             </li>
                             <li><a href="peta-susun-atur-premis" key="t-full-calendar">@lang('Peta Susun Atur Premis')</a></li>
-                            <li><a href="foto-galeri" key="t-full-calendar">@lang('Foto Galeri')</a></li>
                             <li><a href="peta-lokasi" key="t-full-calendar">@lang('Peta Lokasi')</a></li>
                         @endif
                     </ul>
