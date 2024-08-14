@@ -84,16 +84,9 @@
                         </li>
                         @endif
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <span key="t-dashboards">@lang('Logo')</span>
+                            <a href="logo-sekolah">
+                                <span key="t-dashboards">@lang('Logo Sekolah')</span>
                             </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="logo-sekolah" key="t-tui-calendar">@lang('Logo Sekolah')</a></li>
-                                <li><a href="logo-jpn" key="t-tui-calendar">@lang('Logo JPN')</a></li>
-                                <li><a href="logo-kpm" key="t-tui-calendar">@lang('Logo KPM')</a></li>
-                                <li><a href="jata-negeri" key="t-tui-calendar">@lang('Jata Negeri')</a></li>
-                                <li><a href="jata-negara" key="t-tui-calendar">@lang('Jata Negara')</a></li>
-                            </ul>
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
