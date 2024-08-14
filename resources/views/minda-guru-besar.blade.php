@@ -130,6 +130,12 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="mt-4">
+                                    {{-- Nama Guru Besar --}}
+                                    <h5 class="fw-semibold">Rahimi bin Saufi</h5>
+                                    <p>Guru Besar</p>
+                                </div>
                             </div>
                         </div>
                     </div>
