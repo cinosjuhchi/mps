@@ -16,17 +16,18 @@
     @endcomponent
 
     <div class="text-center">
-        <video src="{{ asset('videos/Lagu_Negaraku.mp4') }}" class="w-75" controls></video>
+        {{-- <video src="{{ asset('videos/Lagu_Negaraku.mp4') }}" class="w-75" controls></video> --}}
         <div class="mt-4">
-            <h5 class="text-decoration-underline">Lirik</h5>
-            <p class="fs-4">
-                Negaraku
-                <br> Tanah tumpahnya darahku,
-                <br> Rakyat Hidup bersatu dan maju,
-                <br> Rahmat bahagia Tuhan kurniakan,
-                <br> Raja kita Selamat bertakhta,
-                <br> Rahmat bahagia Tuhan kurniakan,
-                <br> Raja kita Selamat bertakhta
+            <h4 class="">Selamat Sultan</h4>
+            <p class="fs-5">
+                Lanjutkan Usia Al-Sultan Kami
+                <br> Sultan Kelantan Raja Ikrami
+                <br> Aman Sentosa Tuhan Sirami
+                <br> Kekal Memerintah Kami
+                <br> Kasih Dan Taat Setia Disembahkan
+                <br> Keriangan Diucapkan
+                <br> Segala Kebesaran Allah Cucurkan
+                <br> Bertambah Kemuliaan
             </p>
         </div>
     </div>

@@ -15,10 +15,10 @@
         @endslot
     @endcomponent
     <div class="text-center">
-        <video src="{{ asset('videos/Lagu_Negaraku.mp4') }}" class="w-75" controls></video>
+        {{-- <video src="{{ asset('videos/Lagu_Negaraku.mp4') }}" class="w-75" controls></video> --}}
         <div class="mt-4">
-            <h5 class="text-decoration-underline">Lirik</h5>
-            <p class="fs-4">
+            <h4 class="">Lagu Negaraku</h4>
+            <p class="fs-5">
                 Negaraku
                 <br> Tanah tumpahnya darahku,
                 <br> Rakyat Hidup bersatu dan maju,
