@@ -7,6 +7,14 @@
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
             <ul class="metismenu list-unstyled" id="side-menu">
+                @if (Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1)
+                    <li>
+                        <a href="tetapan" class="waves-effect">
+                            <i class='bx bxs-cog'></i>
+                            <span key="t-chat">@lang('Tetapan')</span>
+                        </a>
+                    </li>
+                @endif
                 <li>
                     <a href="dashboard" class="waves-effect">
                         <i class='bx bxs-home'></i>
