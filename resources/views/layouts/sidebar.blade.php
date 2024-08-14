@@ -95,7 +95,7 @@
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="lagu-sekolah" key="t-tui-calendar">@lang('Lagu Sekolah')</a></li>
                                 <li><a href="lagu-guru-malaysia" key="t-tui-calendar">@lang('Lagu Guru Malaysia')</a></li>
-                                <li><a href="lagu-kebangsaan-negeri" key="t-tui-calendar">@lang('Lagu Kebesaran Negeri')</a></li>
+                                <li><a href="lagu-kebangsaan-negeri" key="t-tui-calendar">@lang('Lagu Kebangsaan Negeri')</a></li>
                                 <li><a href="lagu-negaraku" key="t-tui-calendar">@lang('Lagu Negaraku')</a></li>
                             </ul>
                         </li>
