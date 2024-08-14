@@ -257,3 +257,64 @@ img.imej-tetapan:hover {
     height:80px;
 }
 
+/* stepper */
+.stepper {
+    background-color: aliceblue;
+    color: #343a40;
+}
+
+.stepper:hover {
+    cursor: pointer;
+color: #343a40;
+}
+
+.step-title {
+    display: flex;
+    gap: 5px;
+    align-items: cen;
+
+    i {
+        font-size: 25px;
+        color: darkorange;
+    }
+}
+
+.stepper .step-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.stepper .step-number {
+    background-color: cadetblue;
+    color: white;
+    width: 50px;
+    max-width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    min-width: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stepper .step-description {
+    h5 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+.stepper .step-status {
+    i {
+        font-size: 25px;
+    }
+}
+
