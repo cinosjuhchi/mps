@@ -99,69 +99,65 @@
                                     {{-- Nama Guru Besar --}}
                                     <h5 class="fw-semibold m-0">Rahimi bin Saufi</h5>
                                     <p>Guru Besar</p>
-
-                                    <div class="h-50 my-5">
-                                        <p>Sign Guru Besar</p>
-                                    </div>
-
                                     <p class="fw-semibold m-0">Tarikh Post</p>
                                     <p>15 Agustus 2024</p>
                                 </div>
 
-                                <div class="d-flex justify-content-end align-items-center">
+                                <div class="d-flex justify-content-end align-items-center gap-2">
                                     @if (Auth::user()->jawatan_app != 6)
-                                        <div>
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                                data-bs-target="#editMinda">
-                                                <i class='bx bxs-edit'></i>
-                                            </button>
-                                            <!-- Modal -->
-                                            <div class="modal fade" id="editMinda" tabindex="-1"
-                                                aria-labelledby="editMindaLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title fs-5" id="editMindaLabel">Kemaskini Minda
-                                                            </h1>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            ...
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-outline-secondary"
-                                                                data-bs-dismiss="modal">Batal</button>
-                                                            <button type="button"
-                                                                class="btn btn-warning">Kemaskini</button>
-                                                        </div>
+                                        {{-- Padam --}}
+                                        <button class="btn btn-danger d-flex gap-2 align-items-center"
+                                            data-bs-toggle="modal" data-bs-target="#hapusMinda"><i
+                                                class='bx bxs-trash'></i>Padam</button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="hapusMinda" tabindex="-1"
+                                            aria-labelledby="hapusMindaLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="hapusMindaLabel">Padam Minda
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h5>
+                                                            Adakah anda pasti mahu memadamkan minda ini
+                                                        </h5>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-secondary"
+                                                            data-bs-dismiss="modal">Batal</button>
+                                                        <button type="button" class="btn btn-danger">Padam</button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-danger" data-bs-toggle="modal"
-                                                data-bs-target="#hapusMinda"><i class='bx bxs-trash'></i></button>
-                                            <!-- Modal -->
-                                            <div class="modal fade" id="hapusMinda" tabindex="-1"
-                                                aria-labelledby="hapusMindaLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title fs-5" id="hapusMindaLabel">Padam Minda
-                                                            </h1>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                                aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <h5>
-                                                                Adakah anda pasti mahu memadamkan minda ini
-                                                            </h5>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-outline-secondary"
-                                                                data-bs-dismiss="modal">Batal</button>
-                                                            <button type="button" class="btn btn-danger">Padam</button>
-                                                        </div>
+                                        </div>
+
+                                        {{-- KemasKini --}}
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-warning d-flex gap-2 align-items-center"
+                                            data-bs-toggle="modal" data-bs-target="#editMinda">
+                                            <i class='bx bxs-edit'></i> Kemaskini
+                                        </button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="editMinda" tabindex="-1"
+                                            aria-labelledby="editMindaLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="editMindaLabel">Kemaskini Minda
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        ...
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-outline-secondary"
+                                                            data-bs-dismiss="modal">Batal</button>
+                                                        <button type="button" class="btn btn-warning">Kemaskini</button>
                                                     </div>
                                                 </div>
                                             </div>
