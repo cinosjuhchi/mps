@@ -12,20 +12,15 @@
         @slot('title')
             Peta Susun Atur Premis
         @endslot
-    @endcomponent
-
-    @if (Auth::user()->jawatan_app != 6)
-        <button class="btn btn-light d-block me-auto"><i class='bx bxs-edit'></i> Tambah Gambar</button>
-    @endif
-
-    <img src="{{ asset('images/peta-susun-sekolah.jpg') }}" alt="" srcset="" class="img-fluid d-block m-auto"
-        style="width:14rem; transform: rotate(90deg);">
+    @endcomponent    
 
 
-    @if (Auth::user()->jawatan_app != 6)
-        <div class="d-flex justify-content-center mb-3">
-            <button class="btn btn-warning mb-3 me-3"><i class='bx bxs-edit'></i> Kemaskini</button>
-            <button class="btn btn-danger mb-3"><i class='bx bxs-trash'></i> Delete</button>
-        </div>
-    @endif
+    <div class="row text-center">
+        <h4 class="fs-4 text-dark fw-bold mb-3">Peta Atur Premis</h4>
+        <img src="{{ asset('images/foto-premis.png') }}" class="img-fluid" alt="" srcset="">
+    </div>
+
+    {{-- <img src="{{ asset('images/foto-premis.png') }}" alt="" srcset="" class="img-fluid d-block m-auto"
+        style="width:14rem;"> --}}
+
 @endsection
