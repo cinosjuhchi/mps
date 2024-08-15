@@ -145,18 +145,67 @@
                     <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class='bx bxs-directions'></i>
-                            <span key="t-dashboards">@lang('Pengurusan Komponen')</span>
+                            <span key="t-dashboards">@lang('komponen new')</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            {{-- <li><a href="copk" key="t-tui-calendar">@lang('Komponen')</a></li> --}}
-                            {{-- <li><a href="copk" key="t-tui-calendar">@lang('Carta Organisasi Pengurusan Komponen (COPK)')</a></li> --}}
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <span key="t-dashboards">@lang('Pengurusan dan Pentadbiran')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="pengurusan-dan-pentadbiran-komponen"
+                                            key="t-tui-calendar">@lang('komponen')</a></li>
                                     <li><a href="pengurusan-dan-pentadbiran-jk-jp"
-                                            key="t-tui-calendar">@lang('Sub Komponen')</a></li>
+                                            key="t-tui-calendar">@lang('Jawatankuasa')</a></li>
+                                    <li><a href="program-pengurusan-dan-pentadbiran"
+                                            key="t-tui-calendar">@lang('Aktviti &Program')</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards">@lang('Kurikulum')</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="kurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa')</a></li>
+                                    <li><a href="program-kurikulum" key="t-tui-calendar">@lang('Aktiviti & Program')</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards">@lang('Hal Ehwal Murid')</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="hal-ehwal-murid-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa')</a>
+                                    </li>
+                                    <li><a href="program-hal-ehwal-murid" key="t-tui-calendar">@lang('Aktiviti & Program')</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards">@lang('Kokurikulum')</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="kokurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa')</a></li>
+                                    <li><a href="program-kokurikulum" key="t-tui-calendar">@lang('Aktiviti & Program')</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="imbangan-tugas" key="t-tui-calendar">@lang('Imbangan Tugas')</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class='bx bxs-directions'></i>
+                            <span key="t-dashboards">@lang('Pengurusan Komponen')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="copk" key="t-tui-calendar">@lang('Carta Organisasi Pengurusan Komponen (COPK)')</a></li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards">@lang('Komponen Pengurusan dan Pentadbiran')</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="pengurusan-dan-pentadbiran-jk-jp"
                                             key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a></li>
                                     <li><a href="program-pengurusan-dan-pentadbiran"
@@ -165,7 +214,7 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <span key="t-dashboards">@lang('Kurikulum')</span>
+                                    <span key="t-dashboards">@lang('Komponen Kurikulum')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="kurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a></li>
@@ -174,7 +223,7 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <span key="t-dashboards">@lang('Hal Ehwal Murid')</span>
+                                    <span key="t-dashboards">@lang('Komponen Hal Ehwal Murid')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="hal-ehwal-murid-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a>
@@ -185,7 +234,7 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <span key="t-dashboards">@lang('Kokurikulum')</span>
+                                    <span key="t-dashboards">@lang('Komponen Kokurikulum')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="kokurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a></li>
