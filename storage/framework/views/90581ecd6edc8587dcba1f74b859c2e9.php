@@ -1,26 +1,24 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?> <?php echo app('translator')->get('Senarai Pengguna'); ?> <?php $__env->stopSection(); ?>
 
-@section('title') @lang('Senarai Pengguna') @endsection
-
-@section('css')
+<?php $__env->startSection('css'); ?>
     <!-- select2 css -->
-    <link href="{{ URL::asset('build/libs/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(URL::asset('build/libs/select2/css/select2.min.css')); ?>" rel="stylesheet" type="text/css" />
 
     <!-- DataTables -->
-    <link href="{{ URL::asset('build/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet"
+    <link href="<?php echo e(URL::asset('build/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css')); ?>" rel="stylesheet"
         type="text/css" />
 
     <!-- Responsive datatable examples -->
-    <link href="{{ URL::asset('build/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css') }}"
+    <link href="<?php echo e(URL::asset('build/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')); ?>"
         rel="stylesheet" type="text/css" />
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 
-@component('components.breadcrumb')
-@slot('li_1') User @endslot
-@slot('title') Senarai Pengguna @endslot
-@endcomponent
+<?php $__env->startComponent('components.breadcrumb'); ?>
+<?php $__env->slot('li_1'); ?> User <?php $__env->endSlot(); ?>
+<?php $__env->slot('title'); ?> Senarai Pengguna <?php $__env->endSlot(); ?>
+<?php echo $__env->renderComponent(); ?>
 
 
 <div class="row">
@@ -98,7 +96,7 @@
                                         </div>
                                         <div class="avatar-lg">
                                             <div class="avatar-title bg-light rounded-circle">
-                                                <img src="{{ URL::asset('build/images/users/user-dummy-img.jpg') }}" id="member-img"
+                                                <img src="<?php echo e(URL::asset('build/images/users/user-dummy-img.jpg')); ?>" id="member-img"
                                                     class="avatar-md rounded-circle h-auto" />
                                             </div>
                                         </div>
@@ -182,19 +180,21 @@
     </div>
 </div>
 
-@endsection
-@section('script')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
     <!-- select2 js -->
-    <script src="{{ URL::asset('build/libs/select2/js/select2.min.js') }}"></script>
+    <script src="<?php echo e(URL::asset('build/libs/select2/js/select2.min.js')); ?>"></script>
 
     <!-- Required datatable js -->
-    <script src="{{ URL::asset('build/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="<?php echo e(URL::asset('build/libs/datatables.net/js/jquery.dataTables.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js')); ?>"></script>
 
     <!-- Responsive examples -->
-    <script src="{{ URL::asset('build/libs/datatables.net-responsive/js/dataTables.responsive.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') }}"></script>
+    <script src="<?php echo e(URL::asset('build/libs/datatables.net-responsive/js/dataTables.responsive.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js')); ?>"></script>
 
     <!-- ecommerce-customer-list init -->
-    <script src="{{ URL::asset('build/js/pages/contact-user-list.init.js') }}"></script>
-@endsection
+    <script src="<?php echo e(URL::asset('build/js/pages/contact-user-list.init.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BELAJAR-PROYEK\GRAVIX\mps_cino\mps\resources\views/senarai-pengguna.blade.php ENDPATH**/ ?>
