@@ -19,6 +19,49 @@
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
+    <!-- subscribeModal -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <div class="avatar-md mx-auto mb-4">
+                            <div class="avatar-title bg-light rounded-circle text-warning h1">
+                                <i class="mdi mdi-clock-alert"></i>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-xl-10">
+                                <h4 class="text-dark fw-bolder">Program anda tinggal 10 hari lagi !</h4>
+                                <p class="text-muted font-size-14 mb-4">Segera ikuti perkembangan program anda</p>
+                                <div class="bg-light text-start rounded p-3">
+                                    <div class="mb-3">
+                                        <h5 class="text-dark fw-bold">Program dan Aktiviti</h5>
+                                        <p class="text-muted font-size-14">Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023</p>
+                                    </div>                                    
+                                    <div class="mb-3">
+                                        <h5 class="text-dark fw-bold">Komponen</h5>
+                                        <p class="text-muted font-size-14">Pengurusan dan Pentadbiran</p>
+                                    </div>                                    
+                                    <div class="mb-3">
+                                        <h5 class="text-dark fw-bold">Tarikh</h5>
+                                        <p class="text-muted font-size-14">04/06/2024</p>
+                                    </div>                                    
+                                </div>
+                                <div class="mt-3 w-100">
+                                    <button type="button" class="btn btn-primary w-100 waves-effect waves-light" data-bs-dismiss="modal" aria-label="Close">Mengerti</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <?php if(session('change-role-success')): ?>
@@ -271,7 +314,7 @@
                 
 
                 
-                <div class="card border border-opacity-10 border-secondary">
+                <div class="card border border-opacity-10 border-secondary">                                                             
                     <div class="card-header text-bg-dark">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="fw-bold">Kalendar</span>
@@ -284,13 +327,11 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <div id="external-events" class="mt-2"></div>
-
                         <div id="calendar"></div>
-                    </div>
-                </div>
-            </div>
-            
+                    </div>                    
+                </div>                                        
+            </div>            
+                        
             <div class="col-md-3">
                 <div class="table-responsive">
                     <table class="table table-bordered">
@@ -337,7 +378,165 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="card border border-opacity-10 border-secondary">
+                    <div class="card-header text-bg-dark">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">Action Kalendar</span>
+                            <div class="icon-action d-flex">
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <?php if(Auth::user()-> jawatan_app != 0 AND Auth::user()-> jawatan_app != 1 ): ?>
+                        <div class="d-grid">
+                            <button class="btn font-16 btn-primary" id="btn-new-event"><i
+                                class="mdi mdi-plus-circle-outline"></i> Tambah acara</button>
+                        </div>
+                        <?php endif; ?>        
+                        <div id="external-events" class="mt-2">
+                            <div class="row mb-5">
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <p class=" ms-2">Seret dan lepas acara atau klik pada petak kalendar</p>
+                                <?php endif; ?>
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <div class="external-event fc-event bg-success w-100" data-class="bg-success">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Umum
+                                </div>
+                                <?php endif; ?>
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <div class="external-event fc-event bg-info w-100" data-class="bg-info">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Pengurusan dan Pentadbiran
+                                </div>
+                                <?php endif; ?>
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <div class="external-event fc-event bg-warning w-100" data-class="bg-warning">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Kurikulum
+                                </div>
+                                <?php endif; ?>
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <div class="external-event fc-event bg-danger w-100" data-class="bg-danger">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Hal Ehwal Murid
+                                </div>
+                                <?php endif; ?>
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <div class="external-event fc-event bg-purple w-100" data-class="bg-purple">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Kokurikulum
+                                </div>
+                                <?php endif; ?>
+
+                                <div class="external-event fc-event bg-green w-100" data-class="bg-green">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Kalendarku
+                                </div>
+                            </div>
+                            <?php if(Auth::user()->jawatan_app != 6 ): ?>
+                            <div class="row">
+                                <p class="ms-2">Hari cuti</p>
+                                <div class="external-event fc-event bg-grey w-100 text-dark fw-bold" data-class="bg-grey">
+                                    <i class=" font-size-11 me-2"></i>Hari Kelepasan Am Persekutuan
+                                </div>
+                                <div class="external-event fc-event bg-violet w-100 text-dark fw-bold " data-class="bg-violet">
+                                    <i class=" font-size-11 me-2"></i>Hari Kelepasan Am Negeri
+                                </div>
+                                <div class="external-event fc-event bg-cream w-100 text-dark fw-bold" data-class="bg-cream">
+                                    <i class=" font-size-11 me-2"></i>Cuti Peristiwa
+                                </div>
+                                <div class="external-event fc-event bg-cutipenggal w-100 text-dark fw-bold" data-class="bg-cutipenggal">
+                                    <i class=" font-size-11 me-2"></i>Cuti Penggal
+                                </div>
+                            </div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>    
+                <div class="modal fade" id="event-modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header py-3 px-4 border-bottom-0">
+                                <h5 class="modal-title" id="modal-title">Event</h5>
+        
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+        
+                            </div>
+                            <div class="modal-body p-4">
+                                <form class="needs-validation" name="event-form" id="form-event" novalidate>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Event Name</label>
+                                                <input class="form-control" placeholder="Insert Event Name" type="text"
+                                                    name="title" id="event-title" required value="" />
+                                                <div class="invalid-feedback">Please provide a valid event name</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Jam Mulai</label>
+                                                <input class="form-control" type="time" name="" id="event-time">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Jam Selesai</label>
+                                                <input class="form-control" type="time" name="" id="event-time">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Tanggal Mulai</label>
+                                                <input class="form-control" type="date" name="" id="event-time">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Tanggal Selesai</label>
+                                                <input class="form-control" type="date" name="" id="event-time">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Category</label>
+                                                <select class="form-control form-select" name="category" id="event-category">
+                                                    <option selected> --Select-- </option>
+                                                    <?php if(Auth::user()->jawatan_app != 0 AND Auth::user()->jawatan_app !=6 ): ?>
+                                                    <option value="bg-success">Umum</option>
+                                                    <option value="bg-primary">Pengurusan dan Pentadbiran</option>
+                                                    <option value="bg-warning">Kurikulum</option>
+                                                    <option value="bg-danger">Hal Ehwal Murid</option>
+                                                    <option value="bg-purple">Kokurikulum</option>
+                                                    <?php endif; ?>
+                                                    <option value="bg-green">Kalendarku</option>
+                                                    <?php if(Auth::user()->jawatan_app != 6 ): ?>
+                                                    <option value="bg-grey">Hari Kelepasan Am Persekutuan</option>
+                                                    <option value="bg-violet">Hari Kelepasan Am Negeri</option>
+                                                    <option value="bg-cream">Cuti Peristiwa</option>
+                                                    <option value="bg-cutipenggal">Cuti Penggal</option>
+                                                    <?php endif; ?>
+                                                </select>
+                                                <div class="invalid-feedback">Please select a valid event category</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <button type="button" class="btn btn-danger" id="btn-delete-event">Delete</button>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <button type="button" class="btn btn-light me-1"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-success" id="btn-save-event">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- end modal-content-->
+                    </div> <!-- end modal dialog-->
+                </div>                            
             </div>
+            
         </div>
         
     <?php elseif(Auth::user()->jawatan_app == 0): ?>
@@ -478,8 +677,7 @@
         </div>
         
     <?php endif; ?>
-
-
+        
     <script>
         function toggleLabel(checkboxId) {
             var label = document.getElementById("label" + checkboxId.slice(-1));
@@ -526,8 +724,17 @@
         $('#recentUser-table').DataTable();
     </script>
 
-    <script src="<?php echo e(URL::asset('build/libs/jquery-knob/jquery.knob.min.js')); ?>"></script>
-    <script src="<?php echo e(URL::asset('build/js/pages/jquery-knob.init.js')); ?>"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                var myModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
+                myModal.show();
+            }, 3000); // Delay in milliseconds
+        });
+    </script>
+
+    <script src="<?php echo e(URL::asset('build/libs/jquery-knob/jquery.knob.min.js')); ?>"></>
+    <script src="<?php echo e(URL::asset('build/js/pages/jquery-knob.init.js')); ?>"></scrip>
     <script src="<?php echo e(URL::asset('/build/js/pages/jquery-knob.init.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 

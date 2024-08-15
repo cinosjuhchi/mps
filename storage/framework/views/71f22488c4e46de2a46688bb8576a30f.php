@@ -16,34 +16,7 @@
     <?php echo $__env->renderComponent(); ?>
     <?php if(Auth::user()->jawatan_app != 6): ?>
         <div>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editMinda">
-                <i class='bx bxs-edit'></i> Kemaskini Logo
-            </button>
-            <!-- Modal -->
-            <form action="" class="modal fade" id="editMinda" tabindex="-1" aria-labelledby="editMindaLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="editMindaLabel">Kemaskini Logo
-                            </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h5>
-                                Muat naik logo
-                            </h5>
-                            <input type="file" class="form-control">
-                            <p>Logo mestilah dalam bentuk JPG, PNG, JPEG dan saiz maksimum 2MB</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Batal</button>
-                            <button type="submit" class="btn btn-warning">Muat Naik</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
+            <button class="btn btn-warning d-block me-auto mb-3"><i class='bx bxs-edit'></i> Kemaskini Logo</button>
         </div>
     <?php endif; ?>
     <img src="<?php echo e(asset('images/logo-sri-angkasa.png')); ?>" alt="" srcset=""class="img-fluid d-block m-auto"
@@ -71,4 +44,4 @@
     <?php endif; ?>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\mpsOnline\mps\resources\views/logo-sekolah.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BELAJAR-PROYEK\GRAVIX\mps_cino\mps\resources\views/logo-sekolah.blade.php ENDPATH**/ ?>

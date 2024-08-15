@@ -37,14 +37,7 @@
 
 
             <!-- App Search-->
-            <form class="ms-3 app-search d-none d-lg-block">
-                <div class="position-relative">
-                    <input type="text" class="form-control" placeholder="@lang('translation.Search')">
-                    <button class="btn" style="background: #5156BE;">
-                        <span class="bx bx-search-alt"></span>
-                    </button>
-                </div>
-            </form>
+
         </div>
 
         <div class="d-flex">

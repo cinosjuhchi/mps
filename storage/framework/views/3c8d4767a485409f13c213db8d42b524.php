@@ -14,19 +14,21 @@
             Lagu Negaraku
         <?php $__env->endSlot(); ?>
     <?php echo $__env->renderComponent(); ?>
-    <div class="text-center">
-        
-        <div class="mt-4">
-            <h4 class="">Lagu Negaraku</h4>
-            <p class="fs-5">
-                Negaraku
-                <br> Tanah tumpahnya darahku,
-                <br> Rakyat Hidup bersatu dan maju,
-                <br> Rahmat bahagia Tuhan kurniakan,
-                <br> Raja kita Selamat bertakhta,
-                <br> Rahmat bahagia Tuhan kurniakan,
-                <br> Raja kita Selamat bertakhta
-            </p>
+    <div class="d-flex justify-content-center align-items-center mt-4">
+        <div class="w-50 d-flex justify-content-center align-items-center text-start">
+            
+            <div class="mt-4">
+                <h4 class="">Lagu Negaraku</h4>
+                <p class="fs-5">
+                    Negaraku
+                    <br> Tanah tumpahnya darahku,
+                    <br> Rakyat Hidup bersatu dan maju,
+                    <br> Rahmat bahagia Tuhan kurniakan,
+                    <br> Raja kita Selamat bertakhta,
+                    <br> Rahmat bahagia Tuhan kurniakan,
+                    <br> Raja kita Selamat bertakhta
+                </p>
+            </div>
         </div>
     </div>
 <?php $__env->stopSection(); ?>

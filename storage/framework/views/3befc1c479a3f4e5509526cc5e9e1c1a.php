@@ -23,20 +23,6 @@
                 </li>
                 <?php if(Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1): ?>
                     <li class="menu-title" key="t-menu"><?php echo app('translator')->get('translation.Menu'); ?></li>
-
-                    <li>
-                        <a href="javascript: void(0);" class="has-arrow waves-effect">
-                            <i class="bx bxs-user-circle"></i>
-                            <span key="t-dashboards"><?php echo app('translator')->get('User'); ?></span>
-                        </a>
-                        <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="profilku" key="t-default"><?php echo app('translator')->get('Profilku'); ?></a></li>
-                            <li><a href="tukar-kata-laluan" key="t-saas"><?php echo app('translator')->get('Tukar Kata Laluan'); ?></a></li>
-                            <?php if(Auth::user()->jawatan_app == 2 or Auth::user()->jawatan_app == 3): ?>
-                                <li><a href="senarai-pengguna" key="t-crypto"><?php echo app('translator')->get('Senarai Pengguna'); ?></a></li>
-                            <?php endif; ?>
-                        </ul>
-                    </li>
                 <?php endif; ?>
 
                 <li class="menu-title" key="t-apps"><?php echo app('translator')->get('NAVIGASI'); ?></li>
@@ -69,19 +55,19 @@
                             <li><a href="piagam-pelanggan" key="t-full-calendar"><?php echo app('translator')->get('Piagam Pelanggan'); ?></a></li>
                         <?php endif; ?>
                         <?php if(Auth::user()->jawatan_app == 0): ?>
-                        <li><a href="ikrar-rukun-negara" key="t-full-calendar"><?php echo app('translator')->get('Ikrar Rukun Negara'); ?></a></li>
+                            <li><a href="ikrar-rukun-negara" key="t-full-calendar"><?php echo app('translator')->get('Ikrar Rukun Negara'); ?></a></li>
                         <?php endif; ?>
                         <?php if(Auth::user()->jawatan_app != 0): ?>
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <span key="t-dashboards"><?php echo app('translator')->get('Ikrar'); ?></span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="ikrar-rukun-negara" key="t-full-calendar"><?php echo app('translator')->get('Ikrar Rukun Negara'); ?></a></li>
-                                <li><a href="ikrar-penjawat-awam" key="t-full-calendar"><?php echo app('translator')->get('Ikrar Penjawat Awam'); ?></a></li>
-                                <li><a href="ikrar-guru" key="t-full-calendar"><?php echo app('translator')->get('Ikrar Guru'); ?></a></li>
-                            </ul>
-                        </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards"><?php echo app('translator')->get('Ikrar'); ?></span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="ikrar-rukun-negara" key="t-full-calendar"><?php echo app('translator')->get('Ikrar Rukun Negara'); ?></a></li>
+                                    <li><a href="ikrar-penjawat-awam" key="t-full-calendar"><?php echo app('translator')->get('Ikrar Penjawat Awam'); ?></a></li>
+                                    <li><a href="ikrar-guru" key="t-full-calendar"><?php echo app('translator')->get('Ikrar Guru'); ?></a></li>
+                                </ul>
+                            </li>
                         <?php endif; ?>
                         <li>
                             <a href="logo-sekolah">
@@ -122,7 +108,6 @@
                         <span key="t-dashboards"><?php echo app('translator')->get('Takwim'); ?></span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="kalendar" key="t-tui-calendar"><?php echo app('translator')->get('Kalendar'); ?></a></li>
                         <li><a href="penggal-persekolahan" key="t-full-calendar"><?php echo app('translator')->get('Penggal Persekolahan'); ?></a></li>
                         <?php if(Auth::user()->jawatan_app != 0): ?>
                             <li><a href="jadual-guru-bertugas-harian" key="t-full-calendar"><?php echo app('translator')->get('Jadual Guru Bertugas Harian'); ?></a>
@@ -270,14 +255,17 @@
                 <li class="menu-title" key="t-pages"><?php echo app('translator')->get('Tindakan'); ?></li>
 
                 <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class='bx bxs-cog'></i>
-                        <span key="t-authentication"><?php echo app('translator')->get('Tetapan'); ?></span>
+                    <a href="profilku" key="t-default">
+                        <i class='bx bxs-user'></i>
+                        <span><?php echo app('translator')->get('Profilku'); ?></span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="tema" key="t-login"><?php echo app('translator')->get('Tema'); ?></a></li>
-                        <li><a href="imej-latar-belakang" key="t-login"><?php echo app('translator')->get('Imej Latar Belakang'); ?></a></li>
-                    </ul>
+                </li>
+
+                <li>
+                    <a href="senarai-pengguna" key="t-default">
+                        <i class='bx bxs-user-plus' ></i>
+                        <span><?php echo app('translator')->get('Senarai Pengguna'); ?></span>
+                    </a>
                 </li>
 
                 <?php if(Auth::user()->jawatan_app == 0 or Auth::user()->jawatan_app == 1): ?>
