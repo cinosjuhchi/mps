@@ -1,23 +1,21 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Visi, Misi, Moto'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('Visi, Misi, Moto')
-@endsection
-
-@section('content')
-    @component('components.breadcrumb')
-        @slot('li_1')
+<?php $__env->startSection('content'); ?>
+    <?php $__env->startComponent('components.breadcrumb'); ?>
+        <?php $__env->slot('li_1'); ?>
             Maklumat Sekolah
-        @endslot
-        @slot('title')
+        <?php $__env->endSlot(); ?>
+        <?php $__env->slot('title'); ?>
             Visi, Misi, Moto
-        @endslot
-    @endcomponent
-    @if(Auth::user()->jawatan_app != 6)
+        <?php $__env->endSlot(); ?>
+    <?php echo $__env->renderComponent(); ?>
+    <?php if(Auth::user()->jawatan_app != 6): ?>
     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edit">
         <i class='bx bxs-edit'></i> Kemaskini
     </button>
-    @endif
+    <?php endif; ?>
 
     <!-- Modal Edit -->
     <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
@@ -202,4 +200,6 @@
     </div>
 
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\MPS\mps-online\resources\views/visi-misi-moto.blade.php ENDPATH**/ ?>

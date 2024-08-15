@@ -49,11 +49,10 @@
                                         <h5 class="text-dark fw-bold">Tarikh</h5>
                                         <p class="text-muted font-size-14">04/06/2024</p>
                                     </div>                                    
-                                    <div class="mt-2">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light btn-xl" data-bs-dismiss="modal" aria-label="Close">Mengerti</button>
-                                    </div>
                                 </div>
-
+                                <div class="mt-3 w-100">
+                                    <button type="button" class="btn btn-primary w-100 waves-effect waves-light" data-bs-dismiss="modal" aria-label="Close">Mengerti</button>
+                                </div>
                             </div>
                         </div>
                     </div>
