@@ -12,224 +12,116 @@
         @slot('title')
             Profil Sekolah
         @endslot
-    @endcomponent
-    @if (Auth::user()->jawatan_app != 6)
-        <div>
-            <button class="btn btn-warning d-block me-auto mb-3"><i class='bx bxs-edit'></i> Kemaskini</button>
-        </div>
-    @endif
-    <form action="">
-        <div class="table-responsive">
-            <table cellpadding="4" width="100%">
-                @if (Auth::user()->jawatan_app == '2' or Auth::user()->kategori_sekolah == 'sekolah_rendah')
-                    <tr>
-                        <th width="20%"> <label for="nama_sekolah">Nama Sekolah</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="nama_sekolah"
-                                value="Sekolah Rendah Sri Angkasa" @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th> <label for="kod_sekolah">Kod Sekolah</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="kod_sekolah" value="XYZ999"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th> <label for="kategori_sekolah">Kategori Sekolah</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="kategori_sekolah"
-                                value="Sekolah Rendah(SR)" @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th> <label for="jenis_sekolah">Jenis Sekolah</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="jenis_sekolah"
-                                value="Sekolah Kebangsaan(SK)" @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th> <label for="gred">Gred</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="gred" value="A"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th> <label for="sesi_persekolahan">Sesi Persekolahan</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="sesi_persekolahan" value="Pagi sahaja"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th> <label for="PPD">PPD</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="PPD" value="PPD Kota Baharu"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th> <label for="negeri">Negeri</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="negeri" value="Kelantan"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <hr class="maklumat-hr my-3">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th width="20%"> <label for="no_telefon">No. Telefon</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="no_telefon" value="+609-7412-776"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th width="20%"> <label for="no_faksimili">No. Faksimili</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="no_faksimili" value="+609-7412-777"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th width="20%"> <label for="e-mel">E-mel</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="e-mel" value="sriangkasa@moe.edu.my"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th width="20%"> <label for="instagram">Instagram</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="instagram"
-                                value="https://www.instagram.com/sriangkasa"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th width="20%"> <label for="facebook">Facebook</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="facebook"
-                                value="https://www.facebook.com/sriangkasa"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th width="20%"> <label for="alamat">Alamat</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="alamat"
-                                value="Jalan Sultan Muhammad V 35000 Kota Bharu"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                @endif
-
-                @if (Auth::user()->jawatan_app == '3' or Auth::user()->kategori_sekolah == 'sekolah_menengah')
-                    <tr>
-                        <th width="20%"> <label for="nama_sekolah">Nama Sekolah</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="nama_sekolah"
-                                value="Sekolah Menengah Kebangsaan Pinggiran Cyberjaya"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th> <label for="kod_sekolah">Kod Sekolah</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="kod_sekolah" value="XYZ998"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th> <label for="kategori_sekolah">Kategori Sekolah</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="kategori_sekolah"
-                                value="Sekolah Menengah(SM)" @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th> <label for="jenis_sekolah">Jenis Sekolah</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="jenis_sekolah"
-                                value="Sekolah Kebangsaan(SK)" @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th> <label for="gred">Gred</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="gred" value="A"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th> <label for="sesi_persekolahan">Sesi Persekolahan</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="sesi_persekolahan" value="Pagi sahaja"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th> <label for="PPD">PPD</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="PPD" value="PPD Kota Baharu"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th> <label for="negeri">Negeri</label></th>
-                        <td>:</td>
-                        <td> <input type="text" class="form-control w-50" id="negeri" value="Kelantan"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <hr class="maklumat-hr my-3">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th width="20%"> <label for="no_telefon">No. Telefon</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="no_telefon" value="+609-7412-777"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th width="20%"> <label for="no_faksimili">No. Faksimili</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="no_faksimili" value="+609-7412-778"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th width="20%"> <label for="e-mel">E-mel</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="e-mel" value="Cyberjaya@moe.edu.my"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th width="20%"> <label for="instagram">Instagram</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="instagram"
-                                value="https://www.instagram.com/Cyberjaya"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th width="20%"> <label for="facebook">Facebook</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="facebook"
-                                value="https://www.facebook.com/Cyberjaya"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                    <tr>
-                        <th width="20%"> <label for="alamat">Alamat</label></th>
-                        <td>:</td>
-                        <td><input type="text" class="form-control w-50" id="alamat"
-                                value="Jalan Sultan Muhammad VI 35001 Kota Bharu"
-                                @if (Auth::user()->jawatan_app == 6) disabled @endif></td>
-                    </tr>
-                @endif
-
-
-                <div class="row">
+    @endcomponent    
+    <div class="row">        
+        <div class="col-xl-4">
+            <div class="card">
+                <div class="card-body">                    
+                    <form>
+                        <div class="mb-3">
+                            <h4 class="text-dark fw-normal fs-6">Nama Sekolah</h4>
+                            <p class="text-dark fs-5 fw-bold">Sekolah Menengah Kebangsaan Pinggiran Cyberjaya</p>
+                        </div>                        
+                        <div class="mb-3">
+                            <h4 class="text-dark fw-normal fs-6">Kod Sekolah</h4>
+                            <p class="text-dark fs-5 fw-bold">ZY343</p>
+                        </div>                        
+                        <div class="mb-3">
+                            <h4 class="text-dark fw-normal fs-6">Kategori Sekolah</h4>
+                            <p class="text-dark fs-5 fw-bold">Sekolah Menengah(SM)</p>
+                        </div>                        
+                        <div class="mb-3">
+                            <h4 class="text-dark fw-normal fs-6">Jenis Sekolah</h4>
+                            <p class="text-dark fs-5 fw-bold">Sekolah Kebangsaan()SK)</p>
+                        </div>                        
+                        <div class="mb-3">
+                            <h4 class="text-dark fw-normal fs-6">PPD</h4>
+                            <p class="text-dark fs-5 fw-bold">PPD Kota Baharu</p>
+                        </div>                        
+                        <div class="mb-3">
+                            <h4 class="text-dark fw-normal fs-6">Negeri</h4>
+                            <p class="text-dark fs-5 fw-bold">Kelantan</p>
+                        </div>                        
+                    </form>
                 </div>
-            </table>
-        </div>
-    </form>
+                <!-- end card body -->
+            </div>
+            <!-- end card -->
+        </div>                            
+        <div class="col-xl-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Informasi Sekolah</h4>
+    
+                    <form>
+                        <div class="mb-3">
+                            <label for="formrow-firstname-input" class="form-label">Grade</label>
+                            <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Grad Input">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formrow-inputSession" class="form-label">Sesi Persekolahan</label>
+                            <select id="formrow-inputSession" class="form-select">
+                                <option selected>Pilih Sesi</option>
+                                <option>Sesi 1</option>
+                                <option>Sesi 2</option>
+                            </select>
+                        </div>                        
+                        <div class="mb-3">
+                            <label for="formrow-address-input" class="form-label">Alamat</label>
+                            <input type="text" class="form-control" id="formrow-address-input" placeholder="Input Alamat">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formrow-kodpos-input" class="form-label">Kod Pos</label>
+                            <input type="number" class="form-control" id="formrow-kodpos-input" placeholder="Input Kod Pos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formrow-bandar-input" class="form-label">Bandar</label>
+                            <input type="text" class="form-control" id="formrow-bandar-input" placeholder="Input Kod Pos">
+                        </div>                                                                                                    
+                    </form>
+                </div>
+                <!-- end card body -->
+            </div>
+            <!-- end card -->
+        </div>                            
+        <div class="col-xl-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Hubungi Sekolah</h4>
+    
+                    <form>
+                        <div class="mb-3">
+                            <label for="formrow-telefon-input" class="form-label">No. Telefon</label>
+                            <input type="text" class="form-control" id="formrow-telefon-input" placeholder="Input No. Telefon">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formrow-faksimili-input" class="form-label">No. Faksimili</label>
+                            <input type="text" class="form-control" id="formrow-faksimili-input" placeholder="Input faksimili">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formrow-email-input" class="form-label">E-mel</label>
+                            <input type="text" class="form-control" id="formrow-email-input" placeholder="Input E-mel">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formrow-email-input" class="form-label">Instagram</label>
+                            <input type="text" class="form-control" id="formrow-email-input" placeholder="Input Instagram">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formrow-email-input" class="form-label">Twitter/X</label>
+                            <input type="text" class="form-control" id="formrow-email-input" placeholder="Input Twitter">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formrow-email-input" class="form-label">Youtube</label>
+                            <input type="text" class="form-control" id="formrow-email-input" placeholder="Input Youtube">
+                        </div>                                                                        
+                    </form>
+                </div>
+                <!-- end card body -->
+            </div>
+            <!-- end card -->
+        </div>                        
+        <div class="row justify-content-end">
+            <button class="btn btn-primary text-white text-bolder col-2" type="submit">Simpan Perubahan</button>
+        </div>    
+    </div>
 @endsection
