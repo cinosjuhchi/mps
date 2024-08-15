@@ -553,20 +553,21 @@
 
     <div class="row">
         <x-accordion id="accordionExample">
-            <x-accordion.item  collapseId="collapseOne-a1" parentId="accordionExample"
+            <x-accordion.item collapseId="collapseOne-a1" parentId="accordionExample"
                 title="A.1 Pengurusan Perancangan Dan Pengoperasian Sekolah" code="404/1">
                 {{-- level 2 --}}
-                <x-accordion id="sub-a1">
-                    <x-accordion.item  collapseId="sub-collapseOne-a1"  parentId="sub-a1"
+                <x-accordion id="sub-a11">
+                    <x-accordion.item collapseId="sub-collapseOne-a11" parentId="sub-a11"
                         title="A.1.1 Perancangan Sekolah " code="404/1/1" jawatan="Ketua Data" name="Budi">
                         {{-- level 3 --}}
-                        <x-accordion id="sub-sub-a1">
+                        <x-accordion id="sub-sub-a11">
                             <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
                                 A.1.1.1 Perancangan Strategik Sekolah
                             </x-accordion.text>
 
-                            <x-accordion.item collapseId="sub-sub-collapseThree-a1"
-                                parentId="sub-sub-a1" title="A.1.1.2 Sistem Pengurusan Sekolah (SPS)" code="404/1/1" jawatan="Ketua Data" name="Budi">
+                            <x-accordion.item collapseId="sub-sub-collapseThree-a11" parentId="sub-sub-a11"
+                                title="A.1.1.2 Sistem Pengurusan Sekolah (SPS)" code="404/1/1" jawatan="Ketua Data"
+                                name="Budi">
 
                                 <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
                                     A.1.1.2.1 Modul Pengurusan Sekolah (EMIS)
@@ -602,11 +603,11 @@
                         {{-- level 3 end --}}
                     </x-accordion.item>
                 </x-accordion>
-                <x-accordion id="sub-a2">
-                    <x-accordion.item headingId="sub-headingOne-a2" collapseId="sub-collapseOne-a2"  parentId="sub-a2"
+                <x-accordion id="sub-a12">
+                    <x-accordion.item headingId="sub-headingOne-a12" collapseId="sub-collapseOne-a12" parentId="sub-a12"
                         title="A.1.2 Pelaporan dan Dokumentasi" code="404/1/1" jawatan="Ketua Data" name="Budi">
                         {{-- level 3 --}}
-                        <x-accordion id="sub-sub-a2">
+                        <x-accordion id="sub-sub-a12">
                             <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
                                 A.1.2.1 Program Sekolah
                             </x-accordion.text>
@@ -620,11 +621,12 @@
                         {{-- level 3 end --}}
                     </x-accordion.item>
                 </x-accordion>
-                <x-accordion id="sub-a3">
-                    <x-accordion.item headingId="sub-headingOne-a3" collapseId="sub-collapseOne-a3"  parentId="sub-a3"
-                        title="A.1.3 Pengurusan Program Pendidikan Khas (PPKI/PPI/PKV)" code="404/1/1" jawatan="Ketua Data" name="Budi">
+                <x-accordion id="sub-a13">
+                    <x-accordion.item headingId="sub-headingOne-a13" collapseId="sub-collapseOne-a13" parentId="sub-a13"
+                        title="A.1.3 Pengurusan Program Pendidikan Khas (PPKI/PPI/PKV)" code="404/1/1"
+                        jawatan="Ketua Data" name="Budi">
                         {{-- level 3 --}}
-                        <x-accordion id="sub-sub-a3">
+                        <x-accordion id="sub-sub-a13">
                             <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
                                 A.1.3.1 Pengurusan Pentadbiran
                             </x-accordion.text>
@@ -638,11 +640,11 @@
                         {{-- level 3 end --}}
                     </x-accordion.item>
                 </x-accordion>
-                <x-accordion id="sub-a4">
-                    <x-accordion.item headingId="sub-headingOne-a4" collapseId="sub-collapseOne-a4"  parentId="sub-a4"
+                <x-accordion id="sub-a14">
+                    <x-accordion.item headingId="sub-headingOne-a14" collapseId="sub-collapseOne-a14" parentId="sub-a14"
                         title="A.1.4 Prasekolah" code="404/1/1" jawatan="Ketua Data" name="Budi">
                         {{-- level 3 --}}
-                        <x-accordion id="sub-sub-a4">
+                        <x-accordion id="sub-sub-a14">
                             <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
                                 A.1.4.1 Pengurusan Pendadbiran
                             </x-accordion.text>
@@ -657,6 +659,122 @@
                     </x-accordion.item>
                 </x-accordion>
                 {{-- level 2 end --}}
+            </x-accordion.item>
+
+            <x-accordion.item collapseId="collapseOne-a2" parentId="accordionExample" title="A.2 Pengurus Sumber Manusia"
+                code="404/1">
+                {{-- level 2 --}}
+                <x-accordion id="sub-a21">
+                    <x-accordion.item collapseId="sub-collapseOne-a21" parentId="sub-a21" title="A.2.1 Perkhidmatan"
+                        code="404/1/1" jawatan="Ketua Data" name="Budi">
+                        {{-- level 3 --}}
+                        <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                            A.2.1 Pelantikan
+                        </x-accordion.text>
+                        <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                            A.2.2 Pergerakan Gaji
+                        </x-accordion.text>
+                        <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                            A.2.3 Kenaikan Pangkat
+                        </x-accordion.text>
+                        {{-- level 3 end --}}
+                    </x-accordion.item>
+                </x-accordion>
+                <x-accordion id="sub-a22">
+                    <x-accordion.item headingId="sub-headingOne-a22" collapseId="sub-collapseOne-a22" parentId="sub-a22"
+                        title="A.2.2 Cuti" code="404/1/1" jawatan="Ketua Data" name="Budi">
+                        {{-- level 3 --}}
+                        <x-accordion id="sub-sub-a22">
+                            <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                                A.2.2.1 Cuti Kerana Perkhidmatan
+                            </x-accordion.text>
+                            <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                                A.2.2.2 Cuti Atas Sebab Perubatan
+                            </x-accordion.text>
+                            <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                                A.2.2.3 Cuti - Cuti Lain
+                            </x-accordion.text>
+                        </x-accordion>
+                        {{-- level 3 end --}}
+                    </x-accordion.item>
+                    <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                        A.2.3 Kehadiran dan Keberadaan PPP dan AKP
+                    </x-accordion.text>
+                </x-accordion>
+                {{-- level 2 end --}}
+            </x-accordion.item>
+
+            <x-accordion.item collapseId="collapseOne-a3" parentId="accordionExample" title="A.3 Pengurusan Kewangan"
+                code="404/1">
+                {{-- level 2 --}}
+                <x-accordion id="sub-a31">
+                    <x-accordion.item collapseId="sub-collapseOne-a31" parentId="sub-a31"
+                        title="A.3.1 Pengurusan Kewangan" code="404/1/1" jawatan="Ketua Data" name="Budi">
+                        {{-- level 3 --}}
+                        <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                            A.3.1.1 Pengurusan Kewangan dan Perakaunan Kumpulan Wang Sekolah
+                        </x-accordion.text>
+                        <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                            A.3.1.2 Laporan Audit
+                        </x-accordion.text>
+                        <x-accordion.item collapseId="sub-collapseOne-a311" parentId="sub-a311"
+                            title="A.3.1.3 Bantuan Geran Per Kapita (PCG)" code="404/1/1" jawatan="Ketua Data"
+                            name="Budi">
+                            {{-- level 3 --}}
+                            <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                                A.3.1.3.1 Mata Pelajaran
+                            </x-accordion.text>
+                            <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                                A.3.1.3.2 Bukan Mata Pelajaran
+                            </x-accordion.text>
+                            {{-- level 3 end --}}
+                        </x-accordion.item>
+                        {{-- level 3 end --}}
+                    </x-accordion.item>
+                </x-accordion>
+                <x-accordion id="sub-a32">
+                    <x-accordion.item headingId="sub-headingOne-a32" collapseId="sub-collapseOne-a32" parentId="sub-a32"
+                        title="A.3.2 Kebajikan dan Bantuan Murid" code="404/1/1" jawatan="Ketua Data" name="Budi">
+                        <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                            A.3.2.1 Kumpulan Wang Amanah Pelajaran Miskin (KWAPM)
+                        </x-accordion.text>
+                        <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                            A.3.2.2 Rancangan Makanan Tambahan (RMT)
+                        </x-accordion.text>
+                        <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                            A.3.2.3 Bantuan Awal Persekolahan (BAP)
+                        </x-accordion.text>
+                    </x-accordion.item>
+                </x-accordion>
+                {{-- level 2 end --}}
+            </x-accordion.item>
+
+            <x-accordion.item collapseId="collapseOne-a4" parentId="accordionExample" title="A.4 Pentadbiran Pejabat"
+                code="404/1">
+                {{-- level 2 --}}
+                <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                    A.4.1 Perakam Waktu
+                </x-accordion.text>
+                <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                    A.4.2 Pengurusan Aset Alih Kerajaan
+                </x-accordion.text>
+                <x-accordion.text code="404/1/1" jawatan="Ketua Data" name="Budi">
+                    A.4.3 Pengurusan Aset Tak Alih Kerajaan
+                </x-accordion.text>
+                {{-- level 2 end --}}
+            </x-accordion.item>
+
+            <x-accordion.item collapseId="collapseOne-a5" parentId="accordionExample" title="A.5 Persekitaran dan Fizikal"
+                code="404/1">
+                {{-- body --}}
+            </x-accordion.item>
+            <x-accordion.item collapseId="collapseOne-a6" parentId="accordionExample" title="A.6 Pembangunan Sumber Manusia"
+                code="404/1">
+                {{-- body --}}
+            </x-accordion.item>
+            <x-accordion.item collapseId="collapseOne-a7" parentId="accordionExample" title="A.7 Perhubungan Luar"
+                code="404/1">
+                {{-- body --}}
             </x-accordion.item>
         </x-accordion>
         <!-- end accordion -->
