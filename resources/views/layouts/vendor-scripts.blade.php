@@ -1,4 +1,20 @@
 <!-- JAVASCRIPT -->
+<script src="{{ URL::asset('sw.js') }}"></script>
+<script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").then(
+            (registration) => {
+                console.log("Service worker registration succeeded:", registration);
+            },
+            (error) => {
+                console.error(`Service worker registration failed: ${error}`);
+            },
+        );
+    } else {
+        console.error("Service workers are not supported.");
+    }
+</script>
+
 <script src="{{ URL::asset('build/libs/jquery/jquery.min.js') }}"></script>
 <script src="{{ URL::asset('build/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ URL::asset('build/libs/metismenu/metisMenu.min.js') }}"></script>
@@ -42,7 +58,7 @@
                 $('#current_passwordError').text(response.responseJSON.errors.current_password);
                 $('#passwordError').text(response.responseJSON.errors.password);
                 $('#password_confirmError').text(response.responseJSON.errors
-                .password_confirmation);
+                    .password_confirmation);
             }
         });
     });

@@ -1,5 +1,6 @@
 .navbar {
     background-color: #5156be;
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .nav-link {
@@ -11,10 +12,13 @@
 
 .nav-link i {
     font-size: 24px;
-    /* Adjust icon size */
 }
 
 .nav-link span {
     font-size: 12px;
-    /* Adjust text size */
+}
+
+.navbar.hidden {
+    transform: translateY(100%);
+    opacity: 0;
 }

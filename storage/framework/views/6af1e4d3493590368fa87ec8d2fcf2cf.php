@@ -1,8 +1,37 @@
-<header id="page-topbar">
+<style>
+    @media (max-width: 1024px) {
+        #page-topbar {
+            background-color: #5156be;
+        }
+
+        #page-topbar .navbar-header .navbar-brand-box .logo-sm img,
+        #page-topbar .navbar-header .navbar-brand-box .logo-lg img,
+        #page-topbar .navbar-header .navbar-brand-box .text-dark,
+        #page-topbar .navbar-header .navbar-brand-box .text-white,
+        #page-topbar .navbar-header .badge,
+        #page-topbar .navbar-header .btn,
+        #page-topbar .dropdown-menu,
+        #page-topbar .header-item {
+            color: white;
+        }
+
+        #page-topbar .dropdown .badge {
+            background: transparent;
+            border: none;
+        }
+
+        #page-topbar .dropdown .badge:hover,
+        #page-topbar .dropdown .badge:focus {
+            background: transparent;
+            color: white;
+        }
+    }
+</style>
+<header id="page-topbar" class="">
     <div class="navbar-header">
         <div class="d-flex">
             <!-- LOGO -->
-            <div class="navbar-brand-box d-flex justify-content-between" style="height: 74px;">
+            <div class="navbar-brand-box d-flex justify-content-between">
                 <div>
                     <a href="index" class="logo logo-dark">
                         <span class="logo-sm">
@@ -25,12 +54,13 @@
                     </a>
                 </div>
                 <button type="button"
-                    class="btn btn-sm font-size-16 header-item waves-effect text-white d-md-block d-none"
+                    class="btn btn-sm font-size-16 header-item waves-effect text-white d-sm-none d-none"
                     id="vertical-menu-btn-close">
                     <i class="fa fa-fw fa-bars"></i>
                 </button>
             </div>
-            <button type="button" class="btn btn-sm font-size-16 header-item waves-effect d-lg-none"
+            <button type="button"
+                class="btn btn-sm font-size-16 header-item waves-effect d-none d-sm-none d-md-none d-lg-block"
                 id="vertical-menu-btn-open">
                 <i class="fa fa-fw fa-bars"></i>
             </button>
@@ -218,10 +248,10 @@
                 <button type="button" class="btn header-item noti-icon waves-effect"
                     id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
-                    <i class="bx bx-bell bx-tada"></i>
+                    <i class='bx bx-bell bx-tada-hover' style='color:#ffffff'></i>
                     <span class="badge bg-danger rounded-pill">3</span>
                 </button>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 text-dark"
                     aria-labelledby="page-header-notifications-dropdown">
                     <div class="p-3">
                         <div class="row align-items-center">
@@ -299,7 +329,8 @@
                         </a>
                     </div>
                     <div class="p-2 border-top d-grid">
-                        <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                        <a class="btn btn-sm btn-link font-size-14 text-center text-primary"
+                            href="javascript:void(0)">
                             <i class="mdi mdi-arrow-right-circle me-1"></i> <span
                                 key="t-view-more"><?php echo app('translator')->get('translation.View_More'); ?></span>
                         </a>

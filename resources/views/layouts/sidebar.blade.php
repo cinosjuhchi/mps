@@ -1,5 +1,5 @@
 <!-- ========== Left Sidebar Start ========== -->
-<div class="vertical-menu">
+<div class="vertical-menu d-lg-block d-sm-none position-fixed">
 
     <div data-simplebar class="h-100">
 
@@ -263,7 +263,7 @@
 
                 <li>
                     <a href="senarai-pengguna" key="t-default">
-                        <i class='bx bxs-user-plus' ></i>
+                        <i class='bx bxs-user-plus'></i>
                         <span>@lang('Senarai Pengguna')</span>
                     </a>
                 </li>
