@@ -1,10 +1,10 @@
-@extends('layouts.master')
 
-@section('title')
-    @lang('Ikrar Guru')
-@endsection
 
-@section('content')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Ikrar Guru'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
     <div class="d-flex justify-content-center align-items-center">
         <div class="w-50">
             <h4>Ikrar Guru</h4>
@@ -19,4 +19,6 @@
             </ul>
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BELAJAR-PROYEK\GRAVIX\mps_cino\mps\resources\views/ikrar-guru.blade.php ENDPATH**/ ?>

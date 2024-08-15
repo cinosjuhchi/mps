@@ -1,27 +1,27 @@
-@extends('layouts.master')
 
-@section('title')
-    @lang('Logo Sekolah')
-@endsection
 
-@section('content')
-    @component('components.breadcrumb')
-        @slot('li_1')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Logo Sekolah'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+    <?php $__env->startComponent('components.breadcrumb'); ?>
+        <?php $__env->slot('li_1'); ?>
             Maklumat Sekolah
             <li class="breadcrumb-item"><a href="javascript: void(0);">Logo</a></li>
-        @endslot
-        @slot('title')
+        <?php $__env->endSlot(); ?>
+        <?php $__env->slot('title'); ?>
             Logo Sekolah
-        @endslot
-    @endcomponent
-    @if (Auth::user()->jawatan_app != 6)
+        <?php $__env->endSlot(); ?>
+    <?php echo $__env->renderComponent(); ?>
+    <?php if(Auth::user()->jawatan_app != 6): ?>
         <div>
             <button class="btn btn-warning d-block me-auto mb-3"><i class='bx bxs-edit'></i> Kemaskini Logo</button>
         </div>
-    @endif
-    <img src="{{ asset('images/logo-sri-angkasa.png') }}" alt="" srcset=""class="img-fluid d-block m-auto"
+    <?php endif; ?>
+    <img src="<?php echo e(asset('images/logo-sri-angkasa.png')); ?>" alt="" srcset=""class="img-fluid d-block m-auto"
         style="width:12rem;">
-    @if (Auth::user()->jawatan_app != 6)
+    <?php if(Auth::user()->jawatan_app != 6): ?>
         <div class="d-flex justify-content-center align-items-center">
             <div class="w-75 text-center">
                 <h3>Deskripsi Logo</h3>
@@ -41,5 +41,7 @@
                 </p>
             </div>
         </div>
-    @endif
-@endsection
+    <?php endif; ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\mpsOnline\mps\resources\views/logo-sekolah.blade.php ENDPATH**/ ?>

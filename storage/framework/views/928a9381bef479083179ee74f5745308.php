@@ -1,10 +1,10 @@
-@extends('layouts.master')
 
-@section('title')
-    @lang('Ikrar Rukun Negara')
-@endsection
 
-@section('content')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Ikrar Rukun Negara'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
     <div class="d-flex justify-content-center">
         <div class="w-50">
             <h4>Ikrar Rukun Negara</h4>
@@ -28,4 +28,6 @@
             </ul>
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\mpsOnline\mps\resources\views/ikrar-rukun-negara.blade.php ENDPATH**/ ?>

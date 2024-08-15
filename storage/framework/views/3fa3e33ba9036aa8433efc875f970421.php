@@ -1,21 +1,21 @@
-@extends('layouts.master')
 
-@section('title')
-    @lang('Lagu Guru Malaysia')
-@endsection
 
-@section('content')
-    @component('components.breadcrumb')
-        @slot('li_1')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Lagu Guru Malaysia'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+    <?php $__env->startComponent('components.breadcrumb'); ?>
+        <?php $__env->slot('li_1'); ?>
             Maklumat Sekolah
             <li class="breadcrumb-item"><a href="javascript: void(0);">Lagu</a></li>
-        @endslot
-        @slot('title')
+        <?php $__env->endSlot(); ?>
+        <?php $__env->slot('title'); ?>
             Lagu Guru Malaysia
-        @endslot
-    @endcomponent
+        <?php $__env->endSlot(); ?>
+    <?php echo $__env->renderComponent(); ?>
     <div class="text-center">
-        {{-- <video src="{{ asset('videos/Lagu_Negaraku.mp4') }}" class="w-75" controls></video> --}}
+        
         <div class="mt-4">
             <h4 class="">Lagu Guru Malaysia</h4>
             <p class="fs-5">
@@ -38,4 +38,6 @@
             </p>
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\mpsOnline\mps\resources\views/lagu-guru-malaysia.blade.php ENDPATH**/ ?>

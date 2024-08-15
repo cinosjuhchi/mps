@@ -1,18 +1,18 @@
-@extends('layouts.master')
 
-@section('title')
-    @lang('Minda Pengetua')
-@endsection
 
-@section('content')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Minda Guru Besar'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0 font-size-18">Minda Pengetua</h4>
+                <h4 class="mb-sm-0 font-size-18">Minda Guru Besar</h4>
 
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Minda Pengetua</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Minda Guru Besar</a></li>
                         <li class="breadcrumb-item active">Detail</li>
                     </ol>
                 </div>
@@ -31,7 +31,7 @@
                             <h4>Guru Insani Pemangkin Generasi Madani</h4>
                         </div>
                         <div class="mb-4">
-                            <img src="{{ asset('images/1641266225.jpg') }}" alt=""
+                            <img src="<?php echo e(asset('images/1641266225.jpg')); ?>" alt=""
                                 class="img-thumbnail mx-auto d-block">
                         </div>
 
@@ -40,7 +40,7 @@
                                 <h6 class="mb-2">Date</h6>
                                 <p class="text-muted font-size-15">20 June, 2022</p>
                             </div>
-                            @if (Auth::user()->jawatan_app != 6)
+                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                 <div>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -62,7 +62,7 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">Close</button>
+                                                        data-bs-dismiss="modal">Tutup</button>
                                                     <button type="button" class="btn btn-warning">Kemaskini</button>
                                                 </div>
                                             </div>
@@ -70,7 +70,7 @@
                                     </div>
                                     <button class="btn btn-danger"><i class='bx bxs-trash'></i></button>
                                 </div>
-                            @endif
+                            <?php endif; ?>
                         </div>
 
                         <div class="mt-4">
@@ -132,11 +132,10 @@
                                 </div>
 
                                 <div class="mt-4">
-                                    {{-- Nama Pengetua --}}
+                                    
                                     <h5 class="fw-semibold">Rahimi bin Saufi</h5>
-                                    <p>Pengetua</p>
+                                    <p>Guru Besar</p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -154,12 +153,12 @@
                         <div class="search-box">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h5 class="mb-3">Search</h5>
-                                @if (Auth::user()->jawatan_app != 6)
+                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                     <div class="d-flex flex-wrap align-items-center justify-content-end gap-2 mb-3">
                                         <a href="#" class="btn btn-light"><i class="bx bx-plus me-1"></i> Tambah
                                             Minda</a>
                                     </div>
-                                @endif
+                                <?php endif; ?>
                             </div>
                             <div class="position-relative px-2">
                                 <input type="text" class="form-control rounded bg-light border-light"
@@ -173,7 +172,7 @@
                                 <a href="javascript: void(0);" class="list-group-item text-muted pb-3 pt-0 px-2">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0 me-3">
-                                            <img src="{{ asset('images/img1.jpg') }}" alt=""
+                                            <img src="<?php echo e(asset('images/img1.jpg')); ?>" alt=""
                                                 class="avatar-lg h-auto d-block rounded">
                                         </div>
                                         <div class="flex-grow-1 overflow-hidden">
@@ -187,7 +186,7 @@
                                 <a href="javascript: void(0);" class="list-group-item text-muted py-3 px-2">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0 me-3">
-                                            <img src="{{ asset('images/img1.jpg') }}" alt=""
+                                            <img src="<?php echo e(asset('images/img1.jpg')); ?>" alt=""
                                                 class="avatar-lg h-auto d-block rounded">
                                         </div>
                                         <div class="flex-grow-1 overflow-hidden">
@@ -201,7 +200,7 @@
                                 <a href="javascript: void(0);" class="list-group-item text-muted py-3 px-2">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0 me-3">
-                                            <img src="{{ asset('images/img1.jpg') }}" alt=""
+                                            <img src="<?php echo e(asset('images/img1.jpg')); ?>" alt=""
                                                 class="avatar-lg h-auto d-block rounded">
                                         </div>
                                         <div class="flex-grow-1 overflow-hidden">
@@ -215,7 +214,7 @@
                                 <a href="javascript: void(0);" class="list-group-item text-muted py-3 px-2">
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0 me-3">
-                                            <img src="{{ asset('images/img1.jpg') }}" alt=""
+                                            <img src="<?php echo e(asset('images/img1.jpg')); ?>" alt=""
                                                 class="avatar-lg h-auto d-block rounded">
                                         </div>
                                         <div class="flex-grow-1 overflow-hidden">
@@ -233,4 +232,6 @@
         </div>
 
     </div> <!-- container-fluid -->
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BELAJAR-PROYEK\GRAVIX\mps_cino\mps\resources\views/minda-guru-besar.blade.php ENDPATH**/ ?>

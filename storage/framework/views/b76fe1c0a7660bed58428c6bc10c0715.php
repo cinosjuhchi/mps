@@ -1,11 +1,8 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Piagam Pelanggan'); ?>
+<?php $__env->stopSection(); ?>
 
-
-@section('title')
-    @lang('Piagam Pelanggan')
-@endsection
-
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div class="d-flex justify-content-center">
         <div class="w-50">
             <h4>Piagam Pelanggan</h4>
@@ -25,4 +22,6 @@
                     giliran dan keutamaan.</li>
             </ol>
         </div>
-    @endsection
+    <?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BELAJAR-PROYEK\GRAVIX\mps_cino\mps\resources\views/piagam-pelanggan.blade.php ENDPATH**/ ?>

@@ -7,6 +7,14 @@
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
             <ul class="metismenu list-unstyled" id="side-menu">
+                @if (Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1)
+                    <li>
+                        <a href="tetapan" class="waves-effect">
+                            <i class='bx bxs-cog'></i>
+                            <span key="t-chat">@lang('Tetapan')</span>
+                        </a>
+                    </li>
+                @endif
                 <li>
                     <a href="dashboard" class="waves-effect">
                         <i class='bx bxs-home'></i>
@@ -76,16 +84,9 @@
                         </li>
                         @endif
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <span key="t-dashboards">@lang('Logo')</span>
+                            <a href="logo-sekolah">
+                                <span key="t-dashboards">@lang('Logo Sekolah')</span>
                             </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="logo-sekolah" key="t-tui-calendar">@lang('Logo Sekolah')</a></li>
-                                <li><a href="logo-jpn" key="t-tui-calendar">@lang('Logo JPN')</a></li>
-                                <li><a href="logo-kpm" key="t-tui-calendar">@lang('Logo KPM')</a></li>
-                                <li><a href="jata-negeri" key="t-tui-calendar">@lang('Jata Negeri')</a></li>
-                                <li><a href="jata-negara" key="t-tui-calendar">@lang('Jata Negara')</a></li>
-                            </ul>
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -94,7 +95,7 @@
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="lagu-sekolah" key="t-tui-calendar">@lang('Lagu Sekolah')</a></li>
                                 <li><a href="lagu-guru-malaysia" key="t-tui-calendar">@lang('Lagu Guru Malaysia')</a></li>
-                                <li><a href="lagu-kebangsaan-negeri" key="t-tui-calendar">@lang('Lagu Kebesaran Negeri')</a></li>
+                                <li><a href="lagu-kebangsaan-negeri" key="t-tui-calendar">@lang('Lagu Kebangsaan Negeri')</a></li>
                                 <li><a href="lagu-negaraku" key="t-tui-calendar">@lang('Lagu Negaraku')</a></li>
                             </ul>
                         </li>
@@ -110,7 +111,6 @@
                                 </ul>
                             </li>
                             <li><a href="peta-susun-atur-premis" key="t-full-calendar">@lang('Peta Susun Atur Premis')</a></li>
-                            <li><a href="foto-galeri" key="t-full-calendar">@lang('Foto Galeri')</a></li>
                             <li><a href="peta-lokasi" key="t-full-calendar">@lang('Peta Lokasi')</a></li>
                         @endif
                     </ul>

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    @lang('Lagu Negaraku')
+    @lang('Lagu Kebesaran Negeri')
 @endsection
 
 @section('content')
@@ -11,21 +11,23 @@
             <li class="breadcrumb-item"><a href="javascript: void(0);">Lagu</a></li>
         @endslot
         @slot('title')
-            Lagu Negaraku
+            Lagu Kebesaran Negeri
         @endslot
     @endcomponent
+
     <div class="text-center">
         {{-- <video src="{{ asset('videos/Lagu_Negaraku.mp4') }}" class="w-75" controls></video> --}}
         <div class="mt-4">
-            <h4 class="">Lagu Negaraku</h4>
+            <h4 class="">Selamat Sultan</h4>
             <p class="fs-5">
-                Negaraku
-                <br> Tanah tumpahnya darahku,
-                <br> Rakyat Hidup bersatu dan maju,
-                <br> Rahmat bahagia Tuhan kurniakan,
-                <br> Raja kita Selamat bertakhta,
-                <br> Rahmat bahagia Tuhan kurniakan,
-                <br> Raja kita Selamat bertakhta
+                Lanjutkan Usia Al-Sultan Kami
+                <br> Sultan Kelantan Raja Ikrami
+                <br> Aman Sentosa Tuhan Sirami
+                <br> Kekal Memerintah Kami
+                <br> Kasih Dan Taat Setia Disembahkan
+                <br> Keriangan Diucapkan
+                <br> Segala Kebesaran Allah Cucurkan
+                <br> Bertambah Kemuliaan
             </p>
         </div>
     </div>

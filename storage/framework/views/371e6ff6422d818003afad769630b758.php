@@ -1,27 +1,25 @@
-@extends('layouts.master')
 
-@section('title')
-    @lang('Lagu Sekolah')
-@endsection
 
-@section('content')
-    @component('components.breadcrumb')
-        @slot('li_1')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Lagu Sekolah'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+    <?php $__env->startComponent('components.breadcrumb'); ?>
+        <?php $__env->slot('li_1'); ?>
             Maklumat Sekolah
             <li class="breadcrumb-item"><a href="javascript: void(0);">Lagu</a></li>
-        @endslot
-        @slot('title')
+        <?php $__env->endSlot(); ?>
+        <?php $__env->slot('title'); ?>
             Lagu Sekolah
-        @endslot
-    @endcomponent
-    @if (Auth::user()->jawatan_app != 6 and Auth::user()->jawatan_app != 1)
-        {{-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#unggahLagu">
-            <i class='bx bx-link'></i> Muat Naik
-        </button> --}}
+        <?php $__env->endSlot(); ?>
+    <?php echo $__env->renderComponent(); ?>
+    <?php if(Auth::user()->jawatan_app != 6 and Auth::user()->jawatan_app != 1): ?>
+        
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#unggahLirik">
             <i class='bx bx-file'></i> Masukkan Lirik
         </button>
-    @endif
+    <?php endif; ?>
 
     <!-- Modal Lirik -->
     <div class="modal fade" id="unggahLirik" tabindex="-1" aria-labelledby="unggahLirikLabel" aria-hidden="true">
@@ -74,7 +72,7 @@
         </div>
     </div>
 
-    {{-- LAGU --}}
+    
     <div class="d-flex justify-content-center align-items-center">
         <div class="w-75 text-center">
             <h3>[Judul Lagu Sekolah]</h3>
@@ -94,4 +92,6 @@
             </p>
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\mpsOnline\mps\resources\views/lagu-sekolah.blade.php ENDPATH**/ ?>
