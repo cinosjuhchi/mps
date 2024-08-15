@@ -1,18 +1,18 @@
 @extends('layouts.master')
 
 @section('title')
-    @lang('Komponen Tugas | Pengurusan dan Pentadbiran')
+    @lang('Komponen Tugas | Hal Ehwal Murid')
 @endsection
 
 @section('content')
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0 font-size-18">Pengurusan dan Pentadbiran</h4>
+                <h4 class="mb-sm-0 font-size-18">Hal Ehwal Murid</h4>
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="javascript: void(0);">Pegurusan Komponen</a></li>
-                        <li class="breadcrumb-item active">Pengurusan dan Pentadbiran</li>
+                        <li class="breadcrumb-item active">Hal Ehwal Murid</li>
                     </ol>
                 </div>
             </div>

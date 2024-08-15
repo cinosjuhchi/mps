@@ -166,6 +166,7 @@
                                     <span key="t-dashboards"><?php echo app('translator')->get('Kurikulum'); ?></span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="kurikulum-komponen" key="t-tui-calendar"><?php echo app('translator')->get('Komponen'); ?></a></li>
                                     <li><a href="kurikulum-jk-jp" key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa'); ?></a></li>
                                     <li><a href="program-kurikulum" key="t-tui-calendar"><?php echo app('translator')->get('Aktiviti & Program'); ?></a></li>
                                 </ul>
@@ -175,6 +176,7 @@
                                     <span key="t-dashboards"><?php echo app('translator')->get('Hal Ehwal Murid'); ?></span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="hal-ehwal-murid-komponen" key="t-tui-calendar"><?php echo app('translator')->get('Komponen'); ?></a>
                                     <li><a href="hal-ehwal-murid-jk-jp" key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa'); ?></a>
                                     </li>
                                     <li><a href="program-hal-ehwal-murid" key="t-tui-calendar"><?php echo app('translator')->get('Aktiviti & Program'); ?></a>
@@ -186,6 +188,7 @@
                                     <span key="t-dashboards"><?php echo app('translator')->get('Kokurikulum'); ?></span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="kokurikulum-komponen" key="t-tui-calendar"><?php echo app('translator')->get('Komponen'); ?></a></li>
                                     <li><a href="kokurikulum-jk-jp" key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa'); ?></a></li>
                                     <li><a href="program-kokurikulum" key="t-tui-calendar"><?php echo app('translator')->get('Aktiviti & Program'); ?></a></li>
                                 </ul>

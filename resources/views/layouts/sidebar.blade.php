@@ -166,6 +166,7 @@
                                     <span key="t-dashboards">@lang('Kurikulum')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="kurikulum-komponen" key="t-tui-calendar">@lang('Komponen')</a></li>
                                     <li><a href="kurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa')</a></li>
                                     <li><a href="program-kurikulum" key="t-tui-calendar">@lang('Aktiviti & Program')</a></li>
                                 </ul>
@@ -175,6 +176,7 @@
                                     <span key="t-dashboards">@lang('Hal Ehwal Murid')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="hal-ehwal-murid-komponen" key="t-tui-calendar">@lang('Komponen')</a>
                                     <li><a href="hal-ehwal-murid-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa')</a>
                                     </li>
                                     <li><a href="program-hal-ehwal-murid" key="t-tui-calendar">@lang('Aktiviti & Program')</a>
@@ -186,6 +188,7 @@
                                     <span key="t-dashboards">@lang('Kokurikulum')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="kokurikulum-komponen" key="t-tui-calendar">@lang('Komponen')</a></li>
                                     <li><a href="kokurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa')</a></li>
                                     <li><a href="program-kokurikulum" key="t-tui-calendar">@lang('Aktiviti & Program')</a></li>
                                 </ul>
