@@ -15,20 +15,22 @@
         <?php $__env->endSlot(); ?>
     <?php echo $__env->renderComponent(); ?>
 
-    <div class="text-center">
-        
-        <div class="mt-4">
-            <h4 class="">Selamat Sultan</h4>
-            <p class="fs-5">
-                Lanjutkan Usia Al-Sultan Kami
-                <br> Sultan Kelantan Raja Ikrami
-                <br> Aman Sentosa Tuhan Sirami
-                <br> Kekal Memerintah Kami
-                <br> Kasih Dan Taat Setia Disembahkan
-                <br> Keriangan Diucapkan
-                <br> Segala Kebesaran Allah Cucurkan
-                <br> Bertambah Kemuliaan
-            </p>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="w-50 d-flex justify-content-center align-items-center text-start">
+            
+            <div class="mt-4">
+                <h4 class="">Selamat Sultan</h4>
+                <p class="fs-5">
+                    Lanjutkan Usia Al-Sultan Kami
+                    <br> Sultan Kelantan Raja Ikrami
+                    <br> Aman Sentosa Tuhan Sirami
+                    <br> Kekal Memerintah Kami
+                    <br> Kasih Dan Taat Setia Disembahkan
+                    <br> Keriangan Diucapkan
+                    <br> Segala Kebesaran Allah Cucurkan
+                    <br> Bertambah Kemuliaan
+                </p>
+            </div>
         </div>
     </div>
 <?php $__env->stopSection(); ?>

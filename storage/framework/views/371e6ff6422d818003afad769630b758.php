@@ -73,8 +73,8 @@
     </div>
 
     
-    <div class="d-flex justify-content-center align-items-center">
-        <div class="w-75 text-center">
+    <div class="d-flex justify-content-center align-items-center mt-4">
+        <div class="w-50 text-start">
             <h3>[Judul Lagu Sekolah]</h3>
             <p class="fs-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero molestiae quisquam accusantium sed? Ex,
                 perferendis asperiores nulla dicta maiores distinctio, totam laboriosam omnis assumenda laudantium

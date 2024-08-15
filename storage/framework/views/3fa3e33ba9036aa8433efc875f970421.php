@@ -14,28 +14,30 @@
             Lagu Guru Malaysia
         <?php $__env->endSlot(); ?>
     <?php echo $__env->renderComponent(); ?>
-    <div class="text-center">
-        
-        <div class="mt-4">
-            <h4 class="">Lagu Guru Malaysia</h4>
-            <p class="fs-5">
-                Kami guru Malaysia 
-                <br> Berikrar dan berjanji
-                <br> Mendidik dan memimpin
-                <br> Putra putri negara kita
-                <br> Pada Seri Paduka
-                <br> Kami tumpahkan setia
-                <br> Rukun Negara kita
-                <br> Panduan hidup kami semua
-                <br><br> Di bidang pembangunan
-                <br>Kami tetap bersama
-                <br>Membantu, membina
-                <br>Negara yang tercinta
-                <br><br>Amanah yang diberi
-                <br>Kami tak persiakan
-                <br>Apa yang kami janji
-                <br>Tunai tetap kami tunaikan
-            </p>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="w-50 d-flex justify-content-center align-items-center text-start">
+            
+            <div class="mt-4">
+                <h4 class="">Lagu Guru Malaysia</h4>
+                <p class="fs-5">
+                    Kami guru Malaysia
+                    <br> Berikrar dan berjanji
+                    <br> Mendidik dan memimpin
+                    <br> Putra putri negara kita
+                    <br> Pada Seri Paduka
+                    <br> Kami tumpahkan setia
+                    <br> Rukun Negara kita
+                    <br> Panduan hidup kami semua
+                    <br><br> Di bidang pembangunan
+                    <br>Kami tetap bersama
+                    <br>Membantu, membina
+                    <br>Negara yang tercinta
+                    <br><br>Amanah yang diberi
+                    <br>Kami tak persiakan
+                    <br>Apa yang kami janji
+                    <br>Tunai tetap kami tunaikan
+                </p>
+            </div>
         </div>
     </div>
 <?php $__env->stopSection(); ?>
