@@ -121,8 +121,7 @@
                         <i class="bx bx-calendar"></i>
                         <span key="t-dashboards"><?php echo app('translator')->get('Takwim'); ?></span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="kalendar" key="t-tui-calendar"><?php echo app('translator')->get('Kalendar'); ?></a></li>
+                    <ul class="sub-menu" aria-expanded="false">                        
                         <li><a href="penggal-persekolahan" key="t-full-calendar"><?php echo app('translator')->get('Penggal Persekolahan'); ?></a></li>
                         <?php if(Auth::user()->jawatan_app != 0): ?>
                             <li><a href="jadual-guru-bertugas-harian" key="t-full-calendar"><?php echo app('translator')->get('Jadual Guru Bertugas Harian'); ?></a>

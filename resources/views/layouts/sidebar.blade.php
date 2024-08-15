@@ -121,8 +121,7 @@
                         <i class="bx bx-calendar"></i>
                         <span key="t-dashboards">@lang('Takwim')</span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="kalendar" key="t-tui-calendar">@lang('Kalendar')</a></li>
+                    <ul class="sub-menu" aria-expanded="false">                        
                         <li><a href="penggal-persekolahan" key="t-full-calendar">@lang('Penggal Persekolahan')</a></li>
                         @if (Auth::user()->jawatan_app != 0)
                             <li><a href="jadual-guru-bertugas-harian" key="t-full-calendar">@lang('Jadual Guru Bertugas Harian')</a>
