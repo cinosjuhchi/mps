@@ -38,7 +38,7 @@
                             <p>Logo mestilah dalam bentuk JPG, PNG, JPEG dan saiz maksimum 2MB</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Batal</button>
                             <button type="submit" class="btn btn-warning">Muat Naik</button>
                         </div>
                     </div>

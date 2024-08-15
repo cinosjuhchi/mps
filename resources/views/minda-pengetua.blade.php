@@ -152,7 +152,7 @@
                                                         </div>
                                                         <div class="modal-body">
                                                             <h5>
-                                                                Adakah anda pasti mahu memadamkan blog ini
+                                                                Adakah anda pasti mahu memadamkan minda ini
                                                             </h5>
                                                         </div>
                                                         <div class="modal-footer">
