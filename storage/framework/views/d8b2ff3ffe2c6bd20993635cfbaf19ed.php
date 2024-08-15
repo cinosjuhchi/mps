@@ -1,13 +1,11 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?> <?php echo app('translator')->get('Falsafah Pendidikan Kebangsaan'); ?> <?php $__env->stopSection(); ?>
 
-@section('title') @lang('Falsafah Pendidikan Kebangsaan') @endsection
+<?php $__env->startSection('content'); ?>
 
-@section('content')
-
-@component('components.breadcrumb')
-@slot('li_1') Maklumat Sekolah @endslot
-@slot('title') Falsafah Pendidikan Kebangsaan @endslot
-@endcomponent
+<?php $__env->startComponent('components.breadcrumb'); ?>
+<?php $__env->slot('li_1'); ?> Maklumat Sekolah <?php $__env->endSlot(); ?>
+<?php $__env->slot('title'); ?> Falsafah Pendidikan Kebangsaan <?php $__env->endSlot(); ?>
+<?php echo $__env->renderComponent(); ?>
 
 <div class="row justify-content-center py-5">
     <div class="col-4">
@@ -24,4 +22,6 @@
     </div>
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\MPS\mps-online\resources\views/falsafah-pendidikan-kebangsaan.blade.php ENDPATH**/ ?>
