@@ -39,7 +39,9 @@
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
-            @include('layouts.footer')
+            <div class="d-none d-xl-block">
+                @include('layouts.footer')
+            </div>
         </div>
         <!-- end main content-->
     </div>
@@ -48,6 +50,10 @@
     <!-- Right Sidebar -->
     @include('layouts.right-sidebar')
     <!-- /Right-bar -->
+
+    <div class="d-xl-none d-md-block">
+        @include('layouts.bottom-nav')
+    </div>
 
     <!-- JAVASCRIPT -->
     @include('layouts.vendor-scripts')
