@@ -7,6 +7,14 @@
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
             <ul class="metismenu list-unstyled" id="side-menu">
+                <?php if(Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1): ?>
+                    <li>
+                        <a href="tetapan" class="waves-effect">
+                            <i class='bx bxs-cog'></i>
+                            <span key="t-chat"><?php echo app('translator')->get('Tetapan'); ?></span>
+                        </a>
+                    </li>
+                <?php endif; ?>
                 <li>
                     <a href="dashboard" class="waves-effect">
                         <i class='bx bxs-home'></i>
@@ -76,16 +84,9 @@
                         </li>
                         <?php endif; ?>
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <span key="t-dashboards"><?php echo app('translator')->get('Logo'); ?></span>
+                            <a href="logo-sekolah">
+                                <span key="t-dashboards"><?php echo app('translator')->get('Logo Sekolah'); ?></span>
                             </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="logo-sekolah" key="t-tui-calendar"><?php echo app('translator')->get('Logo Sekolah'); ?></a></li>
-                                <li><a href="logo-jpn" key="t-tui-calendar"><?php echo app('translator')->get('Logo JPN'); ?></a></li>
-                                <li><a href="logo-kpm" key="t-tui-calendar"><?php echo app('translator')->get('Logo KPM'); ?></a></li>
-                                <li><a href="jata-negeri" key="t-tui-calendar"><?php echo app('translator')->get('Jata Negeri'); ?></a></li>
-                                <li><a href="jata-negara" key="t-tui-calendar"><?php echo app('translator')->get('Jata Negara'); ?></a></li>
-                            </ul>
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -94,7 +95,7 @@
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="lagu-sekolah" key="t-tui-calendar"><?php echo app('translator')->get('Lagu Sekolah'); ?></a></li>
                                 <li><a href="lagu-guru-malaysia" key="t-tui-calendar"><?php echo app('translator')->get('Lagu Guru Malaysia'); ?></a></li>
-                                <li><a href="lagu-kebangsaan-negeri" key="t-tui-calendar"><?php echo app('translator')->get('Lagu Kebesaran Negeri'); ?></a></li>
+                                <li><a href="lagu-kebangsaan-negeri" key="t-tui-calendar"><?php echo app('translator')->get('Lagu Kebangsaan Negeri'); ?></a></li>
                                 <li><a href="lagu-negaraku" key="t-tui-calendar"><?php echo app('translator')->get('Lagu Negaraku'); ?></a></li>
                             </ul>
                         </li>
@@ -110,7 +111,6 @@
                                 </ul>
                             </li>
                             <li><a href="peta-susun-atur-premis" key="t-full-calendar"><?php echo app('translator')->get('Peta Susun Atur Premis'); ?></a></li>
-                            <li><a href="foto-galeri" key="t-full-calendar"><?php echo app('translator')->get('Foto Galeri'); ?></a></li>
                             <li><a href="peta-lokasi" key="t-full-calendar"><?php echo app('translator')->get('Peta Lokasi'); ?></a></li>
                         <?php endif; ?>
                     </ul>

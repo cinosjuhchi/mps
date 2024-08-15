@@ -16,7 +16,34 @@
     @endcomponent
     @if (Auth::user()->jawatan_app != 6)
         <div>
-            <button class="btn btn-warning d-block me-auto mb-3"><i class='bx bxs-edit'></i> Kemaskini Logo</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editMinda">
+                <i class='bx bxs-edit'></i> Kemaskini Logo
+            </button>
+            <!-- Modal -->
+            <form action="" class="modal fade" id="editMinda" tabindex="-1" aria-labelledby="editMindaLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="editMindaLabel">Kemaskini Logo
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>
+                                Muat naik logo
+                            </h5>
+                            <input type="file" class="form-control">
+                            <p>Logo mestilah dalam bentuk JPG, PNG, JPEG dan saiz maksimum 2MB</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn btn-warning">Muat Naik</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     @endif
     <img src="{{ asset('images/logo-sri-angkasa.png') }}" alt="" srcset=""class="img-fluid d-block m-auto"

@@ -14,19 +14,21 @@
             Lagu Negaraku
         @endslot
     @endcomponent
-    <div class="text-center">
-        {{-- <video src="{{ asset('videos/Lagu_Negaraku.mp4') }}" class="w-75" controls></video> --}}
-        <div class="mt-4">
-            <h4 class="">Lagu Negaraku</h4>
-            <p class="fs-5">
-                Negaraku
-                <br> Tanah tumpahnya darahku,
-                <br> Rakyat Hidup bersatu dan maju,
-                <br> Rahmat bahagia Tuhan kurniakan,
-                <br> Raja kita Selamat bertakhta,
-                <br> Rahmat bahagia Tuhan kurniakan,
-                <br> Raja kita Selamat bertakhta
-            </p>
+    <div class="d-flex justify-content-center align-items-center mt-4">
+        <div class="w-50 d-flex justify-content-center align-items-center text-start">
+            {{-- <video src="{{ asset('videos/Lagu_Negaraku.mp4') }}" class="w-75" controls></video> --}}
+            <div class="mt-4">
+                <h4 class="">Lagu Negaraku</h4>
+                <p class="fs-5">
+                    Negaraku
+                    <br> Tanah tumpahnya darahku,
+                    <br> Rakyat Hidup bersatu dan maju,
+                    <br> Rahmat bahagia Tuhan kurniakan,
+                    <br> Raja kita Selamat bertakhta,
+                    <br> Rahmat bahagia Tuhan kurniakan,
+                    <br> Raja kita Selamat bertakhta
+                </p>
+            </div>
         </div>
     </div>
 @endsection
