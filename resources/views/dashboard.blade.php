@@ -19,6 +19,50 @@
 @endsection
 
 @section('content')
+    <!-- subscribeModal -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <div class="avatar-md mx-auto mb-4">
+                            <div class="avatar-title bg-light rounded-circle text-warning h1">
+                                <i class="mdi mdi-clock-alert"></i>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-xl-10">
+                                <h4 class="text-dark fw-bold">Program anda tinggal 10 hari lagi !</h4>
+                                <p class="text-muted font-size-14 mb-4">Segera ikuti perkembangan program anda</p>
+                                <div class="bg-light text-start rounded p-3">
+                                    <div class="mb-3">
+                                        <h5 class="text-dark fw-bold">Program dan Aktiviti</h5>
+                                        <p class="text-muted font-size-14">Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023</p>
+                                    </div>                                    
+                                    <div class="mb-3">
+                                        <h5 class="text-dark fw-bold">Komponen</h5>
+                                        <p class="text-muted font-size-14">Pengurusan dan Pentadbiran</p>
+                                    </div>                                    
+                                    <div class="mb-3">
+                                        <h5 class="text-dark fw-bold">Tarikh</h5>
+                                        <p class="text-muted font-size-14">04/06/2024</p>
+                                    </div>                                    
+                                    <div class="mt-2">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light btn-xl" data-bs-dismiss="modal" aria-label="Close">Mengerti</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             @if (session('change-role-success'))
@@ -633,8 +677,7 @@
         </div>
         {{-- AKHIR BAGIAN CARD --}}
     @endif
-
-
+        
     <script>
         function toggleLabel(checkboxId) {
             var label = document.getElementById("label" + checkboxId.slice(-1));
@@ -681,7 +724,16 @@
         $('#recentUser-table').DataTable();
     </script>
 
-    <script src="{{ URL::asset('build/libs/jquery-knob/jquery.knob.min.js') }}"></script>
-    <script src="{{ URL::asset('build/js/pages/jquery-knob.init.js') }}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                var myModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
+                myModal.show();
+            }, 3000); // Delay in milliseconds
+        });
+    </script>
+
+    <script src="{{ URL::asset('build/libs/jquery-knob/jquery.knob.min.js') }}"></>
+    <script src="{{ URL::asset('build/js/pages/jquery-knob.init.js') }}"></scrip>
     <script src="{{ URL::asset('/build/js/pages/jquery-knob.init.js') }}"></script>
 @endsection
