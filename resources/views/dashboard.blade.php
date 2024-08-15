@@ -36,7 +36,7 @@
 
                         <div class="row justify-content-center">
                             <div class="col-xl-10">
-                                <h4 class="text-dark fw-bold">Program anda tinggal 10 hari lagi !</h4>
+                                <h4 class="text-dark fw-bolder">Program anda tinggal 10 hari lagi !</h4>
                                 <p class="text-muted font-size-14 mb-4">Segera ikuti perkembangan program anda</p>
                                 <div class="bg-light text-start rounded p-3">
                                     <div class="mb-3">
