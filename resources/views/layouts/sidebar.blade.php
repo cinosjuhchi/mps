@@ -23,20 +23,6 @@
                 </li>
                 @if (Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1)
                     <li class="menu-title" key="t-menu">@lang('translation.Menu')</li>
-
-                    <li>
-                        <a href="javascript: void(0);" class="has-arrow waves-effect">
-                            <i class="bx bxs-user-circle"></i>
-                            <span key="t-dashboards">@lang('User')</span>
-                        </a>
-                        <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="profilku" key="t-default">@lang('Profilku')</a></li>
-                            <li><a href="tukar-kata-laluan" key="t-saas">@lang('Tukar Kata Laluan')</a></li>
-                            @if (Auth::user()->jawatan_app == 2 or Auth::user()->jawatan_app == 3)
-                                <li><a href="senarai-pengguna" key="t-crypto">@lang('Senarai Pengguna')</a></li>
-                            @endif
-                        </ul>
-                    </li>
                 @endif
 
                 <li class="menu-title" key="t-apps">@lang('NAVIGASI')</li>
@@ -69,19 +55,19 @@
                             <li><a href="piagam-pelanggan" key="t-full-calendar">@lang('Piagam Pelanggan')</a></li>
                         @endif
                         @if (Auth::user()->jawatan_app == 0)
-                        <li><a href="ikrar-rukun-negara" key="t-full-calendar">@lang('Ikrar Rukun Negara')</a></li>
+                            <li><a href="ikrar-rukun-negara" key="t-full-calendar">@lang('Ikrar Rukun Negara')</a></li>
                         @endif
                         @if (Auth::user()->jawatan_app != 0)
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <span key="t-dashboards">@lang('Ikrar')</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="ikrar-rukun-negara" key="t-full-calendar">@lang('Ikrar Rukun Negara')</a></li>
-                                <li><a href="ikrar-penjawat-awam" key="t-full-calendar">@lang('Ikrar Penjawat Awam')</a></li>
-                                <li><a href="ikrar-guru" key="t-full-calendar">@lang('Ikrar Guru')</a></li>
-                            </ul>
-                        </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards">@lang('Ikrar')</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="ikrar-rukun-negara" key="t-full-calendar">@lang('Ikrar Rukun Negara')</a></li>
+                                    <li><a href="ikrar-penjawat-awam" key="t-full-calendar">@lang('Ikrar Penjawat Awam')</a></li>
+                                    <li><a href="ikrar-guru" key="t-full-calendar">@lang('Ikrar Guru')</a></li>
+                                </ul>
+                            </li>
                         @endif
                         <li>
                             <a href="logo-sekolah">
@@ -121,7 +107,7 @@
                         <i class="bx bx-calendar"></i>
                         <span key="t-dashboards">@lang('Takwim')</span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">                        
+                    <ul class="sub-menu" aria-expanded="false">
                         <li><a href="penggal-persekolahan" key="t-full-calendar">@lang('Penggal Persekolahan')</a></li>
                         @if (Auth::user()->jawatan_app != 0)
                             <li><a href="jadual-guru-bertugas-harian" key="t-full-calendar">@lang('Jadual Guru Bertugas Harian')</a>
@@ -269,14 +255,17 @@
                 <li class="menu-title" key="t-pages">@lang('Tindakan')</li>
 
                 <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <i class='bx bxs-cog'></i>
-                        <span key="t-authentication">@lang('Tetapan')</span>
+                    <a href="profilku" key="t-default">
+                        <i class='bx bxs-user'></i>
+                        <span>@lang('Profilku')</span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="tema" key="t-login">@lang('Tema')</a></li>
-                        <li><a href="imej-latar-belakang" key="t-login">@lang('Imej Latar Belakang')</a></li>
-                    </ul>
+                </li>
+
+                <li>
+                    <a href="senarai-pengguna" key="t-default">
+                        <i class='bx bxs-user-plus' ></i>
+                        <span>@lang('Senarai Pengguna')</span>
+                    </a>
                 </li>
 
                 @if (Auth::user()->jawatan_app == 0 or Auth::user()->jawatan_app == 1)
