@@ -18,6 +18,9 @@
                         <div class="d-flex justify-content-end">
                             <small class="text-warning bg-warning bg-opacity-25 fw-bold">Premium</small>
                         </div>
+                        <div class="text-center my-3">
+                            <img src="{{asset('images/logo-mps-online.png')}}" alt="logo-mps-online" class="w-50">
+                        </div>
                         <button class="btn btn-outline-primary w-100">See your app</button>
                     </div>
                 </div>
@@ -27,6 +30,9 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-end">
                             <small class="text-primary bg-primary bg-opacity-25 fw-bold">Individu</small>
+                        </div>
+                        <div class="text-center my-3">
+                            <img src="{{asset('images/logo-rph-click.png')}}" alt="logo-rph-click" class="w-50">
                         </div>
                         <button class="btn btn-outline-primary w-100">See your app</button>
                     </div>
@@ -39,6 +45,9 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-body">
+                        <div class="text-center mb-3">
+                            <img src="{{asset('images/logo-rmt-click.png')}}" alt="logo-rmt-click" class="w-50">
+                        </div>
                         <button class="btn btn-primary w-100">Try for free</button>
                     </div>
                 </div>
@@ -46,6 +55,9 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-body">
+                        <div class="text-center mb-3">
+                            <img src="{{asset('images/logo-zertall.png')}}" alt="logo-zertall" class="w-50">
+                        </div>
                         <button class="btn btn-primary w-100">Try for free</button>
                     </div>
                 </div>
