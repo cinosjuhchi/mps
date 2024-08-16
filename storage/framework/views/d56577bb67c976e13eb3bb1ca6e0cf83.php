@@ -1,27 +1,25 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Senarai Guru dan Kaki Tangan'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('Senarai Pekerja Kebersihan')
-@endsection
-
-@section('content')
-    @component('components.breadcrumb')
-        @slot('li_1')
+<?php $__env->startSection('content'); ?>
+    <?php $__env->startComponent('components.breadcrumb'); ?>
+        <?php $__env->slot('li_1'); ?>
             Guru dan Kakitangan
-        @endslot
-        @slot('title')
-            Senarai Pekerja Kebersihan
-        @endslot
-    @endcomponent
+        <?php $__env->endSlot(); ?>
+        <?php $__env->slot('title'); ?>
+            Senarai Guru dan Kakitangan
+        <?php $__env->endSlot(); ?>
+    <?php echo $__env->renderComponent(); ?>
 
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div class="btn-group">
             <button class="btn btn-secondary" id="btn-grid" onclick="switchToGrid()"><i class="bx bx-grid"></i></button>
             <button class="btn btn-outline-secondary" id="btn-list" onclick="switchToList()"><i class="bx bx-list-ul"></i></button>
         </div>
-        @if (Auth::user()->jawatan_app != 6 and Auth::user()->jawatan_app != 1)
+        <?php if(Auth::user()->jawatan_app != 6 and Auth::user()->jawatan_app != 1): ?>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahGuru"><i class='bx bx-plus'></i>Tambah Guru </button>
-        @endif
+        <?php endif; ?>
     </div>
     <div class="container" id="senarai-container">
         <div id="senarai-grid">
@@ -30,7 +28,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/guru-besar.png') }}" alt="Foto Diri" class="card-img-top">
+                                <img src="<?php echo e(asset('images/foto_guru/guru-besar.png')); ?>" alt="Foto Diri" class="card-img-top">
                             </div>
                             <h5 class="font-size-16 m-0"><a href="#" class="text-body">Rahimi bin Saufi</a></h5>
                             <p class="text-muted m-0 fw-bold">Guru Besar</p>
@@ -48,7 +46,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/GPK-Pentadbiran.png') }}" alt="Foto Diri" class="card-img-top">
+                                <img src="<?php echo e(asset('images/foto_guru/GPK-Pentadbiran.png')); ?>" alt="Foto Diri" class="card-img-top">
                             </div>
                             <h5 class="font-size-16 m-0"><a href="#" class="text-body">Marina binti Idris</a></h5>
                             <p class="text-muted m-0 fw-bold font-size-14">GPK Pentadbiran</p>
@@ -62,7 +60,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/GPK-Hal-Ehwal-Murid.png') }}" alt="Foto Diri"
+                                <img src="<?php echo e(asset('images/foto_guru/GPK-Hal-Ehwal-Murid.png')); ?>" alt="Foto Diri"
                                     class="card-img-top">
                             </div>
                             <h5 class="font-size-16 m-0"><a href="#" class="text-body">Norazidi bin Che Amat</a></h5>
@@ -77,7 +75,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/GPK-KoKurikulum.png') }}" alt="Foto Diri" class="card-img-top">
+                                <img src="<?php echo e(asset('images/foto_guru/GPK-KoKurikulum.png')); ?>" alt="Foto Diri" class="card-img-top">
                             </div>
                             <h5 class="font-size-16 mb-0"><a href="#" class="text-body">Lee Hock Chan</a></h5>
                             <p class="text-muted m-0 fw-bold font-size-14">GPK KoKurikulum</p>
@@ -93,7 +91,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/GPK-Pendidikan-Khas.png') }}" alt="Foto Diri"
+                                <img src="<?php echo e(asset('images/foto_guru/GPK-Pendidikan-Khas.png')); ?>" alt="Foto Diri"
                                     class="card-img-top">
                             </div>
                             <h5 class="font-size-16 mb-0"><a href="#" class="text-body">Abdullah bin Zawawi</a></h5>
@@ -111,7 +109,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/Guru-Bimbingan.png') }}" alt="Foto Diri" class="card-img-top">
+                                <img src="<?php echo e(asset('images/foto_guru/Guru-Bimbingan.png')); ?>" alt="Foto Diri" class="card-img-top">
                             </div>
                             <h5 class="font-size-16 mb-0"><a href="#" class="text-body">Syarifah Zahrah binti Syed Akbar</a>
                             </h5>
@@ -130,7 +128,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/Guru-Penyelaras-Bestari.png') }}" alt="Foto Diri"
+                                <img src="<?php echo e(asset('images/foto_guru/Guru-Penyelaras-Bestari.png')); ?>" alt="Foto Diri"
                                     class="card-img-top">
                             </div>
                             <h5 class="font-size-16 mb-0"><a href="#" class="text-body">Maliki bin Ayub Khan</a></h5>
@@ -145,7 +143,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/Guru-Perpustakaan-dan-Media.png') }}" alt="Foto Diri"
+                                <img src="<?php echo e(asset('images/foto_guru/Guru-Perpustakaan-dan-Media.png')); ?>" alt="Foto Diri"
                                     class="card-img-top">
                             </div>
                             <h5 class="font-size-16 mb-0"><a href="#" class="text-body">Suzana binti Muhammad</a></h5>
@@ -160,7 +158,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/Guru-Data.png') }}" alt="Foto Diri" class="card-img-top">
+                                <img src="<?php echo e(asset('images/foto_guru/Guru-Data.png')); ?>" alt="Foto Diri" class="card-img-top">
                             </div>
                             <h5 class="font-size-16 mb-0"><a href="#" class="text-body">Razuki bin Rauf</a></h5>
                             <p class="text-muted m-0 fw-bold font-size-14">Guru Data</p>
@@ -178,7 +176,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/Guru-Prasekolah.png') }}" alt="Foto Diri"
+                                <img src="<?php echo e(asset('images/foto_guru/Guru-Prasekolah.png')); ?>" alt="Foto Diri"
                                     class="card-img-top">
                             </div>
                             <h5 class="font-size-16 mb-0"><a href="#" class="text-body">Mazniyanti binti Zainudin</a></h5>
@@ -193,7 +191,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/Guru-Akademik-KSSR-1.png') }}" alt="Foto Diri"
+                                <img src="<?php echo e(asset('images/foto_guru/Guru-Akademik-KSSR-1.png')); ?>" alt="Foto Diri"
                                     class="card-img-top">
                             </div>
                             <h5 class="font-size-16 mb-0"><a href="#" class="text-body">Farizul bin Nor Yaacob</a></h5>
@@ -208,7 +206,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 16rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/Guru-Akademik-KSSR-2.png') }}" alt="Foto Diri"
+                                <img src="<?php echo e(asset('images/foto_guru/Guru-Akademik-KSSR-2.png')); ?>" alt="Foto Diri"
                                     class="card-img-top">
                             </div>
                             <h5 class="font-size-16 mb-0"><a href="#" class="text-body">Fauziah binti Ismail</a></h5>
@@ -501,7 +499,9 @@
             </div>
         </div>
     </div>
-@endsection
-@section('script')
-    <script src="{{ asset('build/js/style.js') }}"></script>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+    <script src="<?php echo e(asset('build/js/style.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\mps_old\resources\views/senarai-guru-dan-kakitangan.blade.php ENDPATH**/ ?>

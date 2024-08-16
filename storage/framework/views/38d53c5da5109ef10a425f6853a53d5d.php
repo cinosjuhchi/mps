@@ -1,10 +1,8 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Cuti Peristiwa'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('Cuti Peristiwa')
-@endsection
-
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
@@ -149,9 +147,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -206,9 +204,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -275,9 +273,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -344,9 +342,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -413,9 +411,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -482,9 +480,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -551,9 +549,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -620,9 +618,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -689,9 +687,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -758,9 +756,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -827,9 +825,9 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -887,4 +885,6 @@
 
         <!-- end col -->
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\mps_old\resources\views/cuti-peristiwa.blade.php ENDPATH**/ ?>

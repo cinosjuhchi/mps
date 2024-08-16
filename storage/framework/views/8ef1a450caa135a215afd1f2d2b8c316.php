@@ -1,24 +1,22 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Dashboard'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('Dashboard')
-@endsection
-
-@section('css')
-    <link href="{{ URL::asset('build/libs/@fullcalendar/core/main.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ URL::asset('build/libs/@fullcalendar/daygrid/main.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ URL::asset('build/libs/@fullcalendar/bootstrap/main.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ URL::asset('build/libs/@fullcalendar/timegrid/main.min.css') }}" rel="stylesheet" type="text/css" />
+<?php $__env->startSection('css'); ?>
+    <link href="<?php echo e(URL::asset('build/libs/@fullcalendar/core/main.min.css')); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(URL::asset('build/libs/@fullcalendar/daygrid/main.min.css')); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(URL::asset('build/libs/@fullcalendar/bootstrap/main.min.css')); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(URL::asset('build/libs/@fullcalendar/timegrid/main.min.css')); ?>" rel="stylesheet" type="text/css" />
     <!-- DataTables -->
-    <link href="{{ URL::asset('build/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet"
+    <link href="<?php echo e(URL::asset('build/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css')); ?>" rel="stylesheet"
         type="text/css" />
-    <link href="{{ URL::asset('build/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css') }}"
+    <link href="<?php echo e(URL::asset('build/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')); ?>"
         rel="stylesheet" type="text/css" />
     <!-- tui charts Css -->
-    <link href="{{ URL::asset('build/libs/tui-chart/tui-chart.min.css') }}" rel="stylesheet" type="text/css" />
-@endsection
+    <link href="<?php echo e(URL::asset('build/libs/tui-chart/tui-chart.min.css')); ?>" rel="stylesheet" type="text/css" />
+<?php $__env->stopSection(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
     <!-- subscribeModal -->
     <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -64,13 +62,14 @@
     </div>
     <div class="row">
         <div class="col">
-            @if (session('change-role-success'))
+            <?php if(session('change-role-success')): ?>
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <span class="text-dark">{{ session('change-role-success') }}
-                        <b>{{ session('ubahKe') }}!</b></span>
+                    <span class="text-dark"><?php echo e(session('change-role-success')); ?>
+
+                        <b><?php echo e(session('ubahKe')); ?>!</b></span>
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
-            @endif
+            <?php endif; ?>
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                 <h4 class="mb-sm-0 font-size-18 text-capitalize">Dashboard</h4>
 
@@ -83,8 +82,8 @@
         </div>
     </div>
 
-    @if (Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1)
-        {{-- BAGIAN CARD --}}
+    <?php if(Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1): ?>
+        
         <div class="row">
             <div class="col-xl-3 col-md-6">
                 <div class="card card-h-100 shadow-none border border-secondary border-opacity-25 text-bg-primary">
@@ -94,7 +93,7 @@
                                 <span class="mb-3 lh-2 d-block">KOMPONEN PENGURUSAN DAN PENTADBIRAN</span>
                             </div>
                             <div class="col-2">
-                                <img src="{{ asset('build/icons/computer-icon.png') }}" alt="Icon Comp" width="60px"
+                                <img src="<?php echo e(asset('build/icons/computer-icon.png')); ?>" alt="Icon Comp" width="60px"
                                     height="50px" class="position-relative" style="right: 50px; opacity: .1;">
                             </div>
                         </div>
@@ -142,7 +141,7 @@
                                 <span class="mb-3 lh-2 d-block">KOMPONEN KURIKULUM</span>
                             </div>
                             <div class="col-2">
-                                <img src="{{ asset('build/icons/link-icon.png') }}" alt="Icon Comp" width="50px"
+                                <img src="<?php echo e(asset('build/icons/link-icon.png')); ?>" alt="Icon Comp" width="50px"
                                     class="position-relative" style="right: 40px; opacity: .1;">
                             </div>
                         </div>
@@ -190,7 +189,7 @@
                                 <span class="mb-3 lh-2 d-block">KOMPONEN HAL EHWAL MURID</span>
                             </div>
                             <div class="col-2">
-                                <img src="{{ asset('build/icons/group-icon.png') }}" alt="Icon Comp" width="50px"
+                                <img src="<?php echo e(asset('build/icons/group-icon.png')); ?>" alt="Icon Comp" width="50px"
                                     class="position-relative" style="right: 40px; opacity: .1;">
                             </div>
                         </div>
@@ -239,7 +238,7 @@
                                 <span class="mb-3 lh-2 d-block">KOMPONEN KOKURIKULUM</span>
                             </div>
                             <div class="col-2">
-                                <img src="{{ asset('build/icons/clock-icon.png') }}" alt="Icon Comp" width="50px"
+                                <img src="<?php echo e(asset('build/icons/clock-icon.png')); ?>" alt="Icon Comp" width="50px"
                                     class="position-relative" style="right: 40px; opacity: .1;">
                             </div>
                         </div>
@@ -280,12 +279,12 @@
                 </div>
             </div>
         </div>
-        {{-- AKHIR BAGIAN CARD --}}
+        
 
-        {{-- BAGIAN TABEL --}}
+        
         <div class="row">
             <div class="col-md-9">
-                {{-- Todo List --}}
+                
                 <div class="table-responsive">
                     <table class="table bg-white table-bordered table-borderless">
                         <thead class="table-dark">
@@ -304,32 +303,33 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($currentItems as $item)
+                            <?php $__currentLoopData = $currentItems; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <tr>
-                                <td><input type="checkbox" id="check{{ $loop->index }}" onchange="toggleLabel('check{{ $loop->index }}')"></td>
-                                <td><label for="check{{ $loop->index }}" id="label{{ $loop->index }}">{{ $item['program_aktiviti'] }}</label></td>
-                                <td>{{ $item['komponen'] }}</td>
-                                <td>{{ $item['tarikh'] }}</td>
-                                <td>{{ $item['tindakan'] }}</td>
+                                <td><input type="checkbox" id="check<?php echo e($loop->index); ?>" onchange="toggleLabel('check<?php echo e($loop->index); ?>')"></td>
+                                <td><label for="check<?php echo e($loop->index); ?>" id="label<?php echo e($loop->index); ?>"><?php echo e($item['program_aktiviti']); ?></label></td>
+                                <td><?php echo e($item['komponen']); ?></td>
+                                <td><?php echo e($item['tarikh']); ?></td>
+                                <td><?php echo e($item['tindakan']); ?></td>
                                 <td>
-                                    <p class="bg-{{ $item['status_color_class'] }} bg-opacity-75 rounded p-1 text-white">
-                                        {{ $item['status'] }}
+                                    <p class="bg-<?php echo e($item['status_color_class']); ?> bg-opacity-75 rounded p-1 text-white">
+                                        <?php echo e($item['status']); ?>
+
                                     </p>
                                 </td>
                             </tr>
-                            @endforeach
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="d-flex justify-content-end mb-3">
-                    @for ($i = 1; $i <= $pages; $i++)
-                        <a href="{{ url()->current() }}?page={{ $i }}" class="btn mx-1 {{ $i == $page ? 'btn-dark' : 'btn-light border border-secondary' }}">{{ $i }}</a>
-                    @endfor
+                    <?php for($i = 1; $i <= $pages; $i++): ?>
+                        <a href="<?php echo e(url()->current()); ?>?page=<?php echo e($i); ?>" class="btn mx-1 <?php echo e($i == $page ? 'btn-dark' : 'btn-light border border-secondary'); ?>"><?php echo e($i); ?></a>
+                    <?php endfor; ?>
                 </div>
-                {{-- END Todo List --}}
+                
 
-                {{-- Kalendar --}}
+                
                 <div class="card border border-opacity-10 border-secondary">
                     <div class="card-header text-bg-dark">
                         <div class="d-flex justify-content-between align-items-center">
@@ -343,7 +343,7 @@
                     </div>
                 </div>
             </div>
-            {{-- END Kalendar --}}
+            
             <div class="col-md-3">
                 <div class="table-responsive">
                     <table class="table bg-white table-bordered">
@@ -386,9 +386,9 @@
                 </div>
             </div>
         </div>
-        {{-- AKHIR BAGIAN TABEL --}}
-    @elseif (Auth::user()->jawatan_app == 0)
-        {{-- BAGIAN CARD --}}
+        
+    <?php elseif(Auth::user()->jawatan_app == 0): ?>
+        
         <div class="row">
             <div class="col-xl-3 col-md-6">
                 <div class="card card-h-100 shadow-none border border-secondary border-opacity-25 text-bg-primary">
@@ -398,7 +398,7 @@
                                 <span class="mb-2 lh-2 d-block">JUMLAH USER</span>
                             </div>
                             <div class="col-2">
-                                <img src="{{ asset('build/icons/group-icon.png') }}" alt="Icon Users" width="60px"
+                                <img src="<?php echo e(asset('build/icons/group-icon.png')); ?>" alt="Icon Users" width="60px"
                                     height="50px" class="position-relative" style="right: 50px; opacity: .1;">
                             </div>
                         </div>
@@ -414,7 +414,7 @@
                                 <span class="mb-2 lh-2 d-block">JUMLAH SEKOLAH</span>
                             </div>
                             <div class="col-2">
-                                <img src="{{ asset('build/icons/school-icon.png') }}" alt="Icon Comp" width="50px"
+                                <img src="<?php echo e(asset('build/icons/school-icon.png')); ?>" alt="Icon Comp" width="50px"
                                     class="position-relative" style="right: 40px; opacity: .1;">
                             </div>
                         </div>
@@ -430,7 +430,7 @@
                                 <span class="mb-2 lh-2 d-block">JUMLAH PENDAPATAN</span>
                             </div>
                             <div class="col-2">
-                                <img src="{{ asset('build/icons/dollar-icon.png') }}" alt="Icon Dollar" width="50px"
+                                <img src="<?php echo e(asset('build/icons/dollar-icon.png')); ?>" alt="Icon Dollar" width="50px"
                                     class="position-relative" style="right: 40px; opacity: .1;">
                             </div>
                         </div>
@@ -440,10 +440,10 @@
             </div>
         </div>
 
-        {{-- STATISTIK PERBANDINGAN STATUS AKAUN --}}
+        
         <h3 class="card-title my-4">Statistik Perbandingan Status Akaun</h3>
 
-        {{-- SEKOLAH RENDAH --}}
+        
         <div class="row">
             <div class="col">
                 <div class="card">
@@ -459,7 +459,7 @@
                 </div>
             </div>
         </div>
-        {{-- SEKOLAH MENENGAH --}}
+        
         <div class="row">
             <div class="col">
                 <div class="card">
@@ -523,8 +523,8 @@
                 </div>
             </div>
         </div>
-        {{-- AKHIR BAGIAN CARD --}}
-    @endif
+        
+    <?php endif; ?>
 
     <script>
         function toggleLabel(checkboxId) {
@@ -538,36 +538,36 @@
             }
         }
     </script>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('script')
+<?php $__env->startSection('script'); ?>
     <!-- plugin js -->
-    <script src="{{ URL::asset('build/libs/moment/min/moment.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/jquery-ui-dist/jquery-ui.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/@fullcalendar/core/main.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/@fullcalendar/bootstrap/main.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/@fullcalendar/daygrid/main.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/@fullcalendar/timegrid/main.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/@fullcalendar/interaction/main.min.js') }}"></script>
-    <script src="{{ URL::asset('build/js/pages/calendars-full.init.js') }}"></script>
+    <script src="<?php echo e(URL::asset('build/libs/moment/min/moment.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/libs/jquery-ui-dist/jquery-ui.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/libs/@fullcalendar/core/main.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/libs/@fullcalendar/bootstrap/main.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/libs/@fullcalendar/daygrid/main.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/libs/@fullcalendar/timegrid/main.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/libs/@fullcalendar/interaction/main.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/js/pages/calendars-full.init.js')); ?>"></script>
 
     <!-- tui charts plugins -->
-    <script src="{{ URL::asset('build/libs/tui-chart/tui-chart-all.min.js') }}"></script>
+    <script src="<?php echo e(URL::asset('build/libs/tui-chart/tui-chart-all.min.js')); ?>"></script>
     <!-- tui charts map -->
-    <script src="{{ URL::asset('build/libs/tui-chart/maps/usa.js') }}"></script>
+    <script src="<?php echo e(URL::asset('build/libs/tui-chart/maps/usa.js')); ?>"></script>
     <!-- tui charts plugins -->
-    <script src="{{ URL::asset('build/js/pages/tui-charts.init.js') }}"></script>
+    <script src="<?php echo e(URL::asset('build/js/pages/tui-charts.init.js')); ?>"></script>
     <!-- select2 js -->
-    <script src="{{ URL::asset('build/libs/select2/js/select2.min.js') }}"></script>
+    <script src="<?php echo e(URL::asset('build/libs/select2/js/select2.min.js')); ?>"></script>
     <!-- Required datatable js -->
-    <script src="{{ URL::asset('build/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="<?php echo e(URL::asset('build/libs/datatables.net/js/jquery.dataTables.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js')); ?>"></script>
 
     <!-- Responsive examples -->
-    <script src="{{ URL::asset('build/libs/datatables.net-responsive/js/dataTables.responsive.min.js') }}"></script>
-    <script src="{{ URL::asset('build/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') }}"></script>
+    <script src="<?php echo e(URL::asset('build/libs/datatables.net-responsive/js/dataTables.responsive.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js')); ?>"></script>
     <!-- Datatable init js -->
-    <script src="{{ URL::asset('/build/js/pages/datatables.init.js') }}"></script>
+    <script src="<?php echo e(URL::asset('/build/js/pages/datatables.init.js')); ?>"></script>
     <script>
         $('#recentUser-table').DataTable();
     </script>
@@ -581,7 +581,9 @@
         });
     </script>
 
-    <script src="{{ URL::asset('build/libs/jquery-knob/jquery.knob.min.js') }}"></>
-    <script src="{{ URL::asset('build/js/pages/jquery-knob.init.js') }}"></scrip>
-    <script src="{{ URL::asset('/build/js/pages/jquery-knob.init.js') }}"></script>
-@endsection
+    <script src="<?php echo e(URL::asset('build/libs/jquery-knob/jquery.knob.min.js')); ?>"></>
+    <script src="<?php echo e(URL::asset('build/js/pages/jquery-knob.init.js')); ?>"></scrip>
+    <script src="<?php echo e(URL::asset('/build/js/pages/jquery-knob.init.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\mps\resources\views/dashboard.blade.php ENDPATH**/ ?>
