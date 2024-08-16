@@ -1,0 +1,256 @@
+* {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+#sidebar-menu ul li a,
+#sidebar-menu ul li ul.sub-menu li a {
+    font-weight: 500;
+}
+
+body {
+    background: white;
+}
+
+.bg-welcome {
+    background-image: url("../../images/welcome-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -9;
+}
+
+.regist-pict {
+    background-image: url("../../images/1641266162.jpg");
+    height: 580px;
+}
+
+.step {
+    display: none;
+}
+
+.circle1 {
+    border-radius: 50%;
+    background-color: #556ee6;
+    width: 40px;
+    height: 40px;
+}
+
+.circle2 {
+    border-radius: 50%;
+    background-color: #343a40;
+    width: 40px;
+    height: 40px;
+}
+
+.circle3 {
+    border-radius: 50%;
+    background-color: #f0f2f8;
+    width: 40px;
+    height: 40px;
+}
+
+.circle4 {
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #517ed6, #3db69d);
+    width: 40px;
+    height: 40px;
+}
+
+.circle5 {
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #e86b76, #a46ead, #a46ead);
+    width: 40px;
+    height: 40px;
+}
+
+.circle6 {
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #5e72de, #a5919e, #e0ac62);
+    width: 40px;
+    height: 40px;
+}
+
+.circle7 {
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #f37d64, #f29f56);
+    width: 40px;
+    height: 40px;
+}
+
+.circle8 {
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #315ce3, #4b99ef);
+    width: 40px;
+    height: 40px;
+}
+
+.minda-content p:not(.detail-footer p) {
+    text-indent: 30px;
+}
+
+.minda-terdahulu hr.title-border {
+    width: 30%;
+    border: 2px solid black;
+}
+
+.minda-terdahulu hr:not(.title-border),
+hr.maklumat-hr {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin: 5px 0;
+}
+
+.minda-terdahulu a:hover div {
+    background: rgba(0, 0, 0, 0.1);
+    transition: 300ms;
+}
+
+.bg-green {
+    background: rgb(179, 215, 57);
+}
+
+.bg-purple {
+    background: rgb(130, 53, 214);
+}
+
+.bg-grey {
+    background: #b5b8bb;
+}
+
+.bg-violet {
+    background: #c0abde;
+}
+
+.bg-cream {
+    background: #f7ecc1;
+}
+
+img.gallery-item {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Custom styling for Trix Editor */
+trix-toolbar {
+    background-color: #f1f1f1; /* Warna abu-abu pada bagian kepala */
+}
+
+trix-toolbar .trix-button-group {
+    margin-bottom: 0; /* Menghilangkan margin bawah pada tombol */
+}
+
+trix-editor {
+    min-height: 200px; /* Ukuran textarea yang sedikit lebih besar */
+}
+
+.banks .col-md-4 {
+    position: relative;
+}
+
+.banks small {
+    position: absolute;
+    width: 90%;
+    display: inline-block;
+    left: 50%;
+    bottom: 14px;
+    transform: translateX(-50%);
+}
+
+.banks img {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+}
+
+.clicked {
+    background-color: #ddd;
+    border: 1px solid rgb(0, 162, 255) !important;
+}
+
+.bank:hover {
+    cursor: pointer;
+}
+
+.boc-edit-form-instruments {
+    display: none;
+}
+
+.boc-edit-form-header {
+    margin-bottom: 50px;
+}
+
+/*
+.boc-img-button {
+    display: none;
+ } */
+
+img.imej-tetapan:hover {
+    cursor: pointer;
+}
+
+#drop-area {
+    border: 2px dashed #ccc;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-size: 17px;
+    overflow: hidden;
+    position: relative;
+}
+
+#drop-area img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imej-upload {
+    display: none;
+}
+
+.custom-upload {
+    background: blue;
+}
+
+.button-kumpulan {
+    width: 170px;
+    border-radius: 10px;
+    border: none;
+    height: 27px;
+    background-color: #92f6ca;
+}
+
+.button-kumpulan:hover {
+    background-color: #79dbb0;
+}
+
+.color1 {
+    background-color: red;
+    width: 100px;
+    height: 80px;
+}
+
+.color2 {
+    background-color: grey;
+    width: 100px;
+    height: 80px;
+}
+
+.color3 {
+    background-color: black;
+    width: 100px;
+    height: 80px;
+}
