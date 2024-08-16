@@ -27,7 +27,11 @@
             <div class="card border">
                 <div class="card-body">
                     <div class="">
+<<<<<<< HEAD
                         <div class="text-start mb-3">
+=======
+                        <div class="text-center mb-3">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                             <h4>Guru Insani Pemangkin Generasi Madani</h4>
                         </div>
                         <div class="mb-4">
@@ -35,7 +39,47 @@
                                 class="img-thumbnail mx-auto d-block">
                         </div>
 
+<<<<<<< HEAD
 
+=======
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="ps-2">
+                                <h6 class="mb-2">Date</h6>
+                                <p class="text-muted font-size-15">20 June, 2022</p>
+                            </div>
+                            @if (Auth::user()->jawatan_app != 6)
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                        data-bs-target="#editMinda">
+                                        <i class='bx bxs-edit'></i>
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="editMinda" tabindex="-1" aria-labelledby="editMindaLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="editMindaLabel">Kemaskini Minda</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Tutup</button>
+                                                    <button type="button" class="btn btn-warning">Kemaskini</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-danger"><i class='bx bxs-trash'></i></button>
+                                </div>
+                            @endif
+                        </div>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                         <div class="mt-4">
                             <div class="font-size-14">
@@ -94,6 +138,7 @@
                                         </div>
                                     </div>
                                 </div>
+<<<<<<< HEAD
 
                                 <div class="mt-4">
                                     {{-- Nama Guru Besar --}}
@@ -164,6 +209,8 @@
                                         </div>
                                     @endif
                                 </div>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                             </div>
                         </div>
                     </div>
@@ -183,9 +230,13 @@
                                 <h5 class="mb-3">Search</h5>
                                 @if (Auth::user()->jawatan_app != 6)
                                     <div class="d-flex flex-wrap align-items-center justify-content-end gap-2 mb-3">
+<<<<<<< HEAD
                                         <a href="#"
                                             class="btn btn-primary d-flex align-items-center justify-content-center"><i
                                                 class="bx bx-plus me-1"></i> Tambah
+=======
+                                        <a href="#" class="btn btn-light"><i class="bx bx-plus me-1"></i> Tambah
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                             Minda</a>
                                     </div>
                                 @endif

@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
+    <!-- PWA  -->
+    <meta name="theme-color" content="#6777ef" />
+    <link rel="apple-touch-icon" href="{{ URL::asset('logo.png') }}">
+    <link rel="manifest" href="{{ URL::asset('manifest.json') }}">
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ URL::asset('build/images/favicon.ico') }}">
     @include('layouts.head-css')
@@ -24,7 +28,15 @@
         <!-- Start right Content here -->
         <!-- ============================================================== -->
         <div class="main-content">
+<<<<<<< HEAD
+<<<<<<< HEAD
             <div class="page-content">
+=======
+            <div class="page-content" style="background: #f3f3f3">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
+=======
+            <div class="page-content min-vh-100" style="background: #f3f3f3">
+>>>>>>> 3f2b834 (fix: senarai dan polisi angkat, aplikasi penyokon)
                 <div class="container-fluid">
                     {{-- @if (session('change-role-success'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -39,7 +51,9 @@
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
-            @include('layouts.footer')
+            <div class="d-none d-xl-block">
+                @include('layouts.footer')
+            </div>
         </div>
         <!-- end main content-->
     </div>
@@ -49,8 +63,13 @@
     @include('layouts.right-sidebar')
     <!-- /Right-bar -->
 
+    <div class="d-lg-none d-md-block">
+        @include('layouts.bottom-nav')
+    </div>
+
     <!-- JAVASCRIPT -->
     @include('layouts.vendor-scripts')
+
 </body>
 
 </html>

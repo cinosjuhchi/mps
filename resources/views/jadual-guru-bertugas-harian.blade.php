@@ -564,16 +564,28 @@
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium text-white bg-primary bg-opacity-75" type="button" data-bs-toggle="collapse"
+=======
+                            <button class="accordion-button fw-medium text-dark bg-white bg-opacity-75" type="button" data-bs-toggle="collapse"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Jadual Guru Bertugas Harian 1
                             </button>
                         </h2>
+<<<<<<< HEAD
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                             <div class="table-responsive">
                                 <table class="table mb-0  align-middle text-center" data-pattern="priority-columns">
+=======
+                        <div id="collapseOne" class="accordion-collapse show collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-white">
+                            <div class="table-responsive">
+                                <table class="table mb-0 align-middle text-center" data-pattern="priority-columns">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                     <thead class=" bg-opacity-75 text-dark ">
                                         <tr>
                                             <th>Bulan</th>
@@ -784,14 +796,22 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75" type="button" data-bs-toggle="collapse"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75" type="button" data-bs-toggle="collapse"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Jadual Guru Bertugas Harian 2
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body">
+=======
+                            <div class="accordion-body bg-white">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <div class="table-responsive">
                                     <table class="table mb-0  align-middle text-center" data-pattern="priority-columns">
                                         <thead class=" bg-opacity-75 text-dark ">
@@ -1004,14 +1024,22 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75" type="button" data-bs-toggle="collapse"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75" type="button" data-bs-toggle="collapse"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Jadual Guru Bertugas Harian 3
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body">
+=======
+                            <div class="accordion-body bg-white">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <div class="table-responsive">
                                     <table class="table mb-0  align-middle text-center" data-pattern="priority-columns">
                                         <thead class=" bg-opacity-75 text-dark ">

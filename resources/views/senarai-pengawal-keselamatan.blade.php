@@ -22,17 +22,6 @@
         <div class="row">
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/guru-besar.png') }}" alt="Foto Diri" class="card-img-top">
                     </div>
@@ -48,17 +37,6 @@
         <div class="row">
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/GPK-Pentadbiran.png') }}" alt="Foto Diri" class="card-img-top">
                     </div>
@@ -70,17 +48,6 @@
             </div>
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/GPK-Hal-Ehwal-Murid.png') }}" alt="Foto Diri"
                             class="card-img-top">
@@ -93,17 +60,6 @@
             </div>
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/GPK-KoKurikulum.png') }}" alt="Foto Diri" class="card-img-top">
                     </div>
@@ -117,17 +73,6 @@
         <div class="row">
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/GPK-Pendidikan-Khas.png') }}" alt="Foto Diri"
                             class="card-img-top">
@@ -143,17 +88,6 @@
         <div class="row">
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/Guru-Bimbingan.png') }}" alt="Foto Diri" class="card-img-top">
                     </div>
@@ -170,17 +104,6 @@
         <div class="row">
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/Guru-Penyelaras-Bestari.png') }}" alt="Foto Diri"
                             class="card-img-top">
@@ -193,17 +116,6 @@
             </div>
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/Guru-Perpustakaan-dan-Media.png') }}" alt="Foto Diri"
                             class="card-img-top">
@@ -216,17 +128,6 @@
             </div>
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/Guru-Data.png') }}" alt="Foto Diri" class="card-img-top">
                     </div>
@@ -242,17 +143,6 @@
         <div class="row">
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/Guru-Prasekolah.png') }}" alt="Foto Diri"
                             class="card-img-top">
@@ -265,17 +155,6 @@
             </div>
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/Guru-Akademik-KSSR-1.png') }}" alt="Foto Diri"
                             class="card-img-top">
@@ -288,17 +167,6 @@
             </div>
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
-                    {{-- <div class="dropdown text-end">
-                    <a class="text-muted dropdown-toggle font-size-16" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-haspopup="true">
-                        <i class="bx bx-dots-horizontal-rounded"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a class="dropdown-item" href="#">Edit</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Remove</a>
-                    </div>
-                </div> --}}
                     <div class="mx-auto mb-4">
                         <img src="{{ asset('images/foto_guru/Guru-Akademik-KSSR-2.png') }}" alt="Foto Diri"
                             class="card-img-top">

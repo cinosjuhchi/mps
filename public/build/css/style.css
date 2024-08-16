@@ -133,6 +133,10 @@ hr.maklumat-hr {
     background: #f7ecc1;
 }
 
+.bg-mps {
+    background: #5156be;
+}
+
 img.gallery-item {
     width: 100%;
     height: 250px;
@@ -198,7 +202,10 @@ img.imej-tetapan:hover {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 #drop-area {
     border: 2px dashed #ccc;
     width: 100%;
@@ -218,43 +225,55 @@ img.imej-tetapan:hover {
     transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
 .imej-upload{
     display: none;
 }
 
-.custom-upload{
+.custom-upload {
     background: blue;
 }
 
 .button-kumpulan{
+=======
+.imej-upload {
+    display: none;
+}
+
+.custom-upload {
+    background: blue;
+}
+
+.button-kumpulan {
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
     width: 170px;
     border-radius: 10px;
     border: none;
     height: 27px;
+<<<<<<< HEAD
     background-color: #92F6CA;
 }
 
-.button-kumpulan:hover{
-    background-color: #79dbb0 ;
+.button-kumpulan:hover {
+    background-color: #79dbb0;
 }
 
-
-.color1{
+.color1 {
     background-color: red;
-    width:100px;
-    height:80px;
+    width: 100px;
+    height: 80px;
 }
 
-.color2{
+.color2 {
     background-color: grey;
-    width:100px;
-    height:80px;
+    width: 100px;
+    height: 80px;
 }
 
-.color3{
+.color3 {
     background-color: black;
-    width:100px;
-    height:80px;
+    width: 100px;
+    height: 80px;
 }
 
 /* stepper */
@@ -265,7 +284,7 @@ img.imej-tetapan:hover {
 
 .stepper:hover {
     cursor: pointer;
-color: #343a40;
+    color: #343a40;
 }
 
 .step-title {
@@ -318,3 +337,29 @@ color: #343a40;
     }
 }
 
+=======
+    background-color: #92f6ca;
+}
+
+.button-kumpulan:hover {
+    background-color: #79dbb0;
+}
+
+.color1 {
+    background-color: red;
+    width: 100px;
+    height: 80px;
+}
+
+.color2 {
+    background-color: grey;
+    width: 100px;
+    height: 80px;
+}
+
+.color3 {
+    background-color: black;
+    width: 100px;
+    height: 80px;
+}
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)

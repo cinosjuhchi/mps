@@ -18,6 +18,10 @@ use Illuminate\Http\Request;
 
 Auth::routes();
 
+Route::get('/testing', function () {
+    return view('layouts.master');
+});
+
 Route::get('/', [App\Http\Controllers\HomeController::class, 'root'])->name('root');
 
 //Update User Details
@@ -28,7 +32,7 @@ Route::get('{any}', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //Language Translation
 Route::get('index/{locale}', [App\Http\Controllers\HomeController::class, 'lang']);
-Route::get('welcome', function(){
+Route::get('welcome', function () {
     return view('welcome');
 });
 

@@ -73,7 +73,7 @@
                         <img src="{{ asset('images/foto_guru/dummy.jpg') }}" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
                     </div>
                     <h5 class="font-size-16 mb-1"><a href="#" class="text-body">Nablan bin Muhammad</a></h5>
-                    <p class="text-muted mb-4 font-size-14">Pekerja Kantin</p>  
+                    <p class="text-muted mb-4 font-size-14">Pekerja Kantin</p>
                 </div>
                 <button type="button" class="btn btn-outline-light text-dark" data-bs-toggle="modal"
                     data-bs-target="#profile"><i class="uil uil-user me-1"></i> Profile</button>

@@ -25,7 +25,10 @@ class CreateUsersTable extends Migration
             $table->text('avatar');
             $table->integer('jawatan_app');
             $table->string('jawatan_sekolah');
+<<<<<<< HEAD
             $table->string('kategori_sekolah')->nullable();
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
             $table->string('gelaran')->nullable();
             $table->string('telp');
             $table->rememberToken();

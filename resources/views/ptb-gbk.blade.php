@@ -201,43 +201,60 @@
                 <table class="table table-borderless">
                     <tr>
                         <td width="20px">1.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Mengendali sesi kaunseling individu sekurang-kurangnya lima (5) waktu seminggu dan kaunseling
+                            kelompok sekurang-kurangnya satu (1) waktu seminggu. Murid boleh mendapatkan perkhidmatan
+                            bimbingan dan kaunseling pada bila-bila masa dalam dan luar waktu persekolahan mengikut
+                            kesesuaian</td>
                     </tr>
                     <tr>
                         <td>2.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Bertanggungjawab membimbing murid berkaitan kemahiran belajar, pendidikan panduan kerjaya murid,
+                            pendidikan psikososial dan kesejahteraan mental murid, pendidikan kepimpinan murid, pendidikan
+                            pencegahan dadah dan rokok serta pendidikan pencegahan HIV dan AIDS.</td>
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Bertanggungjawab memperkukuhkan program pembangunan modal insan dalam kalangan murid sekolah
+                            melalui Program Kaunseling Berfokus, Program Pembimbing Rakan Sebaya, Program Kepemimpinan
+                            Pengawas, Program Orientasi Murid dan Kelab Bimbingan dan Kaunseling.</td>
                     </tr>
                     <tr>
                         <td>4.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menganggotai dan menjadi Setiausaha Jawatankuasa Unit Bimbingan dan Kaunseling.</td>
                     </tr>
                     <tr>
                         <td>5.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Merancang dan memastikan program dan aktiviti untuk murid berdasarkan fokus perkhidmatan unit
+                            bimbingan dan kaunseling iaitu pembangunan dan pengembangan sahsiah murid, peningkatan disiplin
+                            diri murid, pendidikan kerjaya murid dan psikososial serta kesejahteraan mental murid.</td>
                     </tr>
                     <tr>
                         <td>6.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menyediakan perkhidmatan kaunseling dan bimbingan khas kepada murid-murid berkeperluan khas di
+                            sekolah. GBK juga bertanggungjawab membimbing murid lain untuk menerima, membantu dan sentiasa
+                            memberi pertolongan kepada murid-murid berkeperluan khas.</td>
                     </tr>
                     <tr>
                         <td>7.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Membuat rujukan atau memberi khidmat kaunseling kepada murid, guru, kakitangan serta sesiapa
+                            sahaja yang memerlukan sekiranya berlaku krisis dalam kawasan sekolah.</td>
                     </tr>
                     <tr>
                         <td>8.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Membuat penilaian diagnostik keperluan Perkhidmatan Bimbingan dan Kaunseling sekolah melalui
+                            kajian keperluan, soal selidik, temu bual dan perbincangan dengan murid, guru, pentadbir,
+                            kakitangan sekolah, ibu bapa dan bekas murid.</td>
                     </tr>
                     <tr>
                         <td>9.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Membuat sebaran kepada murid berkaitan perkhidmatan yang boleh diberi oleh unit bimbingan dan
+                            kaunseling.</td>
                     </tr>
                     <tr>
                         <td>10.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menyediakan jadual waktu perkhidmatan bimbingan dan kaunseling persendirian berdasarkan sasaran
+                            kerja mingguan yang perlu mendapat pengesahan PGB. Jadual waktu ini hendaklah dipamerkan dalam
+                            setiap kelas dan papan kenyataan utama unit bimbingan dan kaunseling sekolah.</td>
                     </tr>
                 </table>
             @endif

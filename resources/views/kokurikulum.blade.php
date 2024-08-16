@@ -201,44 +201,64 @@
                 <table class="table table-borderless">
                     <tr>
                         <td width="20px">1.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menyelaraskan dan menyelia aktiviti sukan sekolah dalam bidang olahraga dan sukan di peringkat
+                            sekolah, daerah, negeri, kebangsaan dan antarabangsa.</td>
                     </tr>
                     <tr>
                         <td>2.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menyediakan takwim aktiviti sukan sekolah berdasarkan aktiviti MSSS Kebangsaan, Negeri, Daerah
+                            dan Zon.</td>
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menyelaraskan latihan rumah sukan.</td>
                     </tr>
                     <tr>
                         <td>4.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menyelia klinik olahraga untuk guru dan para murid.</td>
                     </tr>
                     <tr>
                         <td>5.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Mengurus, mencatat dan merekod inventori peralatan dan kemudahan sukan sekolah.</td>
                     </tr>
                     <tr>
                         <td>6.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Mengurus bilik sukan dan mengemas kini stok peralatan sukan bersama ketua rumah sukan, pengurus
+                            dan jurulatih pasukan sekolah.</td>
                     </tr>
                     <tr>
                         <td>7.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Merancang dan menyelia sukan tahunan sekolah, hari merentas desa dan sukantara.</td>
                     </tr>
                     <tr>
                         <td>8.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Memastikan gelanggang sukan dan padang permainan mengikut ukuran yang betul serta mengurus
+                            persediaan dan penjagaan padang.</td>
                     </tr>
                     <tr>
                         <td>9.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menyimpan rekod-rekod yang lengkap segala jenis perlawanan yang disertai oleh sekolah sama ada
+                            di peringkat zon, daerah, negeri, kebangsaan, persahabatan dan sebagainya. Mengandungi:
+                            <ul>
+                                <li>Tarikh</li>
+                                <li>Jenis pertandingan/perlawanan</li>
+                                <li>Pasukan yang terlibat</li>
+                                <li>Tempat pertandingan</li>
+                                <li>Keputusan pertandingan/pencapaian pasukan</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td>10.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Membantu bersama ahli jawatankuasa sukan merangka aktiviti sukan selepas peperiksaan selesai
+                            dijalankan.</td>
                     </tr>
+                    <tr>
+                        <td>11.</td>
+                        <td>Melaksanakan tugas lain yang diarahkan oleh PGB/pentadbir dari semasa ke semasa.</td>
+                    </tr>
+
+
                 </table>
             @endif
         </div>

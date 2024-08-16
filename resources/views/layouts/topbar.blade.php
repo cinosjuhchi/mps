@@ -1,8 +1,38 @@
-<header id="page-topbar">
+<style>
+    @media (max-width: 1024px) {
+        #page-topbar {
+            background-color: #5156be;
+        }
+
+        #page-topbar .navbar-header .navbar-brand-box .logo-sm img,
+        #page-topbar .navbar-header .navbar-brand-box .logo-lg img,
+        #page-topbar .navbar-header .navbar-brand-box .text-dark,
+        #page-topbar .navbar-header .navbar-brand-box .text-white,
+        #page-topbar .navbar-header .badge,
+        #page-topbar .navbar-header .btn,
+        #page-topbar .dropdown-menu,
+        #page-topbar .header-item {
+            color: white;
+        }
+
+        #page-topbar .dropdown .badge {
+            background: transparent;
+            border: none;
+        }
+
+        #page-topbar .dropdown .badge:hover,
+        #page-topbar .dropdown .badge:focus {
+            background: transparent;
+            color: white;
+        }
+    }
+</style>
+<header id="page-topbar" class="">
     <div class="navbar-header">
+>>>>>>> 3f2b834 (fix: senarai dan polisi angkat, aplikasi penyokon)
         <div class="d-flex">
             <!-- LOGO -->
-            <div class="navbar-brand-box d-flex justify-content-between" style="height: 74px;">
+            <div class="navbar-brand-box d-flex justify-content-between">
                 <div>
                     <a href="index" class="logo logo-dark">
                         <span class="logo-sm">
@@ -10,65 +40,57 @@
                         </span>
                         <span class="logo-lg">
                             <img src="{{ URL::asset('images/Logo_MPS.png') }}" alt="" height="17">
-                            <span class="ms-1 text-dark fw-bold">MPSOnline</span>
+                            <span class="ms-3 text-dark fw-bold">MPSOnline</span>
                         </span>
                     </a>
 
                     <a href="index" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="{{ URL::asset('images/Logo_MPS.png') }}" alt="" height="22">
+                            <img src="{{ URL::asset('images/Logo_MPS.png') }}" alt="" height="25">
                         </span>
                         <span class="logo-lg text-white">
-                            <img src="{{ URL::asset('images/Logo_MPS.png') }}" alt="" height="25">
-                            <span class="ms-1">MPSOnline</span>
+                            <img src="{{ URL::asset('images/Logo_MPS.png') }}" alt="" height="38">
+                            <span class="ms-3 fs-3">MPSOnline</span>
                         </span>
                     </a>
                 </div>
                 <button type="button"
-                    class="btn btn-sm font-size-16 header-item waves-effect text-white d-md-block d-none"
+                    class="btn btn-sm font-size-16 header-item waves-effect text-white d-sm-none d-none"
                     id="vertical-menu-btn-close">
                     <i class="fa fa-fw fa-bars"></i>
                 </button>
             </div>
-            <button type="button" class="btn btn-sm font-size-16 header-item waves-effect d-md-none"
+            <button type="button"
+                class="btn btn-sm font-size-16 header-item waves-effect d-none d-sm-none d-md-none d-lg-block"
                 id="vertical-menu-btn-open">
                 <i class="fa fa-fw fa-bars"></i>
             </button>
 
 
             <!-- App Search-->
+<<<<<<< HEAD
 
+=======
+            <form class="ms-3 app-search d-none d-lg-block">
+                <div class="position-relative">
+                    <input type="text" class="form-control" placeholder="@lang('translation.Search')">
+                    <button class="btn" style="background: #5156BE;">
+                        <span class="bx bx-search-alt"></span>
+                    </button>
+                </div>
+            </form>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
         </div>
 
         <div class="d-flex">
 
-            <div class="dropdown d-inline-block d-lg-none ms-2">
-                <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
-                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="mdi mdi-magnify"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-                    aria-labelledby="page-header-search-dropdown">
-
-                    <form class="p-3">
-                        <div class="form-group m-0">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="@lang('translation.Search')"
-                                    aria-label="Search input">
-
-                                <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
             @if (Auth::user()->kategori_sekolah == 'super_admin')
-                <div class="dropdown d-inline-block">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary d-block mt-3 text-white fw-bold " data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Change Role
+                <div class="dropdown d-inline-flex">
+
+                    <button type="button" class="badge header-item fw-bold me-3"
+                        id="page-header-notifications-dropdown" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        aria-haspopup="true" aria-expanded="false">
+                        Change role
                     </button>
 
                     <!-- Modal -->
@@ -110,7 +132,7 @@
                 </div>
             @endif
 
-            <div class="dropdown d-inline-block">
+            <div class="dropdown d-none d-xl-inline-block">
                 <button type="button" class="btn header-item noti-icon waves-effect"
                     id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
@@ -204,18 +226,14 @@
             </div>
 
             <div class="dropdown d-inline-block">
-                <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-                    <i class="bx bx-cog bx-spin"></i>
-                </button>
-            </div>
-
-            <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="d-none d-xl-inline-block ms-1"
+                        key="t-henry">{{ ucfirst(Auth::user()->name) }}</span>
                     <img class="rounded-circle header-profile-user"
                         src="{{ isset(Auth::user()->avatar) ? asset(Auth::user()->avatar) : asset('/build/images/users/avatar-1.jpg') }}"
                         alt="Header Avatar">
-                    <span class="d-none d-xl-inline-block ms-1"
+                    <span class=" d-xl-none d-md-inline-block ms-1"
                         key="t-henry">{{ ucfirst(Auth::user()->name) }}</span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
@@ -237,6 +255,103 @@
                     </form>
                 </div>
             </div>
+
+            <div class="dropdown d-inline-block d-xl-none">
+                <button type="button" class="btn header-item noti-icon waves-effect"
+                    id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class='bx bx-bell bx-tada-hover' style='color:#ffffff'></i>
+                    <span class="badge bg-danger rounded-pill">3</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 text-dark"
+                    aria-labelledby="page-header-notifications-dropdown">
+                    <div class="p-3">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h6 class="m-0" key="t-notifications"> @lang('translation.Notifications') </h6>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#!" class="small" key="t-view-all"> @lang('translation.View_All')</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-simplebar style="max-height: 230px;">
+                        <a href="" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <div class="avatar-xs me-3">
+                                    <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                        <i class="bx bx-cart"></i>
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mt-0 mb-1" key="t-your-order">@lang('translation.Your_order_is_placed')</h6>
+                                    <div class="font-size-12 text-muted">
+                                        <p class="mb-1" key="t-grammer">@lang('translation.If_several_languages_coalesce_the_grammar')</p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                key="t-min-ago">@lang('translation.3_min_ago')</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <img src="{{ URL::asset('/build/images/users/avatar-3.jpg') }}"
+                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                <div class="flex-grow-1">
+                                    <h6 class="mt-0 mb-1">@lang('translation.James_Lemire')</h6>
+                                    <div class="font-size-12 text-muted">
+                                        <p class="mb-1" key="t-simplified">@lang('translation.It_will_seem_like_simplified_English')</p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                key="t-hours-ago">@lang('translation.1_hours_ago')</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <div class="avatar-xs me-3">
+                                    <span class="avatar-title bg-success rounded-circle font-size-16">
+                                        <i class="bx bx-badge-check"></i>
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mt-0 mb-1" key="t-shipped">@lang('translation.Your_item_is_shipped')</h6>
+                                    <div class="font-size-12 text-muted">
+                                        <p class="mb-1" key="t-grammer">@lang('translation.If_several_languages_coalesce_the_grammar')</p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                key="t-min-ago">@lang('translation.3_min_ago')</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <img src="{{ URL::asset('/build/images/users/avatar-4.jpg') }}"
+                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                <div class="flex-grow-1">
+                                    <h6 class="mt-0 mb-1">@lang('translation.Salena_Layfield')</h6>
+                                    <div class="font-size-12 text-muted">
+                                        <p class="mb-1" key="t-occidental">@lang('translation.As_a_skeptical_Cambridge_friend_of_mine_occidental')</p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                key="t-hours-ago">@lang('translation.1_hours_ago')</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-2 border-top d-grid">
+                        <a class="btn btn-sm btn-link font-size-14 text-center text-primary"
+                            href="javascript:void(0)">
+                            <i class="mdi mdi-arrow-right-circle me-1"></i> <span
+                                key="t-view-more">@lang('translation.View_More')</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
 </header>

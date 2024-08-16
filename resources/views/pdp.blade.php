@@ -201,43 +201,31 @@
                 <table class="table table-borderless">
                     <tr>
                         <td width="20px">1.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Mengendalikan Pdp mata pelajaran yang ditetapkan antara enam (6) hingga lapan (8) waktu seminggu bagi jadual 30 minit satu (1) waktu</td>
                     </tr>
                     <tr>
                         <td>2.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Memahami, menghayati dan mengamalkan sehendak sukatan pelajaran dan melaksanakan pentaksian PdP dan mengambil tindakan susulan yang sewajarnya</td>
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Bertanggungjawab terhadap pembangunan sahsiah dan disiplin murid</td>
                     </tr>
                     <tr>
                         <td>4.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menjadi guru penasihat kepada aktiviti kokurikulum</td>
                     </tr>
                     <tr>
                         <td>5.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>PGB boleh melantik Guru Penyelaras Bestari memegang portfolio tanpa jawatan dan mengganggotai jawatankuasa-jawatankuasa sekiranya ada keperluan</td>
                     </tr>
                     <tr>
                         <td>6.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Guru-guru boleh ditugaskan secara bergilir mengawas kelakuan dan sekelamatan murid apabila ada aktiviti di luar sekolah seperti di masjid, kompleks sukan, tempat-tempat lawatan dan sebagainya</td>
                     </tr>
                     <tr>
                         <td>7.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                    </tr>
-                    <tr>
-                        <td>8.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                    </tr>
-                    <tr>
-                        <td>9.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                    </tr>
-                    <tr>
-                        <td>10.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Melaksanakan tugas lain yang diarahkan oleh PGB/pentabir dari semasa ke semasa</td>
                     </tr>
                 </table>
             @endif

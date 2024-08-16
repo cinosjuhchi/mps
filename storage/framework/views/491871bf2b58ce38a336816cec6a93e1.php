@@ -145,18 +145,70 @@
                     <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class='bx bxs-directions'></i>
-                            <span key="t-dashboards"><?php echo app('translator')->get('Pengurusan Komponen'); ?></span>
+                            <span key="t-dashboards"><?php echo app('translator')->get('komponen new'); ?></span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            
-                            
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <span key="t-dashboards"><?php echo app('translator')->get('Pengurusan dan Pentadbiran'); ?></span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="pengurusan-dan-pentadbiran-komponen"
+                                            key="t-tui-calendar"><?php echo app('translator')->get('komponen'); ?></a></li>
                                     <li><a href="pengurusan-dan-pentadbiran-jk-jp"
-                                            key="t-tui-calendar"><?php echo app('translator')->get('Sub Komponen'); ?></a></li>
+                                            key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa'); ?></a></li>
+                                    <li><a href="program-pengurusan-dan-pentadbiran"
+                                            key="t-tui-calendar"><?php echo app('translator')->get('Aktviti &Program'); ?></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards"><?php echo app('translator')->get('Kurikulum'); ?></span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="kurikulum-komponen" key="t-tui-calendar"><?php echo app('translator')->get('Komponen'); ?></a></li>
+                                    <li><a href="kurikulum-jk-jp" key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa'); ?></a></li>
+                                    <li><a href="program-kurikulum" key="t-tui-calendar"><?php echo app('translator')->get('Aktiviti & Program'); ?></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards"><?php echo app('translator')->get('Hal Ehwal Murid'); ?></span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="hal-ehwal-murid-komponen" key="t-tui-calendar"><?php echo app('translator')->get('Komponen'); ?></a>
+                                    <li><a href="hal-ehwal-murid-jk-jp" key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa'); ?></a>
+                                    </li>
+                                    <li><a href="program-hal-ehwal-murid" key="t-tui-calendar"><?php echo app('translator')->get('Aktiviti & Program'); ?></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards"><?php echo app('translator')->get('Kokurikulum'); ?></span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="kokurikulum-komponen" key="t-tui-calendar"><?php echo app('translator')->get('Komponen'); ?></a></li>
+                                    <li><a href="kokurikulum-jk-jp" key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa'); ?></a></li>
+                                    <li><a href="program-kokurikulum" key="t-tui-calendar"><?php echo app('translator')->get('Aktiviti & Program'); ?></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="imbangan-tugas" key="t-tui-calendar"><?php echo app('translator')->get('Imbangan Tugas'); ?></a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class='bx bxs-directions'></i>
+                            <span key="t-dashboards"><?php echo app('translator')->get('Pengurusan Komponen'); ?></span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="copk" key="t-tui-calendar"><?php echo app('translator')->get('Carta Organisasi Pengurusan Komponen (COPK)'); ?></a></li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards"><?php echo app('translator')->get('Komponen Pengurusan dan Pentadbiran'); ?></span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="pengurusan-dan-pentadbiran-jk-jp"
                                             key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)'); ?></a></li>
                                     <li><a href="program-pengurusan-dan-pentadbiran"
@@ -165,7 +217,7 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <span key="t-dashboards"><?php echo app('translator')->get('Kurikulum'); ?></span>
+                                    <span key="t-dashboards"><?php echo app('translator')->get('Komponen Kurikulum'); ?></span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="kurikulum-jk-jp" key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)'); ?></a></li>
@@ -174,7 +226,7 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <span key="t-dashboards"><?php echo app('translator')->get('Hal Ehwal Murid'); ?></span>
+                                    <span key="t-dashboards"><?php echo app('translator')->get('Komponen Hal Ehwal Murid'); ?></span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="hal-ehwal-murid-jk-jp" key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)'); ?></a>
@@ -185,7 +237,7 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <span key="t-dashboards"><?php echo app('translator')->get('Kokurikulum'); ?></span>
+                                    <span key="t-dashboards"><?php echo app('translator')->get('Komponen Kokurikulum'); ?></span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="kokurikulum-jk-jp" key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)'); ?></a></li>

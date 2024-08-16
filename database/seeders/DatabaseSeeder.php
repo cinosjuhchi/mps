@@ -23,7 +23,10 @@ class DatabaseSeeder extends Seeder
             'avatar' => 'images/avatar-1.jpg',
             'jawatan_app' => 0,
             'jawatan_sekolah' => 'Guru Besar',
+<<<<<<< HEAD
             'kategori_sekolah' => 'super_admin',
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
             'telp' => '081829891888'
         ]);
         User::create([

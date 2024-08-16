@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <footer class="footer" style="position: fixed;z-index: 999;">
+=======
+<footer class="footer">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6">
