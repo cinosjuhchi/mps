@@ -1,5 +1,5 @@
 <!-- ========== Left Sidebar Start ========== -->
-<div class="vertical-menu d-lg-block d-sm-none position-fixed">
+<div class="vertical-menu d-lg-block d-md-none ">
 
     <div data-simplebar class="h-100">
 

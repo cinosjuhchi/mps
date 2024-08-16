@@ -21,7 +21,7 @@
 <script src="{{ URL::asset('build/libs/simplebar/simplebar.min.js') }}"></script>
 <script src="{{ URL::asset('build/libs/node-waves/waves.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 
 <script>
     $('#change-password').on('submit', function(event) {

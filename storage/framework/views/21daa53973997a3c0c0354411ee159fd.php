@@ -48,7 +48,7 @@
     <?php echo $__env->make('layouts.right-sidebar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <!-- /Right-bar -->
 
-    <div class="d-lg-none d-sm-block">
+    <div class="d-lg-none d-md-block">
         <?php echo $__env->make('layouts.bottom-nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </div>
 

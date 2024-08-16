@@ -10,7 +10,6 @@
     @endsection
 
     @section('content')
-
         <div class="account-pages my-5 pt-5">
             <div class="container">
                 <div class="row">
@@ -33,5 +32,4 @@
                 </div>
             </div>
         </div>
-
     @endsection

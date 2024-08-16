@@ -39,17 +39,17 @@
                         </span>
                         <span class="logo-lg">
                             <img src="{{ URL::asset('images/Logo_MPS.png') }}" alt="" height="17">
-                            <span class="ms-1 text-dark fw-bold">MPSOnline</span>
+                            <span class="ms-3 text-dark fw-bold">MPSOnline</span>
                         </span>
                     </a>
 
                     <a href="index" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="{{ URL::asset('images/Logo_MPS.png') }}" alt="" height="22">
+                            <img src="{{ URL::asset('images/Logo_MPS.png') }}" alt="" height="25">
                         </span>
                         <span class="logo-lg text-white">
-                            <img src="{{ URL::asset('images/Logo_MPS.png') }}" alt="" height="25">
-                            <span class="ms-1">MPSOnline</span>
+                            <img src="{{ URL::asset('images/Logo_MPS.png') }}" alt="" height="38">
+                            <span class="ms-3 fs-3">MPSOnline</span>
                         </span>
                     </a>
                 </div>

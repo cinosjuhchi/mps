@@ -55,7 +55,7 @@
     @include('layouts.right-sidebar')
     <!-- /Right-bar -->
 
-    <div class="d-lg-none d-sm-block">
+    <div class="d-lg-none d-md-block">
         @include('layouts.bottom-nav')
     </div>
 

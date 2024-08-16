@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('title'); ?>
     <?php echo app('translator')->get('translation.Error_404'); ?>
 <?php $__env->stopSection(); ?>
@@ -10,7 +8,6 @@
     <?php $__env->stopSection(); ?>
 
     <?php $__env->startSection('content'); ?>
-
         <div class="account-pages my-5 pt-5">
             <div class="container">
                 <div class="row">
@@ -33,7 +30,6 @@
                 </div>
             </div>
         </div>
-
     <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.master-without-nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\mps\resources\views/errors/404.blade.php ENDPATH**/ ?>
