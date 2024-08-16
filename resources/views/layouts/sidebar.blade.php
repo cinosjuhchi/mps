@@ -171,18 +171,17 @@
                             <span key="t-dashboards">@lang('komponen new')</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            <<<<<<< HEAD {{-- <li><a href="copk" key="t-tui-calendar">@lang('Komponen')</a></li> --}} {{-- <li><a href="copk" key="t-tui-calendar">@lang('Carta Organisasi Pengurusan Komponen (COPK)')</a></li> --}} <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <span key="t-dashboards">@lang('Pengurusan dan Pentadbiran')</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="pengurusan-dan-pentadbiran-komponen"
-                                            key="t-tui-calendar">@lang('komponen')</a></li>
-                                    <li><a href="pengurusan-dan-pentadbiran-jk-jp"
-                                            key="t-tui-calendar">@lang('Jawatankuasa')</a></li>
-                                    <li><a href="program-pengurusan-dan-pentadbiran"
-                                            key="t-tui-calendar">@lang('Aktviti &Program')</a></li>
-                                </ul>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <span key="t-dashboards">@lang('Pengurusan dan Pentadbiran')</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="pengurusan-dan-pentadbiran-komponen"
+                                        key="t-tui-calendar">@lang('komponen')</a></li>
+                                <li><a href="pengurusan-dan-pentadbiran-jk-jp"
+                                        key="t-tui-calendar">@lang('Jawatankuasa')</a></li>
+                                <li><a href="program-pengurusan-dan-pentadbiran"
+                                        key="t-tui-calendar">@lang('Aktviti &Program')</a></li>
+                            </ul>
                     </li>
                     <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -234,27 +233,24 @@
                         <ul class="sub-menu" aria-expanded="false">
                             <li><a href="pengurusan-dan-pentadbiran-jk-jp" key="t-tui-calendar">@lang('Sub Komponen')</a>
                             </li>
-                            <li><a href="pengurusan-dan-pentadbiran-jk-jp"=======<li><a href="copk"
-                                        key="t-tui-calendar">@lang('Carta Organisasi Pengurusan Komponen (COPK)')</a></li>
+                            <li><a href="pengurusan-dan-pentadbiran-jk-jpli><a href="copk"
+                                    key="t-tui-calendar">@lang('Carta Organisasi Pengurusan Komponen (COPK)')</a></li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <span key="t-dashboards">@lang('Komponen Pengurusan dan Pentadbiran')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="pengurusan-dan-pentadbiran-jk-jp">>>>>>> 185e933 (fix: accordion
-                                            color, remove action column, and table background)
-                                            key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a></li>
+                                    <li><a href="pengurusan-dan-pentadbiran-jk-jp">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a></li>
                                     <li><a href="program-pengurusan-dan-pentadbiran"
                                             key="t-tui-calendar">@lang('Program')</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <<<<<<< HEAD <span key="t-dashboards">@lang('Kurikulum')</span>
-                                        =======
-                                        <span key="t-dashboards">@lang('Komponen Kurikulum')</span>
-                                        >>>>>>> 185e933 (fix: accordion color, remove action column, and table
-                                        background)
+                                    <span key="t-dashboards">@lang('Kurikulum')</span>
+
+                                    <span key="t-dashboards">@lang('Komponen Kurikulum')</span>
+
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="kurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a></li>
@@ -264,11 +260,8 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <<<<<<< HEAD <span key="t-dashboards">@lang('Hal Ehwal Murid')</span>
-                                        =======
-                                        <span key="t-dashboards">@lang('Komponen Hal Ehwal Murid')</span>
-                                        >>>>>>> 185e933 (fix: accordion color, remove action column, and table
-                                        background)
+                                    <span key="t-dashboards">@lang('Hal Ehwal Murid')</span>
+                                    <span key="t-dashboards">@lang('Komponen Hal Ehwal Murid')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="hal-ehwal-murid-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a>
@@ -279,11 +272,8 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <<<<<<< HEAD <span key="t-dashboards">@lang('Kokurikulum')</span>
-                                        =======
-                                        <span key="t-dashboards">@lang('Komponen Kokurikulum')</span>
-                                        >>>>>>> 185e933 (fix: accordion color, remove action column, and table
-                                        background)
+                                    <span key="t-dashboards">@lang('Kokurikulum')</span>
+                                    <span key="t-dashboards">@lang('Komponen Kokurikulum')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="kokurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a>
@@ -356,10 +346,10 @@
                     <li class="menu-title" key="t-pages">@lang('Tindakan')</li>
 
                     <li>
-                        <<<<<<< HEAD <a href="profilku" key="t-default">
+                        <a href="profilku" key="t-default">
                             <i class='bx bxs-user'></i>
                             <span>@lang('Profilku')</span>
-                            </a>
+                        </a>
                     </li>
 
                     <li>
@@ -367,7 +357,6 @@
                             <i class='bx bxs-user-plus'></i>
                             <span>@lang('Senarai Pengguna')</span>
                         </a>
-                        =======
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class='bx bxs-cog'></i>
                             <span key="t-authentication">@lang('Tetapan')</span>
@@ -376,7 +365,6 @@
                             <li><a href="tema" key="t-login">@lang('Tema')</a></li>
                             <li><a href="imej-latar-belakang" key="t-login">@lang('Imej Latar Belakang')</a></li>
                         </ul>
-                        >>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                     </li>
 
                     @if (Auth::user()->jawatan_app == 0 or Auth::user()->jawatan_app == 1)
