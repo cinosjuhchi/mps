@@ -1,5 +1,5 @@
 <!-- ========== Left Sidebar Start ========== -->
-<div class="vertical-menu">
+<div class="vertical-menu d-lg-block d-md-none ">
 
     <div data-simplebar class="h-100">
 
@@ -131,17 +131,13 @@
                             <span key="t-dashboards"><?php echo app('translator')->get('Guru dan Kakitangan'); ?></span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="senarai-guru-dan-kakitangan" key="t-full-calendar"><?php echo app('translator')->get('Senarai Guru dan Kakitangan'); ?></a></li>
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <span key="t-dashboards"><?php echo app('translator')->get('Senarai Pekerja Swasta'); ?></span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="senarai-pengawal-keselamatan" key="t-full-calendar"><?php echo app('translator')->get('Senarai Pengawal Keselamatan'); ?></a></li>
-                                    <li><a href="senarai-pekerja-kebersihan" key="t-full-calendar"><?php echo app('translator')->get('Senarai Pekerja Kebersihan'); ?></a></li>
-                                    <li><a href="senarai-pekerja-kantin" key="t-full-calendar"><?php echo app('translator')->get('Senarai Pekerja Kantin'); ?></a></li>
-                                </ul>
+                            <li><a href="cops" key="t-tui-calendar"><?php echo app('translator')->get('Carta Organisasi Pengurusan Sekolah (COPS)'); ?></a></li>
+                            <li><a href="senarai-guru-dan-kakitangan" key="t-full-calendar"><?php echo app('translator')->get('Senarai Guru dan Kakitangan'); ?></a>
                             </li>
+                            <li><a href="senarai-pengawal-keselamatan" key="t-full-calendar"><?php echo app('translator')->get('Senarai Pengawal Keselamatan'); ?></a>
+                            </li>
+                            <li><a href="senarai-pekerja-kebersihan" key="t-full-calendar"><?php echo app('translator')->get('Senarai Pekerja Kebersihan'); ?></a></li>
+                            <li><a href="senarai-pekerja-kantin" key="t-full-calendar"><?php echo app('translator')->get('Senarai Pekerja Kantin'); ?></a></li>
                             <li><a href="polisi-angkat" key="t-full-calendar"><?php echo app('translator')->get('Polisi Angkat'); ?></a></li>
                         </ul>
                     </li>
@@ -319,7 +315,7 @@
 
                 <li>
                     <a href="senarai-pengguna" key="t-default">
-                        <i class='bx bxs-user-plus' ></i>
+                        <i class='bx bxs-user-plus'></i>
                         <span><?php echo app('translator')->get('Senarai Pengguna'); ?></span>
                     </a>
                 </li>

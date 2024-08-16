@@ -85,7 +85,7 @@
     </div>
 
     <?php if(Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1): ?>
-        
+
         <div class="row">
             <div class="col-xl-3 col-md-6">
                 <div class="card card-h-100 shadow-none border border-secondary border-opacity-25 text-bg-primary">
@@ -281,12 +281,12 @@
                 </div>
             </div>
         </div>
-        
 
-        
+
+
         <div class="row">
             <div class="col-md-9">
-                
+
                 <div class="table-responsive">
                     <table class="table bg-white table-bordered table-borderless">
                         <thead class="table-dark">
@@ -329,9 +329,9 @@
                         <a href="<?php echo e(url()->current()); ?>?page=<?php echo e($i); ?>" class="btn mx-1 <?php echo e($i == $page ? 'btn-dark' : 'btn-light border border-secondary'); ?>"><?php echo e($i); ?></a>
                     <?php endfor; ?>
                 </div>
-                
 
-                
+
+
                 <div class="card border border-opacity-10 border-secondary">
                     <div class="card-header text-bg-dark">
                         <div class="d-flex justify-content-between align-items-center">
@@ -345,7 +345,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-3">
                 <div class="table-responsive">
                     <table class="table bg-white table-bordered">
@@ -388,9 +388,9 @@
                 </div>
             </div>
         </div>
-        
+
     <?php elseif(Auth::user()->jawatan_app == 0): ?>
-        
+
         <div class="row">
             <div class="col-xl-3 col-md-6">
                 <div class="card card-h-100 shadow-none border border-secondary border-opacity-25 text-bg-primary">
@@ -442,10 +442,10 @@
             </div>
         </div>
 
-        
+
         <h3 class="card-title my-4">Statistik Perbandingan Status Akaun</h3>
 
-        
+
         <div class="row">
             <div class="col">
                 <div class="card">
@@ -461,7 +461,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col">
                 <div class="card">
@@ -525,9 +525,8 @@
                 </div>
             </div>
         </div>
-        
-    <?php endif; ?>
 
+    <?php endif; ?>
     <script>
         function toggleLabel(checkboxId) {
             var label = document.getElementById("label" + checkboxId.slice(-1));

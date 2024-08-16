@@ -1,8 +1,37 @@
-<header id="page-topbar">
+<style>
+    @media (max-width: 1024px) {
+        #page-topbar {
+            background-color: #5156be;
+        }
+
+        #page-topbar .navbar-header .navbar-brand-box .logo-sm img,
+        #page-topbar .navbar-header .navbar-brand-box .logo-lg img,
+        #page-topbar .navbar-header .navbar-brand-box .text-dark,
+        #page-topbar .navbar-header .navbar-brand-box .text-white,
+        #page-topbar .navbar-header .badge,
+        #page-topbar .navbar-header .btn,
+        #page-topbar .dropdown-menu,
+        #page-topbar .header-item {
+            color: white;
+        }
+
+        #page-topbar .dropdown .badge {
+            background: transparent;
+            border: none;
+        }
+
+        #page-topbar .dropdown .badge:hover,
+        #page-topbar .dropdown .badge:focus {
+            background: transparent;
+            color: white;
+        }
+    }
+</style>
+<header id="page-topbar" class="">
     <div class="navbar-header">
         <div class="d-flex">
             <!-- LOGO -->
-            <div class="navbar-brand-box d-flex justify-content-between" style="height: 74px;">
+            <div class="navbar-brand-box d-flex justify-content-between">
                 <div>
                     <a href="index" class="logo logo-dark">
                         <span class="logo-sm">
@@ -10,27 +39,28 @@
                         </span>
                         <span class="logo-lg">
                             <img src="<?php echo e(URL::asset('images/Logo_MPS.png')); ?>" alt="" height="17">
-                            <span class="ms-1 text-dark fw-bold">MPSOnline</span>
+                            <span class="ms-3 text-dark fw-bold">MPSOnline</span>
                         </span>
                     </a>
 
                     <a href="index" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="<?php echo e(URL::asset('images/Logo_MPS.png')); ?>" alt="" height="22">
+                            <img src="<?php echo e(URL::asset('images/Logo_MPS.png')); ?>" alt="" height="25">
                         </span>
                         <span class="logo-lg text-white">
-                            <img src="<?php echo e(URL::asset('images/Logo_MPS.png')); ?>" alt="" height="25">
-                            <span class="ms-1">MPSOnline</span>
+                            <img src="<?php echo e(URL::asset('images/Logo_MPS.png')); ?>" alt="" height="38">
+                            <span class="ms-3 fs-3">MPSOnline</span>
                         </span>
                     </a>
                 </div>
                 <button type="button"
-                    class="btn btn-sm font-size-16 header-item waves-effect text-white d-md-block d-none"
+                    class="btn btn-sm font-size-16 header-item waves-effect text-white d-sm-none d-none"
                     id="vertical-menu-btn-close">
                     <i class="fa fa-fw fa-bars"></i>
                 </button>
             </div>
-            <button type="button" class="btn btn-sm font-size-16 header-item waves-effect d-md-none"
+            <button type="button"
+                class="btn btn-sm font-size-16 header-item waves-effect d-none d-sm-none d-md-none d-lg-block"
                 id="vertical-menu-btn-open">
                 <i class="fa fa-fw fa-bars"></i>
             </button>
@@ -42,33 +72,13 @@
 
         <div class="d-flex">
 
-            <div class="dropdown d-inline-block d-lg-none ms-2">
-                <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
-                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="mdi mdi-magnify"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-                    aria-labelledby="page-header-search-dropdown">
+            <?php if (Auth::user()->kategori_sekolah == 'super_admin'): ?>
+                <div class="dropdown d-inline-flex">
 
-                    <form class="p-3">
-                        <div class="form-group m-0">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="<?php echo app('translator')->get('translation.Search'); ?>"
-                                    aria-label="Search input">
-
-                                <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <?php if(Auth::user()->kategori_sekolah == 'super_admin'): ?>
-                <div class="dropdown d-inline-block">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary d-block mt-3 text-white fw-bold " data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Change Role
+                    <button type="button" class="badge header-item fw-bold me-3"
+                        id="page-header-notifications-dropdown" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        aria-haspopup="true" aria-expanded="false">
+                        Change role
                     </button>
 
                     <!-- Modal -->
@@ -90,11 +100,11 @@
                                     <div class="modal-body bg-white">
                                         <label for="jawatan_app" class="form-label">Pilih Role</label>
                                         <select name="jawatan_app" id="jawatan_app" class="form-select">
-                                            <option value="0" <?php if(Auth::user()->jawatan_app == 0): ?> selected <?php endif; ?>>
+                                            <option value="0" <?php if (Auth::user()->jawatan_app == 0): ?> selected <?php endif; ?>>
                                                 Superadmin Back Ofiice</option>
-                                            <option value="3" <?php if(Auth::user()->jawatan_app == 3): ?> selected <?php endif; ?>>
+                                            <option value="3" <?php if (Auth::user()->jawatan_app == 3): ?> selected <?php endif; ?>>
                                                 Sekolah Menengah Kebangsaan Pinggiran Cyberjaya</option>
-                                            <option value="2" <?php if(Auth::user()->jawatan_app == 2): ?> selected <?php endif; ?>>
+                                            <option value="2" <?php if (Auth::user()->jawatan_app == 2): ?> selected <?php endif; ?>>
                                                 Sekolah Rendah Sri Angkasa</option>
                                         </select>
                                     </div>
@@ -110,7 +120,7 @@
                 </div>
             <?php endif; ?>
 
-            <div class="dropdown d-inline-block">
+            <div class="dropdown d-none d-xl-inline-block">
                 <button type="button" class="btn header-item noti-icon waves-effect"
                     id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
@@ -204,18 +214,14 @@
             </div>
 
             <div class="dropdown d-inline-block">
-                <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-                    <i class="bx bx-cog bx-spin"></i>
-                </button>
-            </div>
-
-            <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="d-none d-xl-inline-block ms-1"
+                        key="t-henry"><?php echo e(ucfirst(Auth::user()->name)); ?></span>
                     <img class="rounded-circle header-profile-user"
                         src="<?php echo e(isset(Auth::user()->avatar) ? asset(Auth::user()->avatar) : asset('/build/images/users/avatar-1.jpg')); ?>"
                         alt="Header Avatar">
-                    <span class="d-none d-xl-inline-block ms-1"
+                    <span class=" d-xl-none d-md-inline-block ms-1"
                         key="t-henry"><?php echo e(ucfirst(Auth::user()->name)); ?></span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
@@ -237,6 +243,103 @@
                     </form>
                 </div>
             </div>
+
+            <div class="dropdown d-inline-block d-xl-none">
+                <button type="button" class="btn header-item noti-icon waves-effect"
+                    id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class='bx bx-bell bx-tada-hover' style='color:#ffffff'></i>
+                    <span class="badge bg-danger rounded-pill">3</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 text-dark"
+                    aria-labelledby="page-header-notifications-dropdown">
+                    <div class="p-3">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h6 class="m-0" key="t-notifications"> <?php echo app('translator')->get('translation.Notifications'); ?> </h6>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#!" class="small" key="t-view-all"> <?php echo app('translator')->get('translation.View_All'); ?></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-simplebar style="max-height: 230px;">
+                        <a href="" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <div class="avatar-xs me-3">
+                                    <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                        <i class="bx bx-cart"></i>
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mt-0 mb-1" key="t-your-order"><?php echo app('translator')->get('translation.Your_order_is_placed'); ?></h6>
+                                    <div class="font-size-12 text-muted">
+                                        <p class="mb-1" key="t-grammer"><?php echo app('translator')->get('translation.If_several_languages_coalesce_the_grammar'); ?></p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                key="t-min-ago"><?php echo app('translator')->get('translation.3_min_ago'); ?></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <img src="<?php echo e(URL::asset('/build/images/users/avatar-3.jpg')); ?>"
+                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                <div class="flex-grow-1">
+                                    <h6 class="mt-0 mb-1"><?php echo app('translator')->get('translation.James_Lemire'); ?></h6>
+                                    <div class="font-size-12 text-muted">
+                                        <p class="mb-1" key="t-simplified"><?php echo app('translator')->get('translation.It_will_seem_like_simplified_English'); ?></p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                key="t-hours-ago"><?php echo app('translator')->get('translation.1_hours_ago'); ?></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <div class="avatar-xs me-3">
+                                    <span class="avatar-title bg-success rounded-circle font-size-16">
+                                        <i class="bx bx-badge-check"></i>
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mt-0 mb-1" key="t-shipped"><?php echo app('translator')->get('translation.Your_item_is_shipped'); ?></h6>
+                                    <div class="font-size-12 text-muted">
+                                        <p class="mb-1" key="t-grammer"><?php echo app('translator')->get('translation.If_several_languages_coalesce_the_grammar'); ?></p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                key="t-min-ago"><?php echo app('translator')->get('translation.3_min_ago'); ?></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <img src="<?php echo e(URL::asset('/build/images/users/avatar-4.jpg')); ?>"
+                                    class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                <div class="flex-grow-1">
+                                    <h6 class="mt-0 mb-1"><?php echo app('translator')->get('translation.Salena_Layfield'); ?></h6>
+                                    <div class="font-size-12 text-muted">
+                                        <p class="mb-1" key="t-occidental"><?php echo app('translator')->get('translation.As_a_skeptical_Cambridge_friend_of_mine_occidental'); ?></p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                key="t-hours-ago"><?php echo app('translator')->get('translation.1_hours_ago'); ?></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-2 border-top d-grid">
+                        <a class="btn btn-sm btn-link font-size-14 text-center text-primary"
+                            href="javascript:void(0)">
+                            <i class="mdi mdi-arrow-right-circle me-1"></i> <span
+                                key="t-view-more"><?php echo app('translator')->get('translation.View_More'); ?></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
 </header>
@@ -257,13 +360,17 @@
                         <label for="current_password">Current Password</label>
                         <input id="current-password" type="password"
                             class="form-control <?php $__errorArgs = ['current_password'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>"
+                                                $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+                                                if ($__bag->has($__errorArgs[0])) :
+                                                    if (isset($message)) {
+                                                        $__messageOriginal = $message;
+                                                    }
+                                                    $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+                                                                                                                if (isset($__messageOriginal)) {
+                                                                                                                    $message = $__messageOriginal;
+                                                                                                                }
+                                                                                                            endif;
+                                                                                                            unset($__errorArgs, $__bag); ?>"
                             name="current_password" autocomplete="current_password"
                             placeholder="Enter Current Password" value="<?php echo e(old('current_password')); ?>">
                         <div class="text-danger" id="current_passwordError" data-ajax-feedback="current_password">
@@ -274,13 +381,17 @@ unset($__errorArgs, $__bag); ?>"
                         <label for="newpassword">New Password</label>
                         <input id="password" type="password"
                             class="form-control <?php $__errorArgs = ['password'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" name="password"
+                                                $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+                                                if ($__bag->has($__errorArgs[0])) :
+                                                    if (isset($message)) {
+                                                        $__messageOriginal = $message;
+                                                    }
+                                                    $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+                                                                                                                if (isset($__messageOriginal)) {
+                                                                                                                    $message = $__messageOriginal;
+                                                                                                                }
+                                                                                                            endif;
+                                                                                                            unset($__errorArgs, $__bag); ?>" name="password"
                             autocomplete="new_password" placeholder="Enter New Password">
                         <div class="text-danger" id="passwordError" data-ajax-feedback="password"></div>
                     </div>

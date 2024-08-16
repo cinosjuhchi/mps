@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
+    <!-- PWA  -->
+    <meta name="theme-color" content="#6777ef" />
+    <link rel="apple-touch-icon" href="<?php echo e(URL::asset('logo.png')); ?>">
+    <link rel="manifest" href="<?php echo e(URL::asset('manifest.json')); ?>">
     <!-- App favicon -->
     <link rel="shortcut icon" href="<?php echo e(URL::asset('build/images/favicon.ico')); ?>">
     <?php echo $__env->make('layouts.head-css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
@@ -26,13 +30,15 @@
         <div class="main-content">
             <div class="page-content min-vh-100" style="background: #f3f3f3">
                 <div class="container-fluid">
-                    
+
                     <?php echo $__env->yieldContent('content'); ?>
                 </div>
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
-            <?php echo $__env->make('layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+            <div class="d-none d-xl-block">
+                <?php echo $__env->make('layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+            </div>
         </div>
         <!-- end main content-->
     </div>
@@ -42,8 +48,13 @@
     <?php echo $__env->make('layouts.right-sidebar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <!-- /Right-bar -->
 
+    <div class="d-lg-none d-md-block">
+        <?php echo $__env->make('layouts.bottom-nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    </div>
+
     <!-- JAVASCRIPT -->
     <?php echo $__env->make('layouts.vendor-scripts', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
 </body>
 
 </html>

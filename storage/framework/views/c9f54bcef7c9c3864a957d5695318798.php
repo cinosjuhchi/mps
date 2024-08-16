@@ -1,11 +1,30 @@
 <!-- JAVASCRIPT -->
+<script src="<?php echo e(URL::asset('sw.js')); ?>"></script>
+<script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").then(
+            (registration) => {
+                console.log("Service worker registration succeeded:", registration);
+            },
+            (error) => {
+                console.error(`Service worker registration failed: ${error}`);
+            },
+        );
+    } else {
+        console.error("Service workers are not supported.");
+    }
+</script>
+
 <script src="<?php echo e(URL::asset('build/libs/jquery/jquery.min.js')); ?>"></script>
 <script src="<?php echo e(URL::asset('build/libs/bootstrap/js/bootstrap.bundle.min.js')); ?>"></script>
 <script src="<?php echo e(URL::asset('build/libs/metismenu/metisMenu.min.js')); ?>"></script>
 <script src="<?php echo e(URL::asset('build/libs/simplebar/simplebar.min.js')); ?>"></script>
 <script src="<?php echo e(URL::asset('build/libs/node-waves/waves.min.js')); ?>"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+
 <script>
-    $('#change-password').on('submit',function(event){
+    $('#change-password').on('submit', function(event) {
         event.preventDefault();
         var Id = $('#data_id').val();
         var current_password = $('#current-password').val();
@@ -16,8 +35,8 @@
         $('#password_confirmError').text('');
         $.ajax({
             url: "<?php echo e(url('update-password')); ?>" + "/" + Id,
-            type:"POST",
-            data:{
+            type: "POST",
+            data: {
                 "current_password": current_password,
                 "password": password,
                 "password_confirmation": password_confirm,

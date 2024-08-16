@@ -40,6 +40,7 @@
 
     <!-- Right Sidebar -->
     @include('layouts.right-sidebar')
+    @include('layouts.bottom-nav')
     <!-- END Right Sidebar -->
 
     @include('layouts.vendor-scripts')
