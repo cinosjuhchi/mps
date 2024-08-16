@@ -59,7 +59,7 @@ class HomeController extends Controller
     {
         $jawatan_app = Auth::user()->jawatan_app;
 
-        if($jawatan_app == 0 or $jawatan_app == 1){
+        if ($jawatan_app == 0 or $jawatan_app == 1) {
             return view('dashboard');
         } else {
             return view('welcome');

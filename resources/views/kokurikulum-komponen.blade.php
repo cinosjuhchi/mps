@@ -764,12 +764,12 @@
                 {{-- level 2 end --}}
             </x-accordion.item>
 
-            <x-accordion.item collapseId="collapseOne-a5" parentId="accordionExample" title="A.5 Persekitaran dan Fizikal"
-                code="404/1">
+            <x-accordion.item collapseId="collapseOne-a5" parentId="accordionExample"
+                title="A.5 Persekitaran dan Fizikal" code="404/1">
                 {{-- body --}}
             </x-accordion.item>
-            <x-accordion.item collapseId="collapseOne-a6" parentId="accordionExample" title="A.6 Pembangunan Sumber Manusia"
-                code="404/1">
+            <x-accordion.item collapseId="collapseOne-a6" parentId="accordionExample"
+                title="A.6 Pembangunan Sumber Manusia" code="404/1">
                 {{-- body --}}
             </x-accordion.item>
             <x-accordion.item collapseId="collapseOne-a7" parentId="accordionExample" title="A.7 Perhubungan Luar"
