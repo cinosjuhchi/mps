@@ -19,11 +19,14 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     @if (Auth::user()->jawatan_app != 6)
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#create">
             <i class='bx bx-plus'></i> Tambah Cuti
         </button>
     @endif
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
     <div class="modal fade" id="create" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -106,7 +109,11 @@
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium text-white bg-primary bg-opacity-75" type="button"
+=======
+                            <button class="accordion-button fw-medium text-dark bg-white bg-opacity-75" type="button"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                 aria-controls="collapseOne">
                                 Januari
@@ -114,7 +121,11 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -123,9 +134,12 @@
                                             <th>Hari</th>
                                             <th>Cuti</th>
                                             <th>Negeri</th>
+<<<<<<< HEAD
                                             @if (Auth::user()->jawatan_app != 6)
                                                 <th>Action</th>
                                             @endif
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -134,6 +148,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>\
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -152,12 +167,15 @@
 
 
 
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>2 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -171,12 +189,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -191,12 +212,15 @@
                                                 @endif
                                             </td>
 
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>22 Jan</td>
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -210,12 +234,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -229,12 +256,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -248,6 +278,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -257,7 +289,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                 aria-expanded="false" aria-controls="collapseTwo">
                                 Februari
@@ -265,7 +301,11 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -285,6 +325,7 @@
                                             <td>Wed</td>
                                             <td class="text-danger">Federal Terirtory Day</td>
                                             <td>Kuala Lumpur, Labuan, & Putrajaya</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -298,6 +339,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -306,6 +349,7 @@
                                             <td class="text-danger">Thaipusam</td>
                                             <td>Johor, Kuala Lumpur, Negeri Sembilan, Penang, Perak, Putrajaya, & Selangor
                                             </td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -319,12 +363,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>6 Feb</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Thaipusam Holiday</td>
                                             <td>Kuala Lumpur, Negeri Sembilan, Penang, Perak, Putrajaya & Selangor</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -338,6 +385,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -345,6 +394,7 @@
                                             <td>Sat</td>
                                             <td class="text-danger">Israk and Mikeaj</td>
                                             <td>Kedah, Negeri Sembilan, Perlis & Terengganu </td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -358,6 +408,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
                                 </table>
@@ -366,7 +418,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                 aria-expanded="false" aria-controls="collapseThree">
                                 Mac
@@ -374,7 +430,11 @@
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -394,6 +454,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -407,6 +468,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -414,6 +477,7 @@
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -427,12 +491,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -446,6 +513,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -453,6 +522,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -466,12 +536,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -485,12 +558,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -504,6 +580,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -513,7 +591,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading4">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
                                 aria-expanded="false" aria-controls="collapse4">
                                 April
@@ -521,7 +603,11 @@
                         </h2>
                         <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -541,6 +627,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -554,6 +641,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -561,6 +650,7 @@
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -574,12 +664,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -593,6 +686,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -600,6 +695,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -613,12 +709,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -632,12 +731,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -651,6 +753,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -660,7 +764,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading5">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
                                 aria-expanded="false" aria-controls="collapse5">
                                 Mei
@@ -668,7 +776,11 @@
                         </h2>
                         <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -688,6 +800,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -701,6 +814,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -708,6 +823,7 @@
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -721,12 +837,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -740,6 +859,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -747,6 +868,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                             <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -760,12 +882,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -779,12 +904,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -798,6 +926,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -807,7 +937,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading6">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
                                 aria-expanded="false" aria-controls="collapse6">
                                 Jun
@@ -815,7 +949,11 @@
                         </h2>
                         <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -835,6 +973,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -848,6 +987,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -855,6 +996,7 @@
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -868,12 +1010,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -887,6 +1032,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -894,6 +1041,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -907,12 +1055,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                             <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -926,12 +1077,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -945,6 +1099,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -954,7 +1110,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading7">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapse7"
                                 aria-expanded="false" aria-controls="collapse7">
                                 Julai
@@ -962,7 +1122,11 @@
                         </h2>
                         <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -982,6 +1146,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -995,6 +1160,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1002,6 +1169,7 @@
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1015,12 +1183,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1034,6 +1205,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1041,6 +1214,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1054,12 +1228,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1073,12 +1250,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1092,6 +1272,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -1101,7 +1283,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading8">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapse8"
                                 aria-expanded="false" aria-controls="collapse8">
                                 Ogos
@@ -1109,7 +1295,11 @@
                         </h2>
                         <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -1129,6 +1319,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1142,6 +1333,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1149,6 +1342,7 @@
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1162,12 +1356,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1181,6 +1378,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1188,6 +1387,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1201,12 +1401,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1220,12 +1423,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1239,6 +1445,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -1248,7 +1456,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading9">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapse9"
                                 aria-expanded="false" aria-controls="collapse9">
                                 September
@@ -1256,7 +1468,11 @@
                         </h2>
                         <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -1276,6 +1492,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1289,6 +1506,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1296,6 +1515,7 @@
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1309,12 +1529,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1328,6 +1551,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1335,6 +1560,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1348,12 +1574,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1367,12 +1596,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1386,6 +1618,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -1395,7 +1629,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading10">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapse10"
                                 aria-expanded="false" aria-controls="collapse10">
                                 Oktober
@@ -1403,7 +1641,11 @@
                         </h2>
                         <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -1423,6 +1665,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1436,6 +1679,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1443,6 +1688,7 @@
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1456,12 +1702,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1475,6 +1724,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1482,6 +1733,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1495,12 +1747,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1514,12 +1769,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1533,6 +1791,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -1542,7 +1802,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading11">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapse11"
                                 aria-expanded="false" aria-controls="collapse11">
                                 November
@@ -1550,7 +1814,11 @@
                         </h2>
                         <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -1570,6 +1838,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
+<<<<<<< HEAD
                                             <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1583,6 +1852,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1590,6 +1861,7 @@
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1603,12 +1875,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1622,6 +1897,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1629,6 +1906,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1642,12 +1920,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1661,12 +1942,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1680,6 +1964,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -1689,7 +1975,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading12">
+<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
+=======
+                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapse12"
                                 aria-expanded="false" aria-controls="collapse12">
                                 Disember
@@ -1697,7 +1987,11 @@
                         </h2>
                         <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
                             data-bs-parent="#accordionExample">
+<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
+=======
+                            <div class="accordion-body bg-white table-responsive">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -1717,6 +2011,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1730,6 +2025,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1737,6 +2034,7 @@
                                             <td>Mon</td>
                                             <td class="text-danger">New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1750,12 +2048,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>14 Jan</td>
                                             <td>Sat</td>
                                             <td class="text-danger">YPDB Negeri Sembilan's Birthday</td>
                                             <td>Negeri Sembilan</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1769,6 +2070,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>
@@ -1776,6 +2079,7 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1789,12 +2093,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1808,12 +2115,15 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
+<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -1827,6 +2137,8 @@
                                                 </button>
                                                 @endif
                                             </td>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 

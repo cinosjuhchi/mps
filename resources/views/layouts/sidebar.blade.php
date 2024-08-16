@@ -7,20 +7,27 @@
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
             <ul class="metismenu list-unstyled" id="side-menu">
-                @if (Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1)
-                    <li>
-                        <a href="tetapan" class="waves-effect">
-                            <i class='bx bxs-cog'></i>
-                            <span key="t-chat">@lang('Tetapan')</span>
-                        </a>
-                    </li>
-                @endif
                 <li>
                     <a href="dashboard" class="waves-effect">
                         <i class='bx bxs-home'></i>
                         <span key="t-chat">@lang('Dashboard')</span>
                     </a>
                 </li>
+                @if (Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1)
+                    <li class="menu-title" key="t-menu">@lang('translation.Menu')</li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bxs-user-circle"></i>
+                            <span key="t-dashboards">@lang('User')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            @if (Auth::user()->jawatan_app == 2 or Auth::user()->jawatan_app == 3)
+                                <li><a href="senarai-pengguna" key="t-crypto">@lang('Senarai Pengguna')</a></li>
+                            @endif
+                        </ul>
+                    </li>
+                @endif
 
                 <li class="menu-title" key="t-apps">@lang('NAVIGASI')</li>
                 @if (Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1)
@@ -31,7 +38,6 @@
                             <span key="t-chat">Minda @if (Auth::user()->kategori_sekolah == 'sekolah_rendah' or Auth::user()->jawatan_app == '2')
                                     Guru Besar
                                 @else
-                                    Pengetua
                                 @endif
                             </span>
                         </a>
@@ -52,24 +58,31 @@
                             <li><a href="piagam-pelanggan" key="t-full-calendar">@lang('Piagam Pelanggan')</a></li>
                         @endif
                         @if (Auth::user()->jawatan_app == 0)
-                            <li><a href="ikrar-rukun-negara" key="t-full-calendar">@lang('Ikrar Rukun Negara')</a></li>
+                        <li><a href="ikrar-rukun-negara" key="t-full-calendar">@lang('Ikrar Rukun Negara')</a></li>
                         @endif
                         @if (Auth::user()->jawatan_app != 0)
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <span key="t-dashboards">@lang('Ikrar')</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="ikrar-rukun-negara" key="t-full-calendar">@lang('Ikrar Rukun Negara')</a></li>
-                                    <li><a href="ikrar-penjawat-awam" key="t-full-calendar">@lang('Ikrar Penjawat Awam')</a></li>
-                                    <li><a href="ikrar-guru" key="t-full-calendar">@lang('Ikrar Guru')</a></li>
-                                </ul>
-                            </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <span key="t-dashboards">@lang('Ikrar')</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="ikrar-rukun-negara" key="t-full-calendar">@lang('Ikrar Rukun Negara')</a></li>
+                                <li><a href="ikrar-penjawat-awam" key="t-full-calendar">@lang('Ikrar Penjawat Awam')</a></li>
+                                <li><a href="ikrar-guru" key="t-full-calendar">@lang('Ikrar Guru')</a></li>
+                            </ul>
+                        </li>
                         @endif
                         <li>
-                            <a href="logo-sekolah">
-                                <span key="t-dashboards">@lang('Logo Sekolah')</span>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <span key="t-dashboards">@lang('Logo')</span>
                             </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="logo-sekolah" key="t-tui-calendar">@lang('Logo Sekolah')</a></li>
+                                <li><a href="logo-jpn" key="t-tui-calendar">@lang('Logo JPN')</a></li>
+                                <li><a href="logo-kpm" key="t-tui-calendar">@lang('Logo KPM')</a></li>
+                                <li><a href="jata-negeri" key="t-tui-calendar">@lang('Jata Negeri')</a></li>
+                                <li><a href="jata-negara" key="t-tui-calendar">@lang('Jata Negara')</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -78,7 +91,7 @@
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="lagu-sekolah" key="t-tui-calendar">@lang('Lagu Sekolah')</a></li>
                                 <li><a href="lagu-guru-malaysia" key="t-tui-calendar">@lang('Lagu Guru Malaysia')</a></li>
-                                <li><a href="lagu-kebangsaan-negeri" key="t-tui-calendar">@lang('Lagu Kebangsaan Negeri')</a></li>
+                                <li><a href="lagu-kebangsaan-negeri" key="t-tui-calendar">@lang('Lagu Kebesaran Negeri')</a></li>
                                 <li><a href="lagu-negaraku" key="t-tui-calendar">@lang('Lagu Negaraku')</a></li>
                             </ul>
                         </li>
@@ -94,8 +107,8 @@
                                 </ul>
                             </li>
                             <li><a href="peta-susun-atur-premis" key="t-full-calendar">@lang('Peta Susun Atur Premis')</a></li>
+<<<<<<< HEAD
                             <li><a href="peta-lokasi" key="t-full-calendar">@lang('Peta Lokasi')</a></li>
-                        @endif
                     </ul>
                 </li>
 
@@ -105,6 +118,10 @@
                         <span key="t-dashboards">@lang('Takwim')</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
+<<<<<<< HEAD
+=======
+                        <li><a href="kalendar" key="t-tui-calendar">@lang('Kalendar')</a></li>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                         <li><a href="penggal-persekolahan" key="t-full-calendar">@lang('Penggal Persekolahan')</a></li>
                         @if (Auth::user()->jawatan_app != 0)
                             <li><a href="jadual-guru-bertugas-harian" key="t-full-calendar">@lang('Jadual Guru Bertugas Harian')</a>
@@ -148,6 +165,9 @@
                             <span key="t-dashboards">@lang('komponen new')</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
+<<<<<<< HEAD
+                            {{-- <li><a href="copk" key="t-tui-calendar">@lang('Komponen')</a></li> --}}
+                            {{-- <li><a href="copk" key="t-tui-calendar">@lang('Carta Organisasi Pengurusan Komponen (COPK)')</a></li> --}}
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <span key="t-dashboards">@lang('Pengurusan dan Pentadbiran')</span>
@@ -210,6 +230,17 @@
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="pengurusan-dan-pentadbiran-jk-jp"
+                                            key="t-tui-calendar">@lang('Sub Komponen')</a></li>
+                                    <li><a href="pengurusan-dan-pentadbiran-jk-jp"
+=======
+                            <li><a href="copk" key="t-tui-calendar">@lang('Carta Organisasi Pengurusan Komponen (COPK)')</a></li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards">@lang('Komponen Pengurusan dan Pentadbiran')</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="pengurusan-dan-pentadbiran-jk-jp"
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                             key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a></li>
                                     <li><a href="program-pengurusan-dan-pentadbiran"
                                             key="t-tui-calendar">@lang('Program')</a></li>
@@ -217,7 +248,11 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
+<<<<<<< HEAD
+                                    <span key="t-dashboards">@lang('Kurikulum')</span>
+=======
                                     <span key="t-dashboards">@lang('Komponen Kurikulum')</span>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="kurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a></li>
@@ -226,7 +261,11 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
+<<<<<<< HEAD
+                                    <span key="t-dashboards">@lang('Hal Ehwal Murid')</span>
+=======
                                     <span key="t-dashboards">@lang('Komponen Hal Ehwal Murid')</span>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="hal-ehwal-murid-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a>
@@ -237,7 +276,11 @@
                             </li>
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
+<<<<<<< HEAD
+                                    <span key="t-dashboards">@lang('Kokurikulum')</span>
+=======
                                     <span key="t-dashboards">@lang('Komponen Kokurikulum')</span>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="kokurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa Komponen (JK) dan Jawatan Pelaksana (JP)')</a></li>
@@ -307,6 +350,7 @@
                 <li class="menu-title" key="t-pages">@lang('Tindakan')</li>
 
                 <li>
+<<<<<<< HEAD
                     <a href="profilku" key="t-default">
                         <i class='bx bxs-user'></i>
                         <span>@lang('Profilku')</span>
@@ -318,6 +362,16 @@
                         <i class='bx bxs-user-plus' ></i>
                         <span>@lang('Senarai Pengguna')</span>
                     </a>
+=======
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class='bx bxs-cog'></i>
+                        <span key="t-authentication">@lang('Tetapan')</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="tema" key="t-login">@lang('Tema')</a></li>
+                        <li><a href="imej-latar-belakang" key="t-login">@lang('Imej Latar Belakang')</a></li>
+                    </ul>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                 </li>
 
                 @if (Auth::user()->jawatan_app == 0 or Auth::user()->jawatan_app == 1)

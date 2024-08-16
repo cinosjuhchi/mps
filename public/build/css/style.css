@@ -198,7 +198,10 @@ img.imej-tetapan:hover {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 #drop-area {
     border: 2px dashed #ccc;
     width: 100%;
@@ -218,6 +221,7 @@ img.imej-tetapan:hover {
     transform: translate(-50%, -50%);
 }
 
+<<<<<<< HEAD
 .imej-upload{
     display: none;
 }
@@ -227,10 +231,22 @@ img.imej-tetapan:hover {
 }
 
 .button-kumpulan{
+=======
+.imej-upload {
+    display: none;
+}
+
+.custom-upload {
+    background: blue;
+}
+
+.button-kumpulan {
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
     width: 170px;
     border-radius: 10px;
     border: none;
     height: 27px;
+<<<<<<< HEAD
     background-color: #92F6CA;
 }
 
@@ -318,3 +334,29 @@ color: #343a40;
     }
 }
 
+=======
+    background-color: #92f6ca;
+}
+
+.button-kumpulan:hover {
+    background-color: #79dbb0;
+}
+
+.color1 {
+    background-color: red;
+    width: 100px;
+    height: 80px;
+}
+
+.color2 {
+    background-color: grey;
+    width: 100px;
+    height: 80px;
+}
+
+.color3 {
+    background-color: black;
+    width: 100px;
+    height: 80px;
+}
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)

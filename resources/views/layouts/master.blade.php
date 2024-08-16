@@ -24,7 +24,11 @@
         <!-- Start right Content here -->
         <!-- ============================================================== -->
         <div class="main-content">
+<<<<<<< HEAD
             <div class="page-content">
+=======
+            <div class="page-content" style="background: #f3f3f3">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                 <div class="container-fluid">
                     {{-- @if (session('change-role-success'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">

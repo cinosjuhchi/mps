@@ -1,10 +1,8 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Jadual Guru Bertugas Harian'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('Jadual Guru Bertugas Harian')
-@endsection
-
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
@@ -18,7 +16,7 @@
             </div>
         </div>
     </div>
-    @if(Auth::user()->jawatan_app != 6)
+    <?php if(Auth::user()->jawatan_app != 6): ?>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#create">
         <i class='bx bx-plus'></i> Buat Jadual Guru
     </button>
@@ -26,9 +24,9 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
         <i class='bx bx-plus'></i> Tambah Bidang Tugas
     </button>
-    @endif
+    <?php endif; ?>
 
-    {{-- Modal Kumpulan 1 --}}
+    
     <div class="modal fade mt-3" id="kumpulan-1" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content">
@@ -98,7 +96,7 @@
         </div>
     </div>
 
-    {{-- Modal Kumpulan 2 --}}
+    
     <div class="modal fade mt-3" id="kumpulan-2" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content">
@@ -168,7 +166,7 @@
         </div>
     </div>
 
-    {{-- Modal Kumpulan 3 --}}
+    
     <div class="modal fade mt-3" id="kumpulan-3" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content">
@@ -238,7 +236,7 @@
         </div>
     </div>
 
-    {{-- Modal Kumpula 4 --}}
+    
     <div class="modal fade mt-3" id="kumpulan-4" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content">
@@ -308,7 +306,7 @@
         </div>
     </div>
 
-    {{-- Modal Kumpulan 5 --}}
+    
     <div class="modal fade mt-3" id="kumpulan-5" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content">
@@ -378,7 +376,7 @@
         </div>
     </div>
 
-    {{-- Modal Kumpulan 6 --}}
+    
     <div class="modal fade mt-3" id="kumpulan-6" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content">
@@ -564,28 +562,16 @@
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-<<<<<<< HEAD
-                            <button class="accordion-button fw-medium text-white bg-primary bg-opacity-75" type="button" data-bs-toggle="collapse"
-=======
                             <button class="accordion-button fw-medium text-dark bg-white bg-opacity-75" type="button" data-bs-toggle="collapse"
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Jadual Guru Bertugas Harian 1
                             </button>
                         </h2>
-<<<<<<< HEAD
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                            <div class="table-responsive">
-                                <table class="table mb-0  align-middle text-center" data-pattern="priority-columns">
-=======
                         <div id="collapseOne" class="accordion-collapse show collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body bg-white">
                             <div class="table-responsive">
                                 <table class="table mb-0 align-middle text-center" data-pattern="priority-columns">
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                     <thead class=" bg-opacity-75 text-dark ">
                                         <tr>
                                             <th>Bulan</th>
@@ -593,9 +579,9 @@
                                             <th>Tempoh</th>
                                             <th>Bil. Hari</th>
                                             <th>Kumpulan</th>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <th>Action</th>
-                                            @endif
+                                            <?php endif; ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -606,12 +592,12 @@
                                             <td>5</td>
                                             <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-1">Kumpulan 1</button></td>
                                             <td>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#edit">
                                                     <i class='bx bxs-edit'></i>
                                             </button>
-                                            @endif
+                                            <?php endif; ?>
 
                                         </td>
                                         </tr>
@@ -621,12 +607,12 @@
                                             <td>5</td>
                                             <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-2">Kumpulan 2</button></td>
                                             <td>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#edit">
                                                     <i class='bx bxs-edit'></i>
                                             </button>
-                                            @endif
+                                            <?php endif; ?>
 
                                         </td>
                                         </tr>
@@ -637,12 +623,12 @@
                                             <td>5</td>
                                             <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-3">Kumpulan 3</button></td>
                                             <td>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#edit">
                                                     <i class='bx bxs-edit'></i>
                                             </button>
-                                            @endif
+                                            <?php endif; ?>
 
                                         </td>
                                         </tr>
@@ -652,12 +638,12 @@
                                             <td>5</td>
                                             <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-4">Kumpulan 4</button></td>
                                             <td>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#edit">
                                                     <i class='bx bxs-edit'></i>
                                             </button>
-                                            @endif
+                                            <?php endif; ?>
 
                                         </td>
 
@@ -669,12 +655,12 @@
                                             <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-5">Kumpulan 5</button></td>
                                             </td>
                                             <td>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#edit">
                                                     <i class='bx bxs-edit'></i>
                                             </button>
-                                            @endif
+                                            <?php endif; ?>
 
                                         </td>
                                         </tr>
@@ -684,12 +670,12 @@
                                             <td>9</td>
                                             <td class="bg-white"></td>
                                             <td class="bg-white">
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                         </tr>
@@ -700,12 +686,12 @@
                                             <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-6">Kumpulan 6</button></td>
                                             </td>
                                             <td>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#edit">
                                                     <i class='bx bxs-edit'></i>
                                             </button>
-                                            @endif
+                                            <?php endif; ?>
 
                                         </td>
                                         </tr>
@@ -716,12 +702,12 @@
                                             <td>4</td>
                                             <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-1">Kumpulan 1</button></td>
                                             <td>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#edit">
                                                     <i class='bx bxs-edit'></i>
                                             </button>
-                                            @endif
+                                            <?php endif; ?>
 
                                         </td>
                                         </tr>
@@ -732,12 +718,12 @@
                                             <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-2">Kumpulan 2</button></td>
                                             </td>
                                             <td>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#edit">
                                                     <i class='bx bxs-edit'></i>
                                             </button>
-                                            @endif
+                                            <?php endif; ?>
 
                                         </td>
                                         </tr>
@@ -747,12 +733,12 @@
                                             <td>5</td>
                                             <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-3">Kumpulan 3</button></td>
                                             <td>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#edit">
                                                     <i class='bx bxs-edit'></i>
                                             </button>
-                                            @endif
+                                            <?php endif; ?>
 
                                         </td>
                                         </tr>
@@ -763,12 +749,12 @@
                                             <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-4">Kumpulan 4</button></td>
                                             </td>
                                             <td>
-                                            @if (Auth::user()->jawatan_app != 6)
+                                            <?php if(Auth::user()->jawatan_app != 6): ?>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#edit">
                                                     <i class='bx bxs-edit'></i>
                                             </button>
-                                            @endif
+                                            <?php endif; ?>
 
                                         </td>
                                         </tr>
@@ -778,12 +764,12 @@
                                             <td>9</td>
                                             <td class="bg-white"></td>
                                             <td class="bg-white ">
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                         </tr>
@@ -796,22 +782,14 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-<<<<<<< HEAD
-                            <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75" type="button" data-bs-toggle="collapse"
-=======
                             <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75" type="button" data-bs-toggle="collapse"
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Jadual Guru Bertugas Harian 2
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
-<<<<<<< HEAD
-                            <div class="accordion-body">
-=======
                             <div class="accordion-body bg-white">
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <div class="table-responsive">
                                     <table class="table mb-0  align-middle text-center" data-pattern="priority-columns">
                                         <thead class=" bg-opacity-75 text-dark ">
@@ -821,9 +799,9 @@
                                                 <th>Tempoh</th>
                                                 <th>Bil. Hari</th>
                                                 <th>Kumpulan</th>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                     <th>Action</th>
-                                                @endif
+                                                <?php endif; ?>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -834,12 +812,12 @@
                                                 <td>5</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-1">Kumpulan 1</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -849,12 +827,12 @@
                                                 <td>5</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-2">Kumpulan 2</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -865,12 +843,12 @@
                                                 <td>5</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-3">Kumpulan 3</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -880,12 +858,12 @@
                                                 <td>5</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-4">Kumpulan 4</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
 
@@ -897,12 +875,12 @@
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-5">Kumpulan 5</button></td>
                                                 </td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -912,12 +890,12 @@
                                                 <td>9</td>
                                                 <td class="bg-white"></td>
                                                 <td class="bg-white">
-                                                    @if (Auth::user()->jawatan_app != 6)
+                                                    <?php if(Auth::user()->jawatan_app != 6): ?>
                                                     <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                             data-bs-target="#edit">
                                                             <i class='bx bxs-edit'></i>
                                                     </button>
-                                                    @endif
+                                                    <?php endif; ?>
 
                                                 </td>
                                             </tr>
@@ -928,12 +906,12 @@
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-6">Kumpulan 6</button></td>
                                                 </td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -944,12 +922,12 @@
                                                 <td>4</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-1">Kumpulan 1</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -960,12 +938,12 @@
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-2">Kumpulan 2</button></td>
                                                 </td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -975,12 +953,12 @@
                                                 <td>5</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-3">Kumpulan 3</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -991,12 +969,12 @@
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-4">Kumpulan 4</button></td>
                                                 </td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -1006,12 +984,12 @@
                                                 <td>9</td>
                                                 <td class="bg-white"></td>
                                                 <td class="bg-white ">
-                                                    @if (Auth::user()->jawatan_app != 6)
+                                                    <?php if(Auth::user()->jawatan_app != 6): ?>
                                                     <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                             data-bs-target="#edit">
                                                             <i class='bx bxs-edit'></i>
                                                     </button>
-                                                    @endif
+                                                    <?php endif; ?>
 
                                                 </td>
                                             </tr>
@@ -1024,22 +1002,14 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-<<<<<<< HEAD
-                            <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75" type="button" data-bs-toggle="collapse"
-=======
                             <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75" type="button" data-bs-toggle="collapse"
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Jadual Guru Bertugas Harian 3
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
-<<<<<<< HEAD
-                            <div class="accordion-body">
-=======
                             <div class="accordion-body bg-white">
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <div class="table-responsive">
                                     <table class="table mb-0  align-middle text-center" data-pattern="priority-columns">
                                         <thead class=" bg-opacity-75 text-dark ">
@@ -1049,9 +1019,9 @@
                                                 <th>Tempoh</th>
                                                 <th>Bil. Hari</th>
                                                 <th>Kumpulan</th>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                     <th>Action</th>
-                                                @endif
+                                                <?php endif; ?>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1062,12 +1032,12 @@
                                                 <td>5</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-1">Kumpulan 1</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -1077,12 +1047,12 @@
                                                 <td>5</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-2">Kumpulan 2</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -1093,12 +1063,12 @@
                                                 <td>5</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-3">Kumpulan 3</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -1108,12 +1078,12 @@
                                                 <td>5</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-4">Kumpulan 4</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
 
@@ -1125,12 +1095,12 @@
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-5">Kumpulan 5</button></td>
                                                 </td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -1140,12 +1110,12 @@
                                                 <td>9</td>
                                                 <td class="bg-white"></td>
                                                 <td class="bg-white">
-                                                    @if (Auth::user()->jawatan_app != 6)
+                                                    <?php if(Auth::user()->jawatan_app != 6): ?>
                                                     <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                             data-bs-target="#edit">
                                                             <i class='bx bxs-edit'></i>
                                                     </button>
-                                                    @endif
+                                                    <?php endif; ?>
 
                                                 </td>
                                             </tr>
@@ -1156,12 +1126,12 @@
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-6">Kumpulan 6</button></td>
                                                 </td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -1172,12 +1142,12 @@
                                                 <td>4</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-1">Kumpulan 1</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -1188,12 +1158,12 @@
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-2">Kumpulan 2</button></td>
                                                 </td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -1203,12 +1173,12 @@
                                                 <td>5</td>
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-3">Kumpulan 3</button></td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -1219,12 +1189,12 @@
                                                 <td><button class="button-kumpulan" data-bs-toggle="modal" data-bs-target="#kumpulan-4">Kumpulan 4</button></td>
                                                 </td>
                                                 <td>
-                                                @if (Auth::user()->jawatan_app != 6)
+                                                <?php if(Auth::user()->jawatan_app != 6): ?>
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                         data-bs-target="#edit">
                                                         <i class='bx bxs-edit'></i>
                                                 </button>
-                                                @endif
+                                                <?php endif; ?>
 
                                             </td>
                                             </tr>
@@ -1234,12 +1204,12 @@
                                                 <td>9</td>
                                                 <td class="bg-white"></td>
                                                 <td class="bg-white ">
-                                                    @if (Auth::user()->jawatan_app != 6)
+                                                    <?php if(Auth::user()->jawatan_app != 6): ?>
                                                     <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                                                             data-bs-target="#edit">
                                                             <i class='bx bxs-edit'></i>
                                                     </button>
-                                                    @endif
+                                                    <?php endif; ?>
 
                                                 </td>
                                             </tr>
@@ -1259,4 +1229,6 @@
 
         <!-- end col -->
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\mpsonline_current\resources\views/jadual-guru-bertugas-harian.blade.php ENDPATH**/ ?>

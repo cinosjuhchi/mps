@@ -29,6 +29,27 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         if (view()->exists($request->path())) {
+            if($request->path() == 'dashboard' and Auth::user()->jawatan_app != 0){
+                $items = [
+                    ['program_aktiviti' => 'Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023', 'komponen' => 'Pengurusan', 'tarikh' => '02/03/2024', 'tindakan' => 'John Doe', 'status' => 'Rancang', 'status_color_class' => 'warning'],
+                    ['program_aktiviti' => 'Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023', 'komponen' => 'Kurikulum', 'tarikh' => '22/04/2024', 'tindakan' => 'John Doe', 'status' => 'Siap', 'status_color_class' => 'success'],
+                    ['program_aktiviti' => 'Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023', 'komponen' => 'Kurikulum', 'tarikh' => '22/04/2024', 'tindakan' => 'John Doe', 'status' => 'Gagal', 'status_color_class' => 'danger'],
+                    ['program_aktiviti' => 'Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023', 'komponen' => 'Kurikulum', 'tarikh' => '22/04/2024', 'tindakan' => 'John Doe', 'status' => 'Tunda', 'status_color_class' => 'info'],
+                    ['program_aktiviti' => 'Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023', 'komponen' => 'Kurikulum', 'tarikh' => '22/04/2024', 'tindakan' => 'John Doe', 'status' => 'Hapus', 'status_color_class' => 'dark'],
+                    ['program_aktiviti' => 'Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023', 'komponen' => 'Kurikulum', 'tarikh' => '22/04/2024', 'tindakan' => 'John Doe', 'status' => 'Siap', 'status_color_class' => 'success'],
+                    ['program_aktiviti' => 'Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023', 'komponen' => 'Kurikulum', 'tarikh' => '22/04/2024', 'tindakan' => 'John Doe', 'status' => 'Gagal', 'status_color_class' => 'danger'],
+                ];
+
+                $perPage = 5;
+                $page = request()->input('page', 1);
+                $offset = ($page - 1) * $perPage;
+
+                $currentItems = array_slice($items, $offset, $perPage);
+                $totalItems = count($items);
+
+                $pages = ceil($totalItems / $perPage);
+                return view('dashboard', compact('currentItems', 'page', 'pages'));
+            }
             return view($request->path());
         }
         return abort(404);

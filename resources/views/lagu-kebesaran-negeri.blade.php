@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    @lang('Lagu Negaraku')
+    @lang('Lagu Kebesaran Negeri')
 @endsection
 
 @section('content')
@@ -11,26 +11,10 @@
             <li class="breadcrumb-item"><a href="javascript: void(0);">Lagu</a></li>
         @endslot
         @slot('title')
-            Lagu Negaraku
+            Lagu Kebesaran Negeri
         @endslot
     @endcomponent
-<<<<<<< HEAD
-    <div class="d-flex justify-content-center align-items-center mt-4">
-        <div class="w-50 d-flex justify-content-center align-items-center text-start">
-            {{-- <video src="{{ asset('videos/Lagu_Negaraku.mp4') }}" class="w-75" controls></video> --}}
-            <div class="mt-4">
-                <h4 class="">Lagu Negaraku</h4>
-                <p class="fs-5">
-                    Negaraku
-                    <br> Tanah tumpahnya darahku,
-                    <br> Rakyat Hidup bersatu dan maju,
-                    <br> Rahmat bahagia Tuhan kurniakan,
-                    <br> Raja kita Selamat bertakhta,
-                    <br> Rahmat bahagia Tuhan kurniakan,
-                    <br> Raja kita Selamat bertakhta
-                </p>
-            </div>
-=======
+
     <div class="text-center">
         <video src="{{ asset('videos/Lagu_Negaraku.mp4') }}" class="w-75" controls></video>
         <div class="mt-4">
@@ -44,7 +28,6 @@
                 <br> Rahmat bahagia Tuhan kurniakan,
                 <br> Raja kita Selamat bertakhta
             </p>
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
         </div>
     </div>
 @endsection
