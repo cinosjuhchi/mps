@@ -65,44 +65,6 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered text-dark">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="editLabel">Edit Cuti</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="mb-3">
-                            <label for="Bulan" class="form-label">Bulan</label>
-                            <input type="text" class="form-control" id="Bulan">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Tarikh" class="form-label">Tarikh</label>
-                            <input type="text" class="form-control" id="Tarikh">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Hari" class="form-label">Hari</label>
-                            <input type="text" class="form-control" id="Hari">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Cuti" class="form-label">Cuti</label>
-                            <input type="text" class="form-control" id="Cuti">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Negeri" class="form-label">Negeri</label>
-                            <input type="text" class="form-control" id="Negeri">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                    <button type="button" class="btn btn-primary">Edit Cuti</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="row">
         <div class="col-xl-12">
             <div class="mt-4">
@@ -695,7 +657,6 @@
                                             <td>Sun</td>
                                             <td class="text-danger">Chinese New Year</td>
                                             <td>National</td>
-<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -709,15 +670,12 @@
                                                 </button>
                                                 @endif
                                             </td>
-=======
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>23 Jan</td>
                                             <td>Mon</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National</td>
-<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -731,15 +689,12 @@
                                                 </button>
                                                 @endif
                                             </td>
-=======
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                         <tr>
                                             <td>24 Jan</td>
                                             <td>Tue</td>
                                             <td class="text-danger">Chinese New Year Holiday</td>
                                             <td>National except johor, Kedah, Kelantan, & Terengganu</td>
-<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -753,8 +708,6 @@
                                                 </button>
                                                 @endif
                                             </td>
-=======
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                         </tr>
                                     </tbody>
 
@@ -764,11 +717,7 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading5">
-<<<<<<< HEAD
                             <button class="accordion-button fw-medium collapsed text-white bg-primary bg-opacity-75"
-=======
-                            <button class="accordion-button fw-medium collapsed text-dark bg-white bg-opacity-75"
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
                                 aria-expanded="false" aria-controls="collapse5">
                                 Mei
@@ -776,11 +725,7 @@
                         </h2>
                         <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
                             data-bs-parent="#accordionExample">
-<<<<<<< HEAD
                             <div class="accordion-body table-responsive">
-=======
-                            <div class="accordion-body bg-white table-responsive">
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 <table class="table table-responsive mb-0  align-middle text-center"
                                     data-pattern="priority-columns">
                                     <thead class=" bg-opacity-75 text-dark ">
@@ -800,7 +745,6 @@
                                             <td>Sun</td>
                                             <td class="text-danger">New Year's Day</td>
                                             <td>National except johor, Kedah, Kelantan, Perlis & Terengganu</td>
-<<<<<<< HEAD
                                            <td>
                                                 @if (Auth::user()->jawatan_app == 0)
                                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal"
@@ -814,8 +758,6 @@
                                                 </button>
                                                 @endif
                                             </td>
-=======
->>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
 
                                         </tr>
                                         <tr>

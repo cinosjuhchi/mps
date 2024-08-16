@@ -1,15 +1,13 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?> <?php echo app('translator')->get('Surat Pekeliling Ikhtisas'); ?> <?php $__env->stopSection(); ?>
 
-@section('title') @lang('Surat Pekeliling Ikhtisas') @endsection
+<?php $__env->startSection('content'); ?>
 
-@section('content')
+<?php $__env->startComponent('components.breadcrumb'); ?>
+<?php $__env->slot('li_1'); ?> Punca Kuasa <?php $__env->endSlot(); ?>
+<?php $__env->slot('title'); ?> Surat Pekeliling Ikhtisas <?php $__env->endSlot(); ?>
+<?php echo $__env->renderComponent(); ?>
 
-@component('components.breadcrumb')
-@slot('li_1') Punca Kuasa @endslot
-@slot('title') Surat Pekeliling Ikhtisas @endslot
-@endcomponent
-
-@if(Auth::user()->jawatan_app == 0)
+<?php if(Auth::user()->jawatan_app == 0): ?>
 <div class="action d-flex justify-content-between mb-3">
     <div>
         <div class="btn-group">
@@ -30,7 +28,7 @@
         </button>
     </div>
 </div>
-@endif
+<?php endif; ?>
 
 <div class="container" id="senarai-container">
     <div id="senarai-grid">
@@ -39,7 +37,7 @@
                 <div class="card  shadow">
                     <div class="card-body p-0">
                         <div class="mx-auto">
-                            <img src="{{ asset('images/foto_guru/guru-besar.png') }}" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
+                            <img src="<?php echo e(asset('images/foto_guru/guru-besar.png')); ?>" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
                         </div>
                         <div class="d-flex align-items-center gap-2 p-2">
                             <i class="bx bxs-file-pdf fs-2"></i>
@@ -55,7 +53,7 @@
                 <div class="card  shadow">
                     <div class="card-body p-0">
                         <div class="mx-auto">
-                            <img src="{{ asset('images/foto_guru/guru-besar.png') }}" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
+                            <img src="<?php echo e(asset('images/foto_guru/guru-besar.png')); ?>" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
                         </div>
                         <div class="d-flex align-items-center gap-2 p-2">
                             <i class="bx bxs-file-pdf fs-2"></i>
@@ -71,7 +69,7 @@
                 <div class="card  shadow">
                     <div class="card-body p-0">
                         <div class="mx-auto">
-                            <img src="{{ asset('images/foto_guru/guru-besar.png') }}" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
+                            <img src="<?php echo e(asset('images/foto_guru/guru-besar.png')); ?>" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
                         </div>
                         <div class="d-flex align-items-center gap-2 p-2">
                             <i class="bx bxs-file-pdf fs-2"></i>
@@ -87,7 +85,7 @@
                 <div class="card  shadow">
                     <div class="card-body p-0">
                         <div class="mx-auto">
-                            <img src="{{ asset('images/foto_guru/guru-besar.png') }}" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
+                            <img src="<?php echo e(asset('images/foto_guru/guru-besar.png')); ?>" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
                         </div>
                         <div class="d-flex align-items-center gap-2 p-2">
                             <i class="bx bxs-file-pdf fs-2"></i>
@@ -103,7 +101,7 @@
                 <div class="card  shadow">
                     <div class="card-body p-0">
                         <div class="mx-auto">
-                            <img src="{{ asset('images/foto_guru/guru-besar.png') }}" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
+                            <img src="<?php echo e(asset('images/foto_guru/guru-besar.png')); ?>" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
                         </div>
                         <div class="d-flex align-items-center gap-2 p-2">
                             <i class="bx bxs-file-pdf fs-2"></i>
@@ -119,7 +117,7 @@
                 <div class="card  shadow">
                     <div class="card-body p-0">
                         <div class="mx-auto">
-                            <img src="{{ asset('images/foto_guru/guru-besar.png') }}" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
+                            <img src="<?php echo e(asset('images/foto_guru/guru-besar.png')); ?>" alt="Foto Diri" class="" style="height: 200px; width: 100%; object-fit: cover">
                         </div>
                         <div class="d-flex align-items-center gap-2 p-2">
                             <i class="bx bxs-file-pdf fs-2"></i>
@@ -199,7 +197,7 @@
     </div>
 </div>
 
-{{-- Modal Edit --}}
+
 <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -223,9 +221,11 @@
     </div>
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('script')
-    <script src="{{ asset('build/js/style.js') }}"></script>
-@endsection
+<?php $__env->startSection('script'); ?>
+    <script src="<?php echo e(asset('build/js/style.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
 
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\mpsonline_current\resources\views/surat-pekeliling-ikhtisas.blade.php ENDPATH**/ ?>

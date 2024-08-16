@@ -1,5 +1,5 @@
 <header id="page-topbar">
-    <div class="navbar-header bg-primary">
+    <div class="navbar-header">
         <div class="d-flex">
             <!-- LOGO -->
             <div class="navbar-brand-box d-flex justify-content-between" style="height: 74px;">

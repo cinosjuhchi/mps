@@ -1,9 +1,13 @@
 <header id="page-topbar">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="navbar-header">
 =======
     <div class="navbar-header bg-primary">
 >>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
+=======
+    <div class="navbar-header">
+>>>>>>> 3f2b834 (fix: senarai dan polisi angkat, aplikasi penyokon)
         <div class="d-flex">
             <!-- LOGO -->
             <div class="navbar-brand-box d-flex justify-content-between" style="height: 74px;">
