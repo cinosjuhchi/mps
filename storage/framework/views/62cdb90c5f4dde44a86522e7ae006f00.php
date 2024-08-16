@@ -1,10 +1,8 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Perincian Tugas | Tugas Portofolio Berjawatan'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('Perincian Tugas | Tugas Portofolio Berjawatan')
-@endsection
-
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div class="row">
         <div class="col">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
@@ -23,7 +21,7 @@
 
     <div class="row">
         <div class="col">
-            @if (Auth::user()->jawatan_app == 0)
+            <?php if(Auth::user()->jawatan_app == 0): ?>
                 <button type="button" class="btn btn-sm btn-primary mb-3" data-bs-toggle="modal"
                     data-bs-target="#tambahTugas">
                     <i class='bx bx-plus-circle'></i> Tambah Tugas
@@ -40,7 +38,7 @@
                             </div>
                             <form action="" method="post">
                                 <div class="modal-body">
-                                    @csrf
+                                    <?php echo csrf_field(); ?>
                                     <div class="mb-3">
                                         <label for="tugas" class="form-label">Tugas</label>
                                         <input type="text" class="form-control" id="tugas" name="tugas"
@@ -197,7 +195,7 @@
                         </tr>
                     </tbody>
                 </table>
-            @else
+            <?php else: ?>
                 <table class="table table-borderless">
                     <tr>
                         <td width="20px">1.</td>
@@ -257,7 +255,7 @@
                             setiap kelas dan papan kenyataan utama unit bimbingan dan kaunseling sekolah.</td>
                     </tr>
                 </table>
-            @endif
+            <?php endif; ?>
         </div>
     </div>
 
@@ -271,7 +269,7 @@
                 </div>
                 <form action="" method="post">
                     <div class="modal-body">
-                        @csrf
+                        <?php echo csrf_field(); ?>
                         <div class="mb-3">
                             <label for="tugas" class="form-label">Tugas</label>
                             <input type="text" class="form-control" id="tugas" name="tugas"
@@ -287,4 +285,6 @@
         </div>
     </div>
     <!-- END Modal Edit Program -->
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BELAJAR-PROYEK\GRAVIX\mps_cino\mps\resources\views/ptb-gbk.blade.php ENDPATH**/ ?>

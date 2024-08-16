@@ -1,10 +1,8 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Perincian Tugas | Tugas Portofolio Berjawatan'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('Perincian Tugas | Tugas Portofolio Berjawatan')
-@endsection
-
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div class="row">
         <div class="col">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
@@ -14,7 +12,7 @@
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item">Perincian Tugas</li>
                         <li class="breadcrumb-item">Tugas Portofolio Berjawatan</li>
-                        <li class="breadcrumb-item active">Kategori PTB GBK</li>
+                        <li class="breadcrumb-item active">Kategori PTB-AKB</li>
                     </ol>
                 </div>
             </div>
@@ -23,7 +21,7 @@
 
     <div class="row">
         <div class="col">
-            @if (Auth::user()->jawatan_app == 0)
+            <?php if(Auth::user()->jawatan_app == 0): ?>
                 <button type="button" class="btn btn-sm btn-primary mb-3" data-bs-toggle="modal"
                     data-bs-target="#tambahTugas">
                     <i class='bx bx-plus-circle'></i> Tambah Tugas
@@ -40,7 +38,7 @@
                             </div>
                             <form action="" method="post">
                                 <div class="modal-body">
-                                    @csrf
+                                    <?php echo csrf_field(); ?>
                                     <div class="mb-3">
                                         <label for="tugas" class="form-label">Tugas</label>
                                         <input type="text" class="form-control" id="tugas" name="tugas"
@@ -197,67 +195,64 @@
                         </tr>
                     </tbody>
                 </table>
-            @else
+            <?php else: ?>
                 <table class="table table-borderless">
-                    <tr>
-                        <td width="20px">1.</td>
-                        <td>Mengendali sesi kaunseling individu sekurang-kurangnya lima (5) waktu seminggu dan kaunseling
-                            kelompok sekurang-kurangnya satu (1) waktu seminggu. Murid boleh mendapatkan perkhidmatan
-                            bimbingan dan kaunseling pada bila-bila masa dalam dan luar waktu persekolahan mengikut
-                            kesesuaian</td>
-                    </tr>
-                    <tr>
-                        <td>2.</td>
-                        <td>Bertanggungjawab membimbing murid berkaitan kemahiran belajar, pendidikan panduan kerjaya murid,
-                            pendidikan psikososial dan kesejahteraan mental murid, pendidikan kepimpinan murid, pendidikan
-                            pencegahan dadah dan rokok serta pendidikan pencegahan HIV dan AIDS.</td>
-                    </tr>
-                    <tr>
-                        <td>3.</td>
-                        <td>Bertanggungjawab memperkukuhkan program pembangunan modal insan dalam kalangan murid sekolah
-                            melalui Program Kaunseling Berfokus, Program Pembimbing Rakan Sebaya, Program Kepemimpinan
-                            Pengawas, Program Orientasi Murid dan Kelab Bimbingan dan Kaunseling.</td>
-                    </tr>
-                    <tr>
-                        <td>4.</td>
-                        <td>Menganggotai dan menjadi Setiausaha Jawatankuasa Unit Bimbingan dan Kaunseling.</td>
-                    </tr>
-                    <tr>
-                        <td>5.</td>
-                        <td>Merancang dan memastikan program dan aktiviti untuk murid berdasarkan fokus perkhidmatan unit
-                            bimbingan dan kaunseling iaitu pembangunan dan pengembangan sahsiah murid, peningkatan disiplin
-                            diri murid, pendidikan kerjaya murid dan psikososial serta kesejahteraan mental murid.</td>
-                    </tr>
-                    <tr>
-                        <td>6.</td>
-                        <td>Menyediakan perkhidmatan kaunseling dan bimbingan khas kepada murid-murid berkeperluan khas di
-                            sekolah. GBK juga bertanggungjawab membimbing murid lain untuk menerima, membantu dan sentiasa
-                            memberi pertolongan kepada murid-murid berkeperluan khas.</td>
-                    </tr>
-                    <tr>
-                        <td>7.</td>
-                        <td>Membuat rujukan atau memberi khidmat kaunseling kepada murid, guru, kakitangan serta sesiapa
-                            sahaja yang memerlukan sekiranya berlaku krisis dalam kawasan sekolah.</td>
-                    </tr>
-                    <tr>
-                        <td>8.</td>
-                        <td>Membuat penilaian diagnostik keperluan Perkhidmatan Bimbingan dan Kaunseling sekolah melalui
-                            kajian keperluan, soal selidik, temu bual dan perbincangan dengan murid, guru, pentadbir,
-                            kakitangan sekolah, ibu bapa dan bekas murid.</td>
-                    </tr>
-                    <tr>
-                        <td>9.</td>
-                        <td>Membuat sebaran kepada murid berkaitan perkhidmatan yang boleh diberi oleh unit bimbingan dan
-                            kaunseling.</td>
-                    </tr>
-                    <tr>
-                        <td>10.</td>
-                        <td>Menyediakan jadual waktu perkhidmatan bimbingan dan kaunseling persendirian berdasarkan sasaran
-                            kerja mingguan yang perlu mendapat pengesahan PGB. Jadual waktu ini hendaklah dipamerkan dalam
-                            setiap kelas dan papan kenyataan utama unit bimbingan dan kaunseling sekolah.</td>
-                    </tr>
+                    <ol type="A">
+                        <li class="mb-2">
+                            <h5>Aspek Perkeranian</h5>
+                            <ol type="1">
+                                <li>Pengurusan myPorfolio.</li>
+                                <li>Pengurusan surat akuan murid dan sijil murid, guru, dan AKP yang berkaitan.</li>
+                                <li>Pengurusan latihan/kursus guru dan AKP.</li>
+                                <li>Pengurusan fail sekolah dan rekod am.</li>
+                                <li>Pengurusan pekeliling, peraturan, surat arahan, dan makluman sekolah.</li>
+                                <li>Pengurusan surat-menyurat.</li>
+                                <li>Pengurusan kehadiran pelawat.</li>
+                                <li>Pengurusan kemasukan/penempatan/pertukaran murid.</li>
+                                <li>Pengurusan penyelenggaraan bahan/peralatan dan bangunan.</li>
+                                <li>Pengurusan kehadiran guru, AKP, dan syarikat perkhidmatan swasta.</li>
+                                <li>Pengurusan permohonan mendiami rumah kerajaan/kuarters.</li>
+                                <li>Pengurusan kemasukan guru, AKP, dan perkhidmatan swasta yang baru melapor diri.</li>
+                                <li>Pengemaskinian penyata bulanan maklumat guru, AKP, murid, penyata ringkasan sekolah, dan
+                                    lain-lain.</li>
+                                <li>Pengurusan perakuan tanggung kerja.
+                                </li>
+                                <li>Pengurusan pengemaskinian maklumat dalam sistem</li>
+                            </ol>
+                        </li>
+                        <li class="mb-2">
+                            <h5>Aspek Kewangan</h5>
+
+                            <ol type="1">
+                                <li>Pengurusan penerimaan, perolehan dan bayaran.</li>
+                                <li>Pengurusan Panjar Wang Runcit (PWR).</li>
+                                <li>Penyelenggaraan Buku Tunai/Buku Subsidiari.</li>
+                                <li>Penyediaan penyata tahunan kewangan sekolah.</li>
+                                <li>Penyediaan Permohonan Tuntutan Bantuan Persekolahan.</li>
+                                <li>Penyediaan Permohonan Bantuan Persekolahan Murid.</li>
+                                <li>Pembayaran emolumen dan elaun.</li>
+                                <li>Pembayaran tuntutan-tuntutan lain.</li>
+                                <li>Penyelenggaraan e-SPKB/Buku Vot (manual).</li>
+                                <li>Pengurusan Buku Tunai Cerakinan.</li>
+                                <li>Membantu penyediaan anggaran belanja mengurus.</li>
+                              </ol>
+
+                        </li>
+                        <li class="mb-2">
+                            <h5>Pengurusan Aset Alih dan Stor</h5>
+
+                            <ol type="1">
+                                <li>Menyertai mesyuarat jawatankuasa pengurusan aset alih kerajaan.</li>
+                                <li>Pengurusan aset alih kerajaan.</li>
+                                <li>Pengurusan stor kerajaan.</li>
+                                <li>Aktiviti penerimaan aset secara hadiah/sumbangan.</li>
+                                <li>Pengurusan pelantikan pegawai oleh pegawai pengawal mengemukakan permohonan pelantikan.</li>
+                              </ol>
+
+                        </li>
+                    </ol>
                 </table>
-            @endif
+            <?php endif; ?>
         </div>
     </div>
 
@@ -271,7 +266,7 @@
                 </div>
                 <form action="" method="post">
                     <div class="modal-body">
-                        @csrf
+                        <?php echo csrf_field(); ?>
                         <div class="mb-3">
                             <label for="tugas" class="form-label">Tugas</label>
                             <input type="text" class="form-control" id="tugas" name="tugas"
@@ -287,4 +282,6 @@
         </div>
     </div>
     <!-- END Modal Edit Program -->
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BELAJAR-PROYEK\GRAVIX\mps_cino\mps\resources\views/ptb-akb.blade.php ENDPATH**/ ?>
