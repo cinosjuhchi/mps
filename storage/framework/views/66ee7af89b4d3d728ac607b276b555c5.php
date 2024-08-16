@@ -9,7 +9,7 @@
                 <h4 class="mb-sm-0 font-size-18">Pengurusan dan Pentadbiran</h4>
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Takwim</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Pegurusan Komponen</a></li>
                         <li class="breadcrumb-item active">Pengurusan dan Pentadbiran</li>
                     </ol>
                 </div>

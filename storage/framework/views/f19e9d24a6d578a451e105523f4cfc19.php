@@ -1,32 +1,20 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Etika Perkhidmatan Awam'); ?>
+<?php $__env->stopSection(); ?>
 
-
-@section('title')
-    @lang('Etika Perkhidmatan Awam')
-@endsection
-
-@section('content')
-    @component('components.breadcrumb')
-        @slot('li_1')
+<?php $__env->startSection('content'); ?>
+    <?php $__env->startComponent('components.breadcrumb'); ?>
+        <?php $__env->slot('li_1'); ?>
             Dasar Perkhidmatan
-        @endslot
-        @slot('title')
+        <?php $__env->endSlot(); ?>
+        <?php $__env->slot('title'); ?>
             Etika Perkhidmatan Awam
-        @endslot
-    @endcomponent
+        <?php $__env->endSlot(); ?>
+    <?php echo $__env->renderComponent(); ?>
 
-    {{-- @if (Auth::user()->jawatan_app == 6)
-        <ul class="list-group list-group-numbered">
-            <li class="list-group-item border-0">Lorem ipsum dolor sit amet consectetur.</li>
-            <li class="list-group-item border-0">Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-            <li class="list-group-item border-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li class="list-group-item border-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum!</li>
-            <li class="list-group-item border-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sapiente?
-            </li>
-        </ul>
-    @endif --}}
+    
 
-    @if (Auth::user()->jawatan_app == 0)
+    <?php if(Auth::user()->jawatan_app == 0): ?>
         <div class="row">
             <div class="col-lg-12">
                 <div class="card border border-2">
@@ -46,7 +34,7 @@
                     </div>
                     <div class="card-body">
                         <form action="" method="post">
-                            @csrf
+                            <?php echo csrf_field(); ?>
                             <div class="mt-3 mb-3">
                                 <input id="etika-perkhidmatan-awam" type="hidden" name="etika-perkhidmatan-awam"
                                     value="">
@@ -62,16 +50,11 @@
             <!-- end col -->
         </div>
         <!-- end row -->
-    @endif
+    <?php endif; ?>
 
-    @if (Auth::user()->jawatan_app != 0)
+    <?php if(Auth::user()->jawatan_app != 0): ?>
         <div class="div" id="dasar-sekolah" role="div" style="text-align: justify; text-justify: inter-word">
-            {{-- @if (Auth::user()->jawatan_app != 6)
-                <button class="btn btn-warning me-2">
-                    <i class='bx bxs-edit'></i>
-                    <span class="d-none d-md-inline">Edit</span>
-                </button>
-            @endif --}}
+            
             <div class="text-center mb-3">
                 <span class="fs-3 fw-bold">Etika Perkhidmatan Awam</span>
             </div>
@@ -241,5 +224,7 @@
                 Mohd Syukry bin Abdullah SIDANG REDAKSI ETIKA DALAM PERKHIMATAN AWAM
             </p>
         </div>
-    @endif
-@endsection
+    <?php endif; ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BELAJAR-PROYEK\GRAVIX\mps_cino\mps\resources\views/etika-perkhidmatan-awam.blade.php ENDPATH**/ ?>
