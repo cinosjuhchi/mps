@@ -1,30 +1,28 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Senarai Pekerja Kantin'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('Senarai Pekerja Kantin')
-@endsection
-
-@section('content')
-    @component('components.breadcrumb')
-        @slot('li_1')
+<?php $__env->startSection('content'); ?>
+    <?php $__env->startComponent('components.breadcrumb'); ?>
+        <?php $__env->slot('li_1'); ?>
             Guru dan Kakitangan
-        @endslot
-        @slot('title')
+        <?php $__env->endSlot(); ?>
+        <?php $__env->slot('title'); ?>
             Senarai Pekerja Kantin
-        @endslot
-    @endcomponent
+        <?php $__env->endSlot(); ?>
+    <?php echo $__env->renderComponent(); ?>
 
-    @if (Auth::user()->jawatan_app != 6 and Auth::user()->jawatan_app != 1)
+    <?php if(Auth::user()->jawatan_app != 6 and Auth::user()->jawatan_app != 1): ?>
         <button type="button" class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#tambahGuru"><i
                 class='bx bx-plus'></i>
             Tambah Pekerja</button>
-    @endif
+    <?php endif; ?>
     <div class="container">
         <div class="row">
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
                     <div class="mx-auto mb-4">
-                        <img src="{{ asset('images/foto_guru/dummy.jpg') }}" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
+                        <img src="<?php echo e(asset('images/foto_guru/dummy.jpg')); ?>" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
                     </div>
                     <h5 class="font-size-16 mb-1"><a href="#" class="text-body">Rahimah binti Kamrim</a></h5>
                     <p class="text-muted mb-4 font-size-14">Pekerja Kantin</p>
@@ -35,7 +33,7 @@
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
                     <div class="mx-auto mb-4">
-                        <img src="{{ asset('images/foto_guru/dummy.jpg') }}" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
+                        <img src="<?php echo e(asset('images/foto_guru/dummy.jpg')); ?>" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
                     </div>
                     <h5 class="font-size-16 mb-1"><a href="#" class="text-body">Maniharah binti Aus</a></h5>
                     <p class="text-muted mb-4 font-size-14">Pekerja Kantin</p>
@@ -46,7 +44,7 @@
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
                     <div class="mx-auto mb-4">
-                        <img src="{{ asset('images/foto_guru/dummy.jpg') }}" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
+                        <img src="<?php echo e(asset('images/foto_guru/dummy.jpg')); ?>" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
                     </div>
                     <h5 class="font-size-16 mb-1"><a href="#" class="text-body">Nazariah binti Abdul Aziz</a></h5>
                     <p class="text-muted mb-4 font-size-14">Pekerja Kantin</p>
@@ -59,7 +57,7 @@
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
                     <div class="mx-auto mb-4">
-                        <img src="{{ asset('images/foto_guru/dummy.jpg') }}" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
+                        <img src="<?php echo e(asset('images/foto_guru/dummy.jpg')); ?>" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
                     </div>
                     <h5 class="font-size-16 mb-1"><a href="#" class="text-body">Nik Farihan bin Nik Ramli</a></h5>
                     <p class="text-muted mb-4 font-size-14">Pekerja Kantin</p>
@@ -70,7 +68,7 @@
             <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                 <div class="card-body p-0 shadow-none">
                     <div class="mx-auto mb-4">
-                        <img src="{{ asset('images/foto_guru/dummy.jpg') }}" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
+                        <img src="<?php echo e(asset('images/foto_guru/dummy.jpg')); ?>" alt="Foto Diri" style="width: 100%; height: 274px; object-fit: cover;">
                     </div>
                     <h5 class="font-size-16 mb-1"><a href="#" class="text-body">Nablan bin Muhammad</a></h5>
                     <p class="text-muted mb-4 font-size-14">Pekerja Kantin</p>
@@ -94,7 +92,7 @@
                     <div class="card border text-center p-0 mx-auto" style="width: 14rem">
                         <div class="card-body p-0 shadow-none">
                             <div class="mx-auto mb-4">
-                                <img src="{{ asset('images/foto_guru/dummy.jpg') }}" alt="Foto Diri"
+                                <img src="<?php echo e(asset('images/foto_guru/dummy.jpg')); ?>" alt="Foto Diri"
                                     class="card-img-top">
                             </div>
                             <h5 class="font-size-16 mb-1"><a href="#" class="text-body">Nablan bin Muhammad</a>
@@ -155,4 +153,6 @@
             </div>
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\mpsonline_current\resources\views/senarai-pekerja-kantin.blade.php ENDPATH**/ ?>

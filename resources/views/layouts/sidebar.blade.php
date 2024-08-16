@@ -149,13 +149,16 @@
                             <span key="t-dashboards">@lang('Guru dan Kakitangan')</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="cops" key="t-tui-calendar">@lang('Carta Organisasi Pengurusan Sekolah (COPS)')</a></li>
-                            <li><a href="senarai-guru-dan-kakitangan" key="t-full-calendar">@lang('Senarai Guru dan Kakitangan')</a>
-                            </li>
-                            <li><a href="senarai-pengawal-keselamatan" key="t-full-calendar">@lang('Senarai Pengawal Keselamatan')</a>
-                            </li>
-                            <li><a href="senarai-pekerja-kebersihan" key="t-full-calendar">@lang('Senarai Pekerja Kebersihan')</a></li>
-                            <li><a href="senarai-pekerja-kantin" key="t-full-calendar">@lang('Senarai Pekerja Kantin')</a></li>
+                            <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <span key="t-dashboards">@lang('Senarai Pekerja Swasta')</span>
+                            </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="senarai-guru-dan-kakitangan" key="t-full-calendar">@lang('Senarai Guru dan Kakitangan')</a></li>
+                                    <li><a href="senarai-pengawal-keselamatan" key="t-full-calendar">@lang('Senarai Pengawal Keselamatan')</a></li>
+                                    <li><a href="senarai-pekerja-kebersihan" key="t-full-calendar">@lang('Senarai Pekerja Kebersihan')</a></li>
+                                    <li><a href="senarai-pekerja-kantin" key="t-full-calendar">@lang('Senarai Pekerja Kantin')</a></li>
+                                </ul>
                             <li><a href="polisi-angkat" key="t-full-calendar">@lang('Polisi Angkat')</a></li>
                         </ul>
                     </li>
@@ -290,6 +293,15 @@
                             <li><a href="akaun-backoffice" key="t-login">@lang('Back Office')</a></li>
                             <li><a href="akaun-user" key="t-login">@lang('User')</a></li>
                         </ul>
+                    </li>
+                @endif
+
+                @if (Auth::user()->jawatan_app == 0 or Auth::user()->jawatan_app == 1)
+                    <li>
+                        <a href="aplikasi-penyokong" class="waves-effect">
+                            <i class='bx bxs-grid-alt'></i>
+                            <span key="t-chat">@lang('Aplikasi Penyokong')</span>
+                        </a>
                     </li>
                 @endif
 

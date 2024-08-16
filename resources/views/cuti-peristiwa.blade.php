@@ -19,6 +19,11 @@
             </div>
         </div>
     </div>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#create">
+        <i class="mdi mdi-plus me-1"></i>Tambah Cuti
+    </button>
+
     <div class="modal fade" id="create" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -53,44 +58,6 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
                     <button type="button" class="btn btn-primary">Tambah Cuti</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered text-dark">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="editLabel">Edit Cuti</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="mb-3">
-                            <label for="Bulan" class="form-label">Bulan</label>
-                            <input type="text" class="form-control" id="Bulan">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Tarikh" class="form-label">Tarikh</label>
-                            <input type="text" class="form-control" id="Tarikh">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Hari" class="form-label">Hari</label>
-                            <input type="text" class="form-control" id="Hari">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Cuti" class="form-label">Cuti</label>
-                            <input type="text" class="form-control" id="Cuti">
-                        </div>
-                        <div class="mb-3">
-                            <label for="Negeri" class="form-label">Negeri</label>
-                            <input type="text" class="form-control" id="Negeri">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                    <button type="button" class="btn btn-primary">Edit Cuti</button>
                 </div>
             </div>
         </div>

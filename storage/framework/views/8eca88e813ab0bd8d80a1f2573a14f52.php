@@ -24,7 +24,7 @@
         <!-- Start right Content here -->
         <!-- ============================================================== -->
         <div class="main-content">
-            <div class="page-content" style="background: #f3f3f3">
+            <div class="page-content min-vh-100" style="background: #f3f3f3">
                 <div class="container-fluid">
                     
                     <?php echo $__env->yieldContent('content'); ?>
