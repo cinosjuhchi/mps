@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('title'); ?>
     <?php echo app('translator')->get('Dashboard'); ?>
 <?php $__env->stopSection(); ?>
@@ -42,15 +40,15 @@
                                     <div class="mb-3">
                                         <h5 class="text-dark fw-bold">Program dan Aktiviti</h5>
                                         <p class="text-muted font-size-14">Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023</p>
-                                    </div>
+                                    </div>                                    
                                     <div class="mb-3">
                                         <h5 class="text-dark fw-bold">Komponen</h5>
                                         <p class="text-muted font-size-14">Pengurusan dan Pentadbiran</p>
-                                    </div>
+                                    </div>                                    
                                     <div class="mb-3">
                                         <h5 class="text-dark fw-bold">Tarikh</h5>
                                         <p class="text-muted font-size-14">04/06/2024</p>
-                                    </div>
+                                    </div>                                    
                                 </div>
                                 <div class="mt-3 w-100">
                                     <button type="button" class="btn btn-primary w-100 waves-effect waves-light" data-bs-dismiss="modal" aria-label="Close">Mengerti</button>
@@ -85,7 +83,7 @@
     </div>
 
     <?php if(Auth::user()->jawatan_app != 0 and Auth::user()->jawatan_app != 1): ?>
-
+        
         <div class="row">
             <div class="col-xl-3 col-md-6">
                 <div class="card card-h-100 shadow-none border border-secondary border-opacity-25 text-bg-primary">
@@ -107,22 +105,12 @@
                             </li>
                             <li>
                                 <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Siap (14 Program)
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Selesai (14 Program)
                                 </span>
                             </li>
                             <li>
                                 <span class="align-middle">
                                     <i class='bx bx-right-arrow-circle me-1'></i> Gagal (10 Program)
-                                </span>
-                            </li>
-                            <li>
-                                <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Tunda (4 Program)
-                                </span>
-                            </li>
-                            <li>
-                                <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Hapus (1 Program)
                                 </span>
                             </li>
                         </ul>
@@ -155,22 +143,12 @@
                             </li>
                             <li>
                                 <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Siap (14 Program)
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Selesai (14 Program)
                                 </span>
                             </li>
                             <li>
                                 <span class="align-middle">
                                     <i class='bx bx-right-arrow-circle me-1'></i> Gagal (10 Program)
-                                </span>
-                            </li>
-                            <li>
-                                <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Tunda (4 Program)
-                                </span>
-                            </li>
-                            <li>
-                                <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Hapus (1 Program)
                                 </span>
                             </li>
                         </ul>
@@ -203,22 +181,12 @@
                             </li>
                             <li>
                                 <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Siap (14 Program)
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Selesai (14 Program)
                                 </span>
                             </li>
                             <li>
                                 <span class="align-middle">
                                     <i class='bx bx-right-arrow-circle me-1'></i> Gagal (10 Program)
-                                </span>
-                            </li>
-                            <li>
-                                <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Tunda (4 Program)
-                                </span>
-                            </li>
-                            <li>
-                                <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Hapus (1 Program)
                                 </span>
                             </li>
                         </ul>
@@ -252,22 +220,12 @@
                             </li>
                             <li>
                                 <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Siap (14 Program)
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Selesai (14 Program)
                                 </span>
                             </li>
                             <li>
                                 <span class="align-middle">
                                     <i class='bx bx-right-arrow-circle me-1'></i> Gagal (10 Program)
-                                </span>
-                            </li>
-                            <li>
-                                <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Tunda (4 Program)
-                                </span>
-                            </li>
-                            <li>
-                                <span class="align-middle">
-                                    <i class='bx bx-right-arrow-circle me-1'></i> Hapus (1 Program)
                                 </span>
                             </li>
                         </ul>
@@ -281,17 +239,23 @@
                 </div>
             </div>
         </div>
+        
 
-
-
+        
         <div class="row">
             <div class="col-md-9">
-
+                
                 <div class="table-responsive">
-                    <table class="table bg-white table-bordered table-borderless">
+                    <table class="table table-bordered table-borderless">
                         <thead class="table-dark">
                             <div class="d-flex justify-content-between align-items-center bg-dark text-white p-3">
                                 <span>To Do</span>
+                                <div class="icon-action d-flex">
+                                    <i class='bx bx-right-arrow-circle me-1'></i>
+                                    <i class='bx bx-right-arrow-circle me-1'></i>
+                                    <i class='bx bx-right-arrow-circle me-1'></i>
+                                    <i class='bx bx-right-arrow-circle me-1'></i>
+                                </div>
                             </div>
                         </thead>
                         <thead class="table-white">
@@ -302,58 +266,84 @@
                                 <th>Tarikh</th>
                                 <th>Tindakan</th>
                                 <th>Status</th>
+
                             </tr>
                         </thead>
                         <tbody>
-                            <?php $__currentLoopData = $currentItems; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <tr>
-                                <td><input type="checkbox" id="check<?php echo e($loop->index); ?>" onchange="toggleLabel('check<?php echo e($loop->index); ?>')"></td>
-                                <td><label for="check<?php echo e($loop->index); ?>" id="label<?php echo e($loop->index); ?>"><?php echo e($item['program_aktiviti']); ?></label></td>
-                                <td><?php echo e($item['komponen']); ?></td>
-                                <td><?php echo e($item['tarikh']); ?></td>
-                                <td><?php echo e($item['tindakan']); ?></td>
-                                <td>
-                                    <p class="bg-<?php echo e($item['status_color_class']); ?> bg-opacity-75 rounded p-1 text-white">
-                                        <?php echo e($item['status']); ?>
-
-                                    </p>
-                                </td>
+                                <td><input type="checkbox" id="check1" onchange="toggleLabel('check1')"></td>
+                                <td><label for="check1" id="label1">Mesyuarat Jawatankuasa Induk
+                                        Pengurusan Sekolah Bil.1/2023</label></td>
+                                <td>Pengurusan dan Pentadbiran</td>
+                                <td>02/03/2024</td>
+                                <td>Setia Usaha Induk</td>
+                                <td><p class="bg-warning bg-opacity-75 rounded p-1 text-white">Belum Selesai</p></td>
                             </tr>
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                            <tr>
+                                <td><input type="checkbox" id="check2" onchange="toggleLabel('check2')"></td>
+                                <td><label for="check2" id="label2">Mesyuarat Jawatankuasa Induk Pengurusan Sekolah
+                                        Bil.1/2023</label></td>
+                                <td>Kurikulum/JK Panitia Mata Pelajaran</td>
+                                <td>22/04/2024</td>
+                                <td>Setia Usaha Induk</td>
+                                <td><p class="bg-success bg-opacity-75 rounded p-1 text-white">Selesai</p></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check3" onchange="toggleLabel('check3')"></td>
+                                <td><label for="check3" id="label3">Mesyuarat Jawatankuasa Induk Pengurusan Sekolah
+                                        Bil.1/2023</label></td>
+                                <td>Kokurikulum/JK Usaha Tahunan</td>
+                                <td>15/02/2024</td>
+                                <td>Setia Usaha Sukan</td>
+                                <td><p class="bg-danger bg-opacity-75 rounded p-1 text-white">Gagal</p></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check4" onchange="toggleLabel('check4')"></td>
+                                <td><label for="check4" id="label4">Mesyuarat Jawatankuasa Induk Pengurusan Sekolah
+                                        Bil.1/2023</label></td>
+                                <td>Hal Ehwal Murid/JP Rancangan Makanan Tambahan</td>
+                                <td>02/02/2024</td>
+                                <td>Setia Usaha Induk</td>
+                                <td><p class="bg-success bg-opacity-75 rounded p-1 text-white">Selesai</p></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
+                
 
-                <div class="d-flex justify-content-end mb-3">
-                    <?php for($i = 1; $i <= $pages; $i++): ?>
-                        <a href="<?php echo e(url()->current()); ?>?page=<?php echo e($i); ?>" class="btn mx-1 <?php echo e($i == $page ? 'btn-dark' : 'btn-light border border-secondary'); ?>"><?php echo e($i); ?></a>
-                    <?php endfor; ?>
-                </div>
-
-
-
-                <div class="card border border-opacity-10 border-secondary">
+                
+                <div class="card border border-opacity-10 border-secondary">                                                             
                     <div class="card-header text-bg-dark">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="fw-bold">Kalendar</span>
+                            <div class="icon-action d-flex">
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                            </div>
                         </div>
                     </div>
                     <div class="card-body">
-                        <div id="external-events" class="mt-2"></div>
-
                         <div id="calendar"></div>
-                    </div>
-                </div>
-            </div>
-
+                    </div>                    
+                </div>                                        
+            </div>            
+                        
             <div class="col-md-3">
                 <div class="table-responsive">
-                    <table class="table bg-white table-bordered">
+                    <table class="table table-bordered">
                         <thead class="table-dark">
                             <tr>
                                 <td>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span>Pautan Rasmi</span>
+                                        <div class="icon-action d-flex">
+                                            <i class='bx bx-right-arrow-circle me-1'></i>
+                                            <i class='bx bx-right-arrow-circle me-1'></i>
+                                            <i class='bx bx-right-arrow-circle me-1'></i>
+                                            <i class='bx bx-right-arrow-circle me-1'></i>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
@@ -386,11 +376,169 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="card border border-opacity-10 border-secondary">
+                    <div class="card-header text-bg-dark">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">Action Kalendar</span>
+                            <div class="icon-action d-flex">
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                                <i class='bx bx-right-arrow-circle me-1'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <?php if(Auth::user()-> jawatan_app != 0 AND Auth::user()-> jawatan_app != 1 ): ?>
+                        <div class="d-grid">
+                            <button class="btn font-16 btn-primary" id="btn-new-event"><i
+                                class="mdi mdi-plus-circle-outline"></i> Tambah acara</button>
+                        </div>
+                        <?php endif; ?>        
+                        <div id="external-events" class="mt-2">
+                            <div class="row mb-5">
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <p class=" ms-2">Seret dan lepas acara atau klik pada petak kalendar</p>
+                                <?php endif; ?>
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <div class="external-event fc-event bg-success w-100" data-class="bg-success">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Umum
+                                </div>
+                                <?php endif; ?>
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <div class="external-event fc-event bg-info w-100" data-class="bg-info">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Pengurusan dan Pentadbiran
+                                </div>
+                                <?php endif; ?>
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <div class="external-event fc-event bg-warning w-100" data-class="bg-warning">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Kurikulum
+                                </div>
+                                <?php endif; ?>
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <div class="external-event fc-event bg-danger w-100" data-class="bg-danger">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Hal Ehwal Murid
+                                </div>
+                                <?php endif; ?>
+                                <?php if(Auth::user()-> jawatan_app != 6 AND Auth::user()-> jawatan_app != 0): ?>
+                                <div class="external-event fc-event bg-purple w-100" data-class="bg-purple">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Kokurikulum
+                                </div>
+                                <?php endif; ?>
+
+                                <div class="external-event fc-event bg-green w-100" data-class="bg-green">
+                                    <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Kalendarku
+                                </div>
+                            </div>
+                            <?php if(Auth::user()->jawatan_app != 6 ): ?>
+                            <div class="row">
+                                <p class="ms-2">Hari cuti</p>
+                                <div class="external-event fc-event bg-grey w-100 text-dark fw-bold" data-class="bg-grey">
+                                    <i class=" font-size-11 me-2"></i>Hari Kelepasan Am Persekutuan
+                                </div>
+                                <div class="external-event fc-event bg-violet w-100 text-dark fw-bold " data-class="bg-violet">
+                                    <i class=" font-size-11 me-2"></i>Hari Kelepasan Am Negeri
+                                </div>
+                                <div class="external-event fc-event bg-cream w-100 text-dark fw-bold" data-class="bg-cream">
+                                    <i class=" font-size-11 me-2"></i>Cuti Peristiwa
+                                </div>
+                                <div class="external-event fc-event bg-cutipenggal w-100 text-dark fw-bold" data-class="bg-cutipenggal">
+                                    <i class=" font-size-11 me-2"></i>Cuti Penggal
+                                </div>
+                            </div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>    
+                <div class="modal fade" id="event-modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header py-3 px-4 border-bottom-0">
+                                <h5 class="modal-title" id="modal-title">Event</h5>
+        
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+        
+                            </div>
+                            <div class="modal-body p-4">
+                                <form class="needs-validation" name="event-form" id="form-event" novalidate>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Event Name</label>
+                                                <input class="form-control" placeholder="Insert Event Name" type="text"
+                                                    name="title" id="event-title" required value="" />
+                                                <div class="invalid-feedback">Please provide a valid event name</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Jam Mulai</label>
+                                                <input class="form-control" type="time" name="" id="event-time">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Jam Selesai</label>
+                                                <input class="form-control" type="time" name="" id="event-time">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Tanggal Mulai</label>
+                                                <input class="form-control" type="date" name="" id="event-time">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Tanggal Selesai</label>
+                                                <input class="form-control" type="date" name="" id="event-time">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Category</label>
+                                                <select class="form-control form-select" name="category" id="event-category">
+                                                    <option selected> --Select-- </option>
+                                                    <?php if(Auth::user()->jawatan_app != 0 AND Auth::user()->jawatan_app !=6 ): ?>
+                                                    <option value="bg-success">Umum</option>
+                                                    <option value="bg-primary">Pengurusan dan Pentadbiran</option>
+                                                    <option value="bg-warning">Kurikulum</option>
+                                                    <option value="bg-danger">Hal Ehwal Murid</option>
+                                                    <option value="bg-purple">Kokurikulum</option>
+                                                    <?php endif; ?>
+                                                    <option value="bg-green">Kalendarku</option>
+                                                    <?php if(Auth::user()->jawatan_app != 6 ): ?>
+                                                    <option value="bg-grey">Hari Kelepasan Am Persekutuan</option>
+                                                    <option value="bg-violet">Hari Kelepasan Am Negeri</option>
+                                                    <option value="bg-cream">Cuti Peristiwa</option>
+                                                    <option value="bg-cutipenggal">Cuti Penggal</option>
+                                                    <?php endif; ?>
+                                                </select>
+                                                <div class="invalid-feedback">Please select a valid event category</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <button type="button" class="btn btn-danger" id="btn-delete-event">Delete</button>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <button type="button" class="btn btn-light me-1"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-success" id="btn-save-event">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- end modal-content-->
+                    </div> <!-- end modal dialog-->
+                </div>                            
             </div>
+            
         </div>
-
+        
     <?php elseif(Auth::user()->jawatan_app == 0): ?>
-
+        
         <div class="row">
             <div class="col-xl-3 col-md-6">
                 <div class="card card-h-100 shadow-none border border-secondary border-opacity-25 text-bg-primary">
@@ -442,10 +590,10 @@
             </div>
         </div>
 
-
+        
         <h3 class="card-title my-4">Statistik Perbandingan Status Akaun</h3>
 
-
+        
         <div class="row">
             <div class="col">
                 <div class="card">
@@ -461,7 +609,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="row">
             <div class="col">
                 <div class="card">
@@ -525,8 +673,9 @@
                 </div>
             </div>
         </div>
-
+        
     <?php endif; ?>
+        
     <script>
         function toggleLabel(checkboxId) {
             var label = document.getElementById("label" + checkboxId.slice(-1));

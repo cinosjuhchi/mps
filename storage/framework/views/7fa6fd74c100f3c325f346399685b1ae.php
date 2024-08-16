@@ -131,13 +131,20 @@
                             <span key="t-dashboards"><?php echo app('translator')->get('Guru dan Kakitangan'); ?></span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="cops" key="t-tui-calendar"><?php echo app('translator')->get('Carta Organisasi Pengurusan Sekolah (COPS)'); ?></a></li>
-                            <li><a href="senarai-guru-dan-kakitangan" key="t-full-calendar"><?php echo app('translator')->get('Senarai Guru dan Kakitangan'); ?></a>
+                            <li><a href="senarai-guru-dan-kakitangan" key="t-full-calendar"><?php echo app('translator')->get('Senarai Guru dan Kakitangan'); ?></a></li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <span key="t-dashboards"><?php echo app('translator')->get('Senarai Pekerja Swasta'); ?></span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="senarai-pengawal-keselamatan"
+                                            key="t-full-calendar"><?php echo app('translator')->get('Senarai Pengawal Keselamatan'); ?></a></li>
+                                    <li><a href="senarai-pekerja-kebersihan"
+                                            key="t-full-calendar"><?php echo app('translator')->get('Senarai Pekerja Kebersihan'); ?></a></li>
+                                    <li><a href="senarai-pekerja-kantin" key="t-full-calendar"><?php echo app('translator')->get('Senarai Pekerja Kantin'); ?></a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li><a href="senarai-pengawal-keselamatan" key="t-full-calendar"><?php echo app('translator')->get('Senarai Pengawal Keselamatan'); ?></a>
-                            </li>
-                            <li><a href="senarai-pekerja-kebersihan" key="t-full-calendar"><?php echo app('translator')->get('Senarai Pekerja Kebersihan'); ?></a></li>
-                            <li><a href="senarai-pekerja-kantin" key="t-full-calendar"><?php echo app('translator')->get('Senarai Pekerja Kantin'); ?></a></li>
                             <li><a href="polisi-angkat" key="t-full-calendar"><?php echo app('translator')->get('Polisi Angkat'); ?></a></li>
                         </ul>
                     </li>
@@ -188,7 +195,8 @@
                                     <span key="t-dashboards"><?php echo app('translator')->get('Kokurikulum'); ?></span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="kokurikulum-komponen" key="t-tui-calendar"><?php echo app('translator')->get('Komponen'); ?></a></li>
+                                    <li><a href="kokurikulum-komponen" key="t-tui-calendar"><?php echo app('translator')->get('Komponen'); ?></a>
+                                    </li>
                                     <li><a href="kokurikulum-jk-jp" key="t-tui-calendar"><?php echo app('translator')->get('Jawatankuasa'); ?></a></li>
                                     <li><a href="program-kokurikulum" key="t-tui-calendar"><?php echo app('translator')->get('Aktiviti & Program'); ?></a></li>
                                 </ul>

@@ -137,9 +137,12 @@
                                     <span key="t-dashboards">@lang('Senarai Pekerja Swasta')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="senarai-pengawal-keselamatan" key="t-full-calendar">@lang('Senarai Pengawal Keselamatan')</a></li>
-                                    <li><a href="senarai-pekerja-kebersihan" key="t-full-calendar">@lang('Senarai Pekerja Kebersihan')</a></li>
-                                    <li><a href="senarai-pekerja-kantin" key="t-full-calendar">@lang('Senarai Pekerja Kantin')</a></li>
+                                    <li><a href="senarai-pengawal-keselamatan"
+                                            key="t-full-calendar">@lang('Senarai Pengawal Keselamatan')</a></li>
+                                    <li><a href="senarai-pekerja-kebersihan"
+                                            key="t-full-calendar">@lang('Senarai Pekerja Kebersihan')</a></li>
+                                    <li><a href="senarai-pekerja-kantin" key="t-full-calendar">@lang('Senarai Pekerja Kantin')</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li><a href="polisi-angkat" key="t-full-calendar">@lang('Polisi Angkat')</a></li>
@@ -192,7 +195,8 @@
                                     <span key="t-dashboards">@lang('Kokurikulum')</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="kokurikulum-komponen" key="t-tui-calendar">@lang('Komponen')</a></li>
+                                    <li><a href="kokurikulum-komponen" key="t-tui-calendar">@lang('Komponen')</a>
+                                    </li>
                                     <li><a href="kokurikulum-jk-jp" key="t-tui-calendar">@lang('Jawatankuasa')</a></li>
                                     <li><a href="program-kokurikulum" key="t-tui-calendar">@lang('Aktiviti & Program')</a></li>
                                 </ul>

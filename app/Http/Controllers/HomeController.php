@@ -29,7 +29,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         if (view()->exists($request->path())) {
-            if($request->path() == 'dashboard' and Auth::user()->jawatan_app != 0){
+            if ($request->path() == 'dashboard' and Auth::user()->jawatan_app != 0) {
                 $items = [
                     ['program_aktiviti' => 'Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023', 'komponen' => 'Pengurusan', 'tarikh' => '02/03/2024', 'tindakan' => 'John Doe', 'status' => 'Rancang', 'status_color_class' => 'info'],
                     ['program_aktiviti' => 'Mesyuarat Jawatankuasa Induk Pengurusan Sekolah Bil.1/2023', 'komponen' => 'Kurikulum', 'tarikh' => '22/04/2024', 'tindakan' => 'John Doe', 'status' => 'Siap', 'status_color_class' => 'success'],
