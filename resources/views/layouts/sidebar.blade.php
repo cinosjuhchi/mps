@@ -107,7 +107,6 @@
                                 </ul>
                             </li>
                             <li><a href="peta-susun-atur-premis" key="t-full-calendar">@lang('Peta Susun Atur Premis')</a></li>
-<<<<<<< HEAD
                             <li><a href="peta-lokasi" key="t-full-calendar">@lang('Peta Lokasi')</a></li>
                     </ul>
                 </li>
