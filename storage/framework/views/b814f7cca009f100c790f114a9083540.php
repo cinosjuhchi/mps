@@ -1,15 +1,13 @@
-@extends('layouts.master-without-nav')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('translation.Error_404'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('translation.Error_404')
-@endsection
-
-@section('body')
+<?php $__env->startSection('body'); ?>
 
     <body>
-    @endsection
+    <?php $__env->stopSection(); ?>
 
-    @section('content')
+    <?php $__env->startSection('content'); ?>
         <div class="account-pages my-5 pt-5">
             <div class="container">
                 <div class="row">
@@ -26,10 +24,12 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-xl-6">
                         <div>
-                            <img src="{{ URL::asset('/build/images/error-img.png') }}" alt="" class="img-fluid">
+                            <img src="<?php echo e(URL::asset('/build/images/error-img.png')); ?>" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    @endsection
+    <?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master-without-nav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\mps\resources\views/errors/404.blade.php ENDPATH**/ ?>

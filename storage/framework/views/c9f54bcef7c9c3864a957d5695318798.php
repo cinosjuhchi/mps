@@ -1,5 +1,5 @@
 <!-- JAVASCRIPT -->
-<script src="{{ URL::asset('sw.js') }}"></script>
+<script src="<?php echo e(URL::asset('sw.js')); ?>"></script>
 <script>
     if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/sw.js").then(
@@ -15,11 +15,11 @@
     }
 </script>
 
-<script src="{{ URL::asset('build/libs/jquery/jquery.min.js') }}"></script>
-<script src="{{ URL::asset('build/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ URL::asset('build/libs/metismenu/metisMenu.min.js') }}"></script>
-<script src="{{ URL::asset('build/libs/simplebar/simplebar.min.js') }}"></script>
-<script src="{{ URL::asset('build/libs/node-waves/waves.min.js') }}"></script>
+<script src="<?php echo e(URL::asset('build/libs/jquery/jquery.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/libs/bootstrap/js/bootstrap.bundle.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/libs/metismenu/metisMenu.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/libs/simplebar/simplebar.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/libs/node-waves/waves.min.js')); ?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 
 
@@ -34,13 +34,13 @@
         $('#passwordError').text('');
         $('#password_confirmError').text('');
         $.ajax({
-            url: "{{ url('update-password') }}" + "/" + Id,
+            url: "<?php echo e(url('update-password')); ?>" + "/" + Id,
             type: "POST",
             data: {
                 "current_password": current_password,
                 "password": password,
                 "password_confirmation": password_confirm,
-                "_token": "{{ csrf_token() }}",
+                "_token": "<?php echo e(csrf_token()); ?>",
             },
             success: function(response) {
                 $('#current_passwordError').text('');
@@ -50,7 +50,7 @@
                     $('#current_passwordError').text(response.Message);
                 } else if (response.isSuccess == true) {
                     setTimeout(function() {
-                        window.location.href = "{{ route('root') }}";
+                        window.location.href = "<?php echo e(route('root')); ?>";
                     }, 1000);
                 }
             },
@@ -65,9 +65,10 @@
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.3.1/trix.min.js" defer></script>
 
-@yield('script')
+<?php echo $__env->yieldContent('script'); ?>
 
 <!-- App js -->
-<script src="{{ URL::asset('build/js/app.js') }}"></script>
+<script src="<?php echo e(URL::asset('build/js/app.js')); ?>"></script>
 
-@yield('script-bottom')
+<?php echo $__env->yieldContent('script-bottom'); ?>
+<?php /**PATH C:\laragon\www\mps\resources\views/layouts/vendor-scripts.blade.php ENDPATH**/ ?>

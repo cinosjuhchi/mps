@@ -133,6 +133,10 @@ hr.maklumat-hr {
     background: #f7ecc1;
 }
 
+.bg-mps {
+    background: #5156be;
+}
+
 img.gallery-item {
     width: 100%;
     height: 250px;
@@ -226,7 +230,7 @@ img.imej-tetapan:hover {
     display: none;
 }
 
-.custom-upload{
+.custom-upload {
     background: blue;
 }
 
@@ -250,27 +254,26 @@ img.imej-tetapan:hover {
     background-color: #92F6CA;
 }
 
-.button-kumpulan:hover{
-    background-color: #79dbb0 ;
+.button-kumpulan:hover {
+    background-color: #79dbb0;
 }
 
-
-.color1{
+.color1 {
     background-color: red;
-    width:100px;
-    height:80px;
+    width: 100px;
+    height: 80px;
 }
 
-.color2{
+.color2 {
     background-color: grey;
-    width:100px;
-    height:80px;
+    width: 100px;
+    height: 80px;
 }
 
-.color3{
+.color3 {
     background-color: black;
-    width:100px;
-    height:80px;
+    width: 100px;
+    height: 80px;
 }
 
 /* stepper */
@@ -281,7 +284,7 @@ img.imej-tetapan:hover {
 
 .stepper:hover {
     cursor: pointer;
-color: #343a40;
+    color: #343a40;
 }
 
 .step-title {

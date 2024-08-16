@@ -1,22 +1,20 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('translation.Jobs'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('translation.Jobs')
-@endsection
-
-@section('content')
-    @component('components.breadcrumb')
-        @slot('li_1')
+<?php $__env->startSection('content'); ?>
+    <?php $__env->startComponent('components.breadcrumb'); ?>
+        <?php $__env->slot('li_1'); ?>
             Dashboards
-        @endslot
-        @slot('title')
+        <?php $__env->endSlot(); ?>
+        <?php $__env->slot('title'); ?>
             Tetapan
-        @endslot
-    @endcomponent
+        <?php $__env->endSlot(); ?>
+    <?php echo $__env->renderComponent(); ?>
 
     <div class="row">
         <div class="col-lg-12">
-            {{-- success --}}
+            
             <div class="card">
                 <div class="card-body">
                     <div class="step-title">
@@ -57,7 +55,7 @@
                 </div>
             </div>
 
-            {{-- kedua --}}
+            
             <div class="card">
                 <div class="card-body">
                     <div class="step-title">
@@ -130,12 +128,7 @@
     </div>
     <!--end row-->
     <!--end row-->
-@endsection
-{{-- @section('script')
-    <!-- apexcharts -->
-    <script src="{{ URL::asset('build/libs/apexcharts/apexcharts.min.js') }}"></script>
-    <!-- crypto dash init js -->
-    <script src="{{ URL::asset('build/js/pages/dashboard-job.init.js') }}"></script>
-    <!-- app js -->
-    <script src="{{ URL::asset('build/js/app.js') }}"></script>
-@endsection --}}
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\mps\resources\views/tetapan.blade.php ENDPATH**/ ?>
