@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('title'); ?>
     <?php echo app('translator')->get('Perincian Tugas | Tugas Portofolio Berjawatan'); ?>
 <?php $__env->stopSection(); ?>
@@ -201,43 +199,28 @@
                 <table class="table table-borderless">
                     <tr>
                         <td width="20px">1.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Merekod dan mengemaskinikan kehadiran serta butiran peribadi murid.</td>
                     </tr>
                     <tr>
                         <td>2.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Memastikan murid membawa surat daripada ibu bapa penjaga atau surat doktor sekiranya mereka
+                            tidak dapat menghadirkan diri ke sekolah.</td>
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Memaklumkan kepada guru admin APDM sekolah untuk mengeluarkan nama murid dari sistem selepas
+                            Surat Buang Sekolah dikeluarkan.</td>
                     </tr>
                     <tr>
                         <td>4.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Sekiranya murid tidak hadir selama 60 hari persekolahan, namanya dikeluarkan dari buku jadual
+                            kedatangan. Kes-kes ini hendaklah dirujuk kepada PGB terlebih dahulu.</td>
                     </tr>
                     <tr>
                         <td>5.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                    </tr>
-                    <tr>
-                        <td>6.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                    </tr>
-                    <tr>
-                        <td>7.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                    </tr>
-                    <tr>
-                        <td>8.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                    </tr>
-                    <tr>
-                        <td>9.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
-                    </tr>
-                    <tr>
-                        <td>10.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menjalankan pengurusan bilik darjah seperti pemilihan ketua kelas, membuat giliran bertugas,
+                            giliran kebersihan, alat tulis, perhiasan kelas, kerusi meja berada dalam keadaan teratur, dan
+                            membantu mengurus pertukaran murid.</td>
                     </tr>
                 </table>
             <?php endif; ?>

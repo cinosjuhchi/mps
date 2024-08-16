@@ -201,44 +201,55 @@
                 <table class="table table-borderless">
                     <tr>
                         <td width="20px">1.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Memastikan penerapan dan penghayatan disiplin dan nilai-nilai murni dipraktikkan di sekolah.
+                        </td>
                     </tr>
                     <tr>
                         <td>2.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Memastikan peraturan sekolah dikuatkuasakan dan dipatuhi sepanjang masa kegiatan dijalankan sama
+                            ada di dalam atau di luar sekolah.</td>
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Mengambil tindakan yang wajar dan adil untuk pihak-pihak yang terlibat seperti memberi nasihat,
+                            bimbingan ataupun merujuk kepada pihak yang lain.</td>
                     </tr>
                     <tr>
                         <td>4.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Melaksanakan hukuman disiplin sekiranya diwakilkan oleh PGB.</td>
                     </tr>
                     <tr>
                         <td>5.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menjadi pegawai perhubungan antara pihak sekolah dengan ibu bapa/penjaga dalam menangani masalah
+                            disiplin.</td>
                     </tr>
                     <tr>
                         <td>6.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Bertanggungjawab menimbulkan semangat kekitaan dan semangat sekolah dalam kalangan murid dan
+                            guru.</td>
                     </tr>
                     <tr>
                         <td>7.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Memantau semua kes disiplin melalui Sistem Sahsiah Diri Murid (SSDM).</td>
                     </tr>
                     <tr>
                         <td>8.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Mengenal pasti murid-murid yang berisiko dari segi disiplin.</td>
                     </tr>
                     <tr>
                         <td>9.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menerima aduan dan memastikan kesahihan aduan.</td>
                     </tr>
                     <tr>
                         <td>10.</td>
-                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td>Menjalankan siasatan rapi pada kes yang diadu.</td>
                     </tr>
+                    <tr>
+                        <td>11.</td>
+                        <td>Melaporkan isu atau insiden berdasarkan Standard Operating Procedure (SOP) 1:3:7 Pelaporan dan
+                            Tindakan Menangani Isu Disiplin Murid.</td>
+                    </tr>
+
                 </table>
             @endif
         </div>

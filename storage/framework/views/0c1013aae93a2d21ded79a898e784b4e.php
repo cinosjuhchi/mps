@@ -1,20 +1,18 @@
-@extends('layouts.master')
+<?php $__env->startSection('title'); ?>
+    <?php echo app('translator')->get('Perincian Tugas | Tugas Portofolio Berjawatan'); ?>
+<?php $__env->stopSection(); ?>
 
-@section('title')
-    @lang('Perincian Tugas | Tugas Portofolio Berjawatan')
-@endsection
-
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div class="row">
         <div class="col">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0 font-size-18 text-capitalize">Perincian Tugas - Komponen Pengurusan dan Pentadbiran</h4>
+                <h4 class="mb-sm-0 font-size-18 text-capitalize">Perincian Tugas - Komponen Hal Ehwal Murid</h4>
 
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item">Perincian Tugas</li>
                         <li class="breadcrumb-item">Tugas Portofolio Tanpa Jawatan</li>
-                        <li class="breadcrumb-item active">Komponen Pengurusan dan Pentadbiran</li>
+                        <li class="breadcrumb-item active">Komponen Hal Ehwal Murid</li>
                     </ol>
                 </div>
             </div>
@@ -23,7 +21,7 @@
 
     <div class="row">
         <div class="col">
-            @if (Auth::user()->jawatan_app == 0)
+            <?php if(Auth::user()->jawatan_app == 0): ?>
                 <button type="button" class="btn btn-sm btn-primary mb-3" data-bs-toggle="modal"
                     data-bs-target="#tambahTugas">
                     <i class='bx bx-plus-circle'></i> Tambah Tugas
@@ -40,7 +38,7 @@
                             </div>
                             <form action="" method="post">
                                 <div class="modal-body">
-                                    @csrf
+                                    <?php echo csrf_field(); ?>
                                     <div class="mb-3">
                                         <label for="tugas" class="form-label">Tugas</label>
                                         <input type="text" class="form-control" id="tugas" name="tugas"
@@ -197,35 +195,61 @@
                         </tr>
                     </tbody>
                 </table>
-            @else
+            <?php else: ?>
                 <table class="table table-borderless">
                     <tr>
                         <td width="20px">1.</td>
-                        <td>Merekod dan mengemaskinikan kehadiran serta butiran peribadi murid.</td>
+                        <td>Memastikan penerapan dan penghayatan disiplin dan nilai-nilai murni dipraktikkan di sekolah.
+                        </td>
                     </tr>
                     <tr>
                         <td>2.</td>
-                        <td>Memastikan murid membawa surat daripada ibu bapa penjaga atau surat doktor sekiranya mereka
-                            tidak dapat menghadirkan diri ke sekolah.</td>
+                        <td>Memastikan peraturan sekolah dikuatkuasakan dan dipatuhi sepanjang masa kegiatan dijalankan sama
+                            ada di dalam atau di luar sekolah.</td>
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td>Memaklumkan kepada guru admin APDM sekolah untuk mengeluarkan nama murid dari sistem selepas
-                            Surat Buang Sekolah dikeluarkan.</td>
+                        <td>Mengambil tindakan yang wajar dan adil untuk pihak-pihak yang terlibat seperti memberi nasihat,
+                            bimbingan ataupun merujuk kepada pihak yang lain.</td>
                     </tr>
                     <tr>
                         <td>4.</td>
-                        <td>Sekiranya murid tidak hadir selama 60 hari persekolahan, namanya dikeluarkan dari buku jadual
-                            kedatangan. Kes-kes ini hendaklah dirujuk kepada PGB terlebih dahulu.</td>
+                        <td>Melaksanakan hukuman disiplin sekiranya diwakilkan oleh PGB.</td>
                     </tr>
                     <tr>
                         <td>5.</td>
-                        <td>Menjalankan pengurusan bilik darjah seperti pemilihan ketua kelas, membuat giliran bertugas,
-                            giliran kebersihan, alat tulis, perhiasan kelas, kerusi meja berada dalam keadaan teratur, dan
-                            membantu mengurus pertukaran murid.</td>
+                        <td>Menjadi pegawai perhubungan antara pihak sekolah dengan ibu bapa/penjaga dalam menangani masalah
+                            disiplin.</td>
                     </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Bertanggungjawab menimbulkan semangat kekitaan dan semangat sekolah dalam kalangan murid dan
+                            guru.</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Memantau semua kes disiplin melalui Sistem Sahsiah Diri Murid (SSDM).</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>Mengenal pasti murid-murid yang berisiko dari segi disiplin.</td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>Menerima aduan dan memastikan kesahihan aduan.</td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>Menjalankan siasatan rapi pada kes yang diadu.</td>
+                    </tr>
+                    <tr>
+                        <td>11.</td>
+                        <td>Melaporkan isu atau insiden berdasarkan Standard Operating Procedure (SOP) 1:3:7 Pelaporan dan
+                            Tindakan Menangani Isu Disiplin Murid.</td>
+                    </tr>
+
                 </table>
-            @endif
+            <?php endif; ?>
         </div>
     </div>
 
@@ -239,7 +263,7 @@
                 </div>
                 <form action="" method="post">
                     <div class="modal-body">
-                        @csrf
+                        <?php echo csrf_field(); ?>
                         <div class="mb-3">
                             <label for="tugas" class="form-label">Tugas</label>
                             <input type="text" class="form-control" id="tugas" name="tugas"
@@ -255,4 +279,6 @@
         </div>
     </div>
     <!-- END Modal Edit Program -->
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\BELAJAR-PROYEK\GRAVIX\mps_cino\mps\resources\views/hal-ehwal-murid.blade.php ENDPATH**/ ?>
