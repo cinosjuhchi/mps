@@ -29,6 +29,7 @@
 </style>
 <header id="page-topbar" class="">
     <div class="navbar-header">
+>>>>>>> 3f2b834 (fix: senarai dan polisi angkat, aplikasi penyokon)
         <div class="d-flex">
             <!-- LOGO -->
             <div class="navbar-brand-box d-flex justify-content-between">
@@ -67,7 +68,18 @@
 
 
             <!-- App Search-->
+<<<<<<< HEAD
 
+=======
+            <form class="ms-3 app-search d-none d-lg-block">
+                <div class="position-relative">
+                    <input type="text" class="form-control" placeholder="<?php echo app('translator')->get('translation.Search'); ?>">
+                    <button class="btn" style="background: #5156BE;">
+                        <span class="bx bx-search-alt"></span>
+                    </button>
+                </div>
+            </form>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
         </div>
 
         <div class="d-flex">

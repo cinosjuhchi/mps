@@ -28,7 +28,15 @@
         <!-- Start right Content here -->
         <!-- ============================================================== -->
         <div class="main-content">
+<<<<<<< HEAD
+<<<<<<< HEAD
             <div class="page-content">
+=======
+            <div class="page-content" style="background: #f3f3f3">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
+=======
+            <div class="page-content min-vh-100" style="background: #f3f3f3">
+>>>>>>> 3f2b834 (fix: senarai dan polisi angkat, aplikasi penyokon)
                 <div class="container-fluid">
                     
                     <?php echo $__env->yieldContent('content'); ?>

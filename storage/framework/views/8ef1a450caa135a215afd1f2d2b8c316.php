@@ -19,6 +19,7 @@
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
+<<<<<<< HEAD
     <!-- subscribeModal -->
     <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -62,6 +63,8 @@
             </div>
         </div>
     </div>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
     <div class="row">
         <div class="col">
             <?php if(session('change-role-success')): ?>
@@ -107,7 +110,11 @@
                             </li>
                             <li>
                                 <span class="align-middle">
+<<<<<<< HEAD
                                     <i class='bx bx-right-arrow-circle me-1'></i> Selesai (14 Program)
+=======
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Siap (14 Program)
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 </span>
                             </li>
                             <li>
@@ -115,6 +122,19 @@
                                     <i class='bx bx-right-arrow-circle me-1'></i> Gagal (10 Program)
                                 </span>
                             </li>
+<<<<<<< HEAD
+=======
+                            <li>
+                                <span class="align-middle">
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Tunda (4 Program)
+                                </span>
+                            </li>
+                            <li>
+                                <span class="align-middle">
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Hapus (1 Program)
+                                </span>
+                            </li>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                         </ul>
                         <div class="card-footer position-absolute bottom-0 end-0 start-0">
                             <div class="text-end align-middle">
@@ -145,7 +165,11 @@
                             </li>
                             <li>
                                 <span class="align-middle">
+<<<<<<< HEAD
                                     <i class='bx bx-right-arrow-circle me-1'></i> Selesai (14 Program)
+=======
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Siap (14 Program)
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 </span>
                             </li>
                             <li>
@@ -153,6 +177,19 @@
                                     <i class='bx bx-right-arrow-circle me-1'></i> Gagal (10 Program)
                                 </span>
                             </li>
+<<<<<<< HEAD
+=======
+                            <li>
+                                <span class="align-middle">
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Tunda (4 Program)
+                                </span>
+                            </li>
+                            <li>
+                                <span class="align-middle">
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Hapus (1 Program)
+                                </span>
+                            </li>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                         </ul>
                         <div class="card-footer position-absolute bottom-0 end-0 start-0">
                             <div class="text-end align-middle">
@@ -183,7 +220,11 @@
                             </li>
                             <li>
                                 <span class="align-middle">
+<<<<<<< HEAD
                                     <i class='bx bx-right-arrow-circle me-1'></i> Selesai (14 Program)
+=======
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Siap (14 Program)
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 </span>
                             </li>
                             <li>
@@ -191,6 +232,19 @@
                                     <i class='bx bx-right-arrow-circle me-1'></i> Gagal (10 Program)
                                 </span>
                             </li>
+<<<<<<< HEAD
+=======
+                            <li>
+                                <span class="align-middle">
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Tunda (4 Program)
+                                </span>
+                            </li>
+                            <li>
+                                <span class="align-middle">
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Hapus (1 Program)
+                                </span>
+                            </li>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                         </ul>
                         <div class="card-footer position-absolute bottom-0 end-0 start-0">
                             <div class="text-end align-middle">
@@ -222,7 +276,11 @@
                             </li>
                             <li>
                                 <span class="align-middle">
+<<<<<<< HEAD
                                     <i class='bx bx-right-arrow-circle me-1'></i> Selesai (14 Program)
+=======
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Siap (14 Program)
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                 </span>
                             </li>
                             <li>
@@ -230,6 +288,19 @@
                                     <i class='bx bx-right-arrow-circle me-1'></i> Gagal (10 Program)
                                 </span>
                             </li>
+<<<<<<< HEAD
+=======
+                            <li>
+                                <span class="align-middle">
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Tunda (4 Program)
+                                </span>
+                            </li>
+                            <li>
+                                <span class="align-middle">
+                                    <i class='bx bx-right-arrow-circle me-1'></i> Hapus (1 Program)
+                                </span>
+                            </li>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                         </ul>
                         <div class="card-footer position-absolute bottom-0 end-0 start-0">
                             <div class="text-end align-middle">
@@ -248,6 +319,7 @@
             <div class="col-md-9">
                 
                 <div class="table-responsive">
+<<<<<<< HEAD
                     <table class="table table-bordered table-borderless">
                         <thead class="table-dark">
                             <div class="d-flex justify-content-between align-items-center bg-dark text-white p-3">
@@ -258,6 +330,12 @@
                                     <i class='bx bx-right-arrow-circle me-1'></i>
                                     <i class='bx bx-right-arrow-circle me-1'></i>
                                 </div>
+=======
+                    <table class="table bg-white table-bordered table-borderless">
+                        <thead class="table-dark">
+                            <div class="d-flex justify-content-between align-items-center bg-dark text-white p-3">
+                                <span>To Do</span>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                             </div>
                         </thead>
                         <thead class="table-white">
@@ -268,6 +346,7 @@
                                 <th>Tarikh</th>
                                 <th>Tindakan</th>
                                 <th>Status</th>
+<<<<<<< HEAD
 
                             </tr>
                         </thead>
@@ -335,17 +414,69 @@
             <div class="col-md-3">
                 <div class="table-responsive">
                     <table class="table table-bordered">
+=======
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php $__currentLoopData = $currentItems; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <tr>
+                                <td><input type="checkbox" id="check<?php echo e($loop->index); ?>" onchange="toggleLabel('check<?php echo e($loop->index); ?>')"></td>
+                                <td><label for="check<?php echo e($loop->index); ?>" id="label<?php echo e($loop->index); ?>"><?php echo e($item['program_aktiviti']); ?></label></td>
+                                <td><?php echo e($item['komponen']); ?></td>
+                                <td><?php echo e($item['tarikh']); ?></td>
+                                <td><?php echo e($item['tindakan']); ?></td>
+                                <td>
+                                    <p class="bg-<?php echo e($item['status_color_class']); ?> bg-opacity-75 rounded p-1 text-white">
+                                        <?php echo e($item['status']); ?>
+
+                                    </p>
+                                </td>
+                            </tr>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="d-flex justify-content-end mb-3">
+                    <?php for($i = 1; $i <= $pages; $i++): ?>
+                        <a href="<?php echo e(url()->current()); ?>?page=<?php echo e($i); ?>" class="btn mx-1 <?php echo e($i == $page ? 'btn-dark' : 'btn-light border border-secondary'); ?>"><?php echo e($i); ?></a>
+                    <?php endfor; ?>
+                </div>
+                
+
+                
+                <div class="card border border-opacity-10 border-secondary">
+                    <div class="card-header text-bg-dark">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">Kalendar</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="external-events" class="mt-2"></div>
+
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="table-responsive">
+                    <table class="table bg-white table-bordered">
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                         <thead class="table-dark">
                             <tr>
                                 <td>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span>Pautan Rasmi</span>
+<<<<<<< HEAD
                                         <div class="icon-action d-flex">
                                             <i class='bx bx-right-arrow-circle me-1'></i>
                                             <i class='bx bx-right-arrow-circle me-1'></i>
                                             <i class='bx bx-right-arrow-circle me-1'></i>
                                             <i class='bx bx-right-arrow-circle me-1'></i>
                                         </div>
+=======
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
                                     </div>
                                 </td>
                             </tr>
@@ -378,6 +509,7 @@
                         </tbody>
                     </table>
                 </div>
+<<<<<<< HEAD
                 <div class="card border border-opacity-10 border-secondary">
                     <div class="card-header text-bg-dark">
                         <div class="d-flex justify-content-between align-items-center">
@@ -537,6 +669,9 @@
                 </div>                            
             </div>
             
+=======
+            </div>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
         </div>
         
     <?php elseif(Auth::user()->jawatan_app == 0): ?>
@@ -677,7 +812,12 @@
         </div>
         
     <?php endif; ?>
+<<<<<<< HEAD
         
+=======
+
+
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
     <script>
         function toggleLabel(checkboxId) {
             var label = document.getElementById("label" + checkboxId.slice(-1));
@@ -724,6 +864,7 @@
         $('#recentUser-table').DataTable();
     </script>
 
+<<<<<<< HEAD
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
@@ -735,6 +876,10 @@
 
     <script src="<?php echo e(URL::asset('build/libs/jquery-knob/jquery.knob.min.js')); ?>"></>
     <script src="<?php echo e(URL::asset('build/js/pages/jquery-knob.init.js')); ?>"></scrip>
+=======
+    <script src="<?php echo e(URL::asset('build/libs/jquery-knob/jquery.knob.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/js/pages/jquery-knob.init.js')); ?>"></script>
+>>>>>>> 185e933 (fix: accordion color, remove action column, and table background)
     <script src="<?php echo e(URL::asset('/build/js/pages/jquery-knob.init.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 
